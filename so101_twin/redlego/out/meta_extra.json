@@ -1,0 +1,164 @@
+{
+ "pass_claimed_on": "strict arm-only reading (A): both cameras >= 0.80 held-out; the real-occluder-excluded reading (B) is reported as well and also passes",
+ "pass_strict": true,
+ "pass_occluder_excluded": true,
+ "masks": "so101_twin/redlego/masks/redlego_<cam>_t1ok.npy: SAM 2.1 consensus-prompted (twin r1c silhouette + twin-independent DINO+SAM mask _d1k), real brick pixels removed (_t1o), thin cables removed by a 5x5 opening (_t1ok); occluders for reading B: redlego_<cam>_d1_occ.npy (brick | box, DINO+SAM on the real frames only)",
+ "occluder_masks": "so101_twin/redlego/masks/redlego_<cam>_d1_occ.npy (red brick | cardboard box; real frames only)",
+ "arm_additions": {
+  "wrist_camera_bar": {
+   "params": [
+    -0.008540264925012449,
+    0.013363054936189962,
+    0.0164480151524305,
+    2.412678685406267,
+    0.9493598258759329,
+    -1.6656783068201386,
+    0.06672069009575789
+   ],
+   "frame": "gripper body (so101 'gripper'), [x, y, z (m), rotvec (rad), length (m)]",
+   "geometry": "rod 10 x 3 mm along local +x, camera module 26 x 26 x 16 mm hanging below its end",
+   "source": "global search bar_search.py + stage-C refinement against the arm masks, even episodes"
+  },
+  "base_cable_loop": {
+   "params": [
+    0.03128700667956689,
+    -0.0618958582882185,
+    0.024207636214711566,
+    0.03816051390546094,
+    -0.9587132218213779,
+    0.3029172994912082,
+    0.020779428861949067,
+    0.04698785167387788,
+    0.02330388694725602
+   ],
+   "frame": "arm root (base) frame, [x, y, z (m), rotvec (rad), semi-axes (m)]",
+   "geometry": "static ellipsoid (black cable loop at the foot of the base, side view)",
+   "source": "global search blob_search.py against the arm masks, even episodes"
+  }
+ },
+ "gravity_compliance_deg_per_Nm": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "mesh_comparison": {
+  "rule": "max mean over cameras of the EVEN-episode strict median",
+  "rows": [
+   {
+    "fit": "out/redlego_r2_so101_fit.json",
+    "model": "so101",
+    "even_mean_median": 0.8152,
+    "top_held_out": 0.8279,
+    "top_all_frames": 0.8283,
+    "side_held_out": 0.8149,
+    "side_all_frames": 0.8055,
+    "top_excl_held_out": 0.8331,
+    "side_excl_held_out": 0.8235
+   },
+   {
+    "fit": "out/redlego_r3_so101_fit.json",
+    "model": "so101",
+    "even_mean_median": 0.8275,
+    "top_held_out": 0.8259,
+    "top_all_frames": 0.8256,
+    "side_held_out": 0.8331,
+    "side_all_frames": 0.83,
+    "top_excl_held_out": 0.8314,
+    "side_excl_held_out": 0.8388
+   },
+   {
+    "fit": "out/redlego_r3b_so101_fit.json",
+    "model": "so101",
+    "even_mean_median": 0.8159,
+    "top_held_out": 0.8259,
+    "top_all_frames": 0.8256,
+    "side_held_out": 0.8131,
+    "side_all_frames": 0.8107,
+    "top_excl_held_out": 0.8314,
+    "side_excl_held_out": 0.8247
+   },
+   {
+    "fit": "out/redlego_r2_so100_fit.json",
+    "model": "so100",
+    "even_mean_median": 0.8047,
+    "top_held_out": 0.8105,
+    "top_all_frames": 0.8072,
+    "side_held_out": 0.8043,
+    "side_all_frames": 0.804,
+    "top_excl_held_out": 0.8193,
+    "side_excl_held_out": 0.8116
+   }
+  ],
+  "chosen": "out/redlego_r3_so101_fit.json"
+ },
+ "twin_independent_check": {
+  "masks": "so101_twin/redlego/masks/redlego_<cam>_d1k.npy (DINO+SAM box-prompted, brick/box removed, 5x5 opening; no twin input)",
+  "held_out": {
+   "top": {
+    "n": 128,
+    "median": 0.8201,
+    "p10": 0.7821,
+    "mean": 0.8235
+   },
+   "side": {
+    "n": 128,
+    "median": 0.8302,
+    "p10": 0.7588,
+    "mean": 0.826
+   }
+  },
+  "all_frames": {
+   "top": {
+    "n": 320,
+    "median": 0.8198,
+    "p10": 0.7823,
+    "mean": 0.8232
+   },
+   "side": {
+    "n": 320,
+    "median": 0.8279,
+    "p10": 0.7589,
+    "mean": 0.8236
+   }
+  },
+  "held_out_real_occluder_excluded": {
+   "top": {
+    "n": 128,
+    "median": 0.8272,
+    "p10": 0.7932,
+    "mean": 0.8304
+   },
+   "side": {
+    "n": 128,
+    "median": 0.8372,
+    "p10": 0.7783,
+    "mean": 0.8365
+   }
+  }
+ },
+ "guard_rails": {
+  "lens": {
+   "top": {
+    "k1": -0.20110224111338096,
+    "k2": 0.0019554361782235068,
+    "principal_point_shift_frac": [
+     -0.00886021648860051,
+     -0.014688947935144836
+    ]
+   },
+   "side": {
+    "k1": -0.2879486472713798,
+    "k2": -0.009155866714303138,
+    "principal_point_shift_frac": [
+     -0.015051953742556102,
+     -0.02719011915561515
+    ]
+   }
+  },
+  "lens_note": "all |k1| < 0.4 and principal-point shifts < 10 %: no lens audit required",
+  "joint_scales_note": "fitted 0.95-1.18 deg/unit, consistent with LeRobot's normalised -100..100 mode (pan 1.18 deg/unit = ~236 deg calibrated travel); visual check at the extremes of every joint in so101_twin/redlego/out/extremes.jpg"
+ },
+ "fit_protocol": "fit on EVEN episodes only (24 episodes, 192 frames); held_out = ODD episodes (16 episodes, 128 frames)"
+}

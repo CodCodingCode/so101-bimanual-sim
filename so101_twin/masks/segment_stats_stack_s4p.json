@@ -1,0 +1,16 @@
+{
+ "model": "facebook/sam2.1-hiera-small",
+ "parts": "/Users/owner/Downloads/whatif/inference-testing/so101_twin/stack2/parts_r2",
+ "n": 320,
+ "seconds": 204.29136204719543,
+ "cams": {
+  "top": {
+   "prompt_iou_med": 0.8312382698059082,
+   "area": 0.1387861328125
+  },
+  "side": {
+   "prompt_iou_med": 0.6504870057106018,
+   "area": 0.042560516357421876
+  }
+ }
+}

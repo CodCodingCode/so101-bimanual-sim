@@ -1,0 +1,50 @@
+{
+ "rule": "max mean over cameras of the EVEN-episode strict median",
+ "rows": [
+  {
+   "fit": "out/redlego_r2_so101_fit.json",
+   "model": "so101",
+   "even_mean_median": 0.8152,
+   "top_held_out": 0.8279,
+   "top_all_frames": 0.8283,
+   "side_held_out": 0.8149,
+   "side_all_frames": 0.8055,
+   "top_excl_held_out": 0.8331,
+   "side_excl_held_out": 0.8235
+  },
+  {
+   "fit": "out/redlego_r3_so101_fit.json",
+   "model": "so101",
+   "even_mean_median": 0.8275,
+   "top_held_out": 0.8259,
+   "top_all_frames": 0.8256,
+   "side_held_out": 0.8331,
+   "side_all_frames": 0.83,
+   "top_excl_held_out": 0.8314,
+   "side_excl_held_out": 0.8388
+  },
+  {
+   "fit": "out/redlego_r3b_so101_fit.json",
+   "model": "so101",
+   "even_mean_median": 0.8159,
+   "top_held_out": 0.8259,
+   "top_all_frames": 0.8256,
+   "side_held_out": 0.8131,
+   "side_all_frames": 0.8107,
+   "top_excl_held_out": 0.8314,
+   "side_excl_held_out": 0.8247
+  },
+  {
+   "fit": "out/redlego_r2_so100_fit.json",
+   "model": "so100",
+   "even_mean_median": 0.8047,
+   "top_held_out": 0.8105,
+   "top_all_frames": 0.8072,
+   "side_held_out": 0.8043,
+   "side_all_frames": 0.804,
+   "top_excl_held_out": 0.8193,
+   "side_excl_held_out": 0.8116
+  }
+ ],
+ "chosen": "out/redlego_r3_so101_fit.json"
+}

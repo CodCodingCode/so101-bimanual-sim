@@ -1,0 +1,67 @@
+{
+ "chosen": "so100",
+ "chosen_fit": "so101_twin/ballcup/out/ballcup_r5_so100_fit.json",
+ "mask_tag": "_t2o",
+ "metric": "held-out median, visible arm",
+ "rows": [
+  {
+   "model": "so100",
+   "round": "r3_so100",
+   "fit": "so101_twin/ballcup/out/ballcup_r3_so100_fit.json",
+   "top": 0.8336,
+   "side": 0.8242,
+   "top_even": 0.8415,
+   "side_even": 0.8213
+  },
+  {
+   "model": "so100",
+   "round": "r4_so100",
+   "fit": "so101_twin/ballcup/out/ballcup_r4_so100_fit.json",
+   "top": 0.8337,
+   "side": 0.8199,
+   "top_even": 0.8395,
+   "side_even": 0.8137
+  },
+  {
+   "model": "so100",
+   "round": "r5_so100",
+   "fit": "so101_twin/ballcup/out/ballcup_r5_so100_fit.json",
+   "top": 0.8376,
+   "side": 0.8289,
+   "top_even": 0.8443,
+   "side_even": 0.8283
+  },
+  {
+   "model": "so101",
+   "round": "r3_so101",
+   "fit": "so101_twin/ballcup/out/ballcup_r3_so101_fit.json",
+   "top": 0.8202,
+   "side": 0.8053,
+   "top_even": 0.8278,
+   "side_even": 0.7966
+  },
+  {
+   "model": "so101",
+   "round": "r4_so101",
+   "fit": "so101_twin/ballcup/out/ballcup_r4_so101_fit.json",
+   "top": 0.8202,
+   "side": 0.8036,
+   "top_even": 0.8281,
+   "side_even": 0.8005
+  }
+ ],
+ "joint_sign": [
+  -1.0,
+  -1.0,
+  1.0,
+  1.0,
+  -1.0
+ ],
+ "joint_nominal": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ]
+}

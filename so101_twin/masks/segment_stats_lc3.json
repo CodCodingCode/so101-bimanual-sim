@@ -1,0 +1,29 @@
+{
+ "model": "facebook/sam2.1-hiera-small",
+ "device": "mps",
+ "smooth": true,
+ "prompts": "so101_twin/masks/prompts,so101_twin/masks/prompts_twin2_r3",
+ "total_s": 159.13024282455444,
+ "scenes": {
+  "legocup": {
+   "n": 320,
+   "seconds": 155.7266309261322,
+   "per_image_s": 0.24332286082208157,
+   "peak_rss_gb": 2.369903564453125,
+   "cams": {
+    "top": {
+     "prompt_iou_med": 0.7030358910560608,
+     "sam_iou_med": 0.8802905082702637,
+     "area": 0.048754425048828126,
+     "empty": 0.00625
+    },
+    "side": {
+     "prompt_iou_med": 0.8963955044746399,
+     "sam_iou_med": 0.9775015115737915,
+     "area": 0.061867431640625,
+     "empty": 0.0
+    }
+   }
+  }
+ }
+}

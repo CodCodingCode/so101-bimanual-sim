@@ -1,0 +1,127 @@
+{
+ "metric": "strict arm-only IoU on masks _t2o",
+ "rule": "max over candidates of min over cameras of the EVEN-episode mean IoU (fit split); held-out (odd) shown, not used for the choice",
+ "rows": [
+  {
+   "fit_json": "so101_twin/grayblock/out/grayblock_r2_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t1o",
+   "even_median": {
+    "top": 0.9086,
+    "side": 0.838
+   },
+   "even_mean": {
+    "top": 0.9024,
+    "side": 0.8312
+   },
+   "even_p10": {
+    "top": 0.8651,
+    "side": 0.773
+   },
+   "held_out_median": {
+    "top": 0.9062,
+    "side": 0.8364
+   },
+   "held_out_p10": {
+    "top": 0.8676,
+    "side": 0.771
+   },
+   "even_min": 0.8312,
+   "k1": {
+    "top": -0.0214,
+    "side": 0.0132
+   }
+  },
+  {
+   "fit_json": "so101_twin/grayblock/out/grayblock_r2_so100_fit.json",
+   "model": "so100",
+   "mask_tag_fitted": "_t1o",
+   "even_median": {
+    "top": 0.8627,
+    "side": 0.8036
+   },
+   "even_mean": {
+    "top": 0.8596,
+    "side": 0.8033
+   },
+   "even_p10": {
+    "top": 0.8146,
+    "side": 0.7375
+   },
+   "held_out_median": {
+    "top": 0.8628,
+    "side": 0.8027
+   },
+   "held_out_p10": {
+    "top": 0.8176,
+    "side": 0.7341
+   },
+   "even_min": 0.8033,
+   "k1": {
+    "top": -0.0593,
+    "side": -0.2263
+   }
+  },
+  {
+   "fit_json": "so101_twin/grayblock/out/grayblock_r3a_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t2o",
+   "even_median": {
+    "top": 0.9076,
+    "side": 0.8472
+   },
+   "even_mean": {
+    "top": 0.8995,
+    "side": 0.8375
+   },
+   "even_p10": {
+    "top": 0.861,
+    "side": 0.768
+   },
+   "held_out_median": {
+    "top": 0.9065,
+    "side": 0.8458
+   },
+   "held_out_p10": {
+    "top": 0.86,
+    "side": 0.7627
+   },
+   "even_min": 0.8375,
+   "k1": {
+    "top": -0.0196,
+    "side": -0.0152
+   }
+  },
+  {
+   "fit_json": "so101_twin/grayblock/out/grayblock_r3b_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t2o",
+   "even_median": {
+    "top": 0.9007,
+    "side": 0.8389
+   },
+   "even_mean": {
+    "top": 0.8984,
+    "side": 0.8341
+   },
+   "even_p10": {
+    "top": 0.8699,
+    "side": 0.7778
+   },
+   "held_out_median": {
+    "top": 0.9023,
+    "side": 0.84
+   },
+   "held_out_p10": {
+    "top": 0.8733,
+    "side": 0.7721
+   },
+   "even_min": 0.8341,
+   "k1": {
+    "top": -0.0412,
+    "side": -0.0124
+   }
+  }
+ ],
+ "chosen_fit": "so101_twin/grayblock/out/grayblock_r3a_so101_fit.json"
+}

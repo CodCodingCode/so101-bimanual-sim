@@ -1,0 +1,8 @@
+{
+ "wall_back_y": 0.10,
+ "wall_note": "back wall moved from y = 1.0 to the table's far edge (y = 0.10, the builder's table edge; the top-view table/wall boundary at the left image edge casts to y = 0.086); top at z = 1.0 so neither light is ever blocked",
+ "cardboard": [
+  {"name": "s_cardboard_a", "center": [0.42, -0.12, 0.06], "half": [0.15, 0.045, 0.06], "yaw": 0.0},
+  {"name": "s_cardboard_b", "center": [0.42, -0.2825, 0.15], "half": [0.15, 0.1175, 0.15], "yaw": 0.0}],
+ "cardboard_how": "two stacked shipping boxes seen only by the side camera: the brown component of the side-view median (cols 454-635) has its bottom edge on z = 0 at x = 0.27 (y -0.087 .. -0.275) and its left box top at z = 0.10-0.12 on that face; the right box runs out of frame (top set to 0.30); depth 0.30 m not observable. Through the frozen top camera such a box would show at the top-right of the top view, where the real top frames show none (the two frozen cameras disagree this far from the arm), so the boxes are drawn in geom group 4, enabled only for the side camera."
+}

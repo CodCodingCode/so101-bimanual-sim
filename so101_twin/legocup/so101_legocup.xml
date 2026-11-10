@@ -1,0 +1,214 @@
+<mujoco model="so101_legocup">
+  <compiler angle="radian" meshdir="/Users/owner/Downloads/whatif/inference-testing/so101_twin/assets/so_arm100" autolimits="true" />
+  <option timestep="0.002" integrator="implicitfast" />
+  <visual>
+    <global offwidth="640" offheight="480" />
+    <headlight ambient="0.34 0.34 0.34" diffuse="0.30 0.30 0.30" specular="0.05 0.05 0.05" />
+    <quality shadowsize="4096" />
+  </visual>
+  <default>
+    <default class="so_arm100">
+      <joint frictionloss="0.1" armature="0.1" />
+      <position kp="50" dampratio="1" forcerange="-3.5 3.5" />
+      <default class="Rotation">
+        <joint axis="0 1 0" range="-1.92 1.92" />
+      </default>
+      <default class="Pitch">
+        <joint axis="1 0 0" range="-3.32 0.174" />
+      </default>
+      <default class="Elbow">
+        <joint axis="1 0 0" range="-0.174 3.14" />
+      </default>
+      <default class="Wrist_Pitch">
+        <joint axis="1 0 0" range="-1.66 1.66" />
+      </default>
+      <default class="Wrist_Roll">
+        <joint axis="0 1 0" range="-2.79 2.79" />
+      </default>
+      <default class="Jaw">
+        <joint axis="0 0 1" range="-0.174 1.75" />
+      </default>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" density="0" group="2" material="white" />
+        <default class="motor_visual">
+          <geom material="black" />
+        </default>
+      </default>
+      <default class="collision">
+        <geom group="3" type="mesh" material="white" />
+        <default class="finger_collision">
+          <geom type="box" solimp="2 1 0.01" solref="0.01 1" friction="1 0.005 0.0001" />
+        </default>
+      </default>
+    </default>
+  </default>
+  <asset>
+    <material name="white" rgba="1 1 1 1" />
+    <material name="black" rgba="0.1 0.1 0.1 1" />
+    <mesh name="Base" file="Base.stl" />
+    <mesh name="Base_Motor" file="Base_Motor.stl" />
+    <mesh name="Rotation_Pitch" file="Rotation_Pitch.stl" />
+    <mesh name="Rotation_Pitch_Motor" file="Rotation_Pitch_Motor.stl" />
+    <mesh name="Upper_Arm" file="Upper_Arm.stl" />
+    <mesh name="Upper_Arm_Motor" file="Upper_Arm_Motor.stl" />
+    <mesh name="Lower_Arm" file="Lower_Arm.stl" />
+    <mesh name="Lower_Arm_Motor" file="Lower_Arm_Motor.stl" />
+    <mesh name="Wrist_Pitch_Roll" file="Wrist_Pitch_Roll.stl" />
+    <mesh name="Wrist_Pitch_Roll_Motor" file="Wrist_Pitch_Roll_Motor.stl" />
+    <mesh name="Fixed_Jaw" file="Fixed_Jaw.stl" />
+    <mesh name="Fixed_Jaw_Motor" file="Fixed_Jaw_Motor.stl" />
+    <mesh name="Fixed_Jaw_Collision_1" file="Fixed_Jaw_Collision_1.stl" />
+    <mesh name="Fixed_Jaw_Collision_2" file="Fixed_Jaw_Collision_2.stl" />
+    <mesh name="Moving_Jaw" file="Moving_Jaw.stl" />
+    <mesh name="Moving_Jaw_Collision_1" file="Moving_Jaw_Collision_1.stl" />
+    <mesh name="Moving_Jaw_Collision_2" file="Moving_Jaw_Collision_2.stl" />
+    <mesh name="Moving_Jaw_Collision_3" file="Moving_Jaw_Collision_3.stl" />
+    <material name="arm_black" rgba="0.07 0.07 0.075 1" specular="0.25" shininess="0.35" />
+    <material name="mat_grey" rgba="0.56 0.58 0.57 1" specular="0.08" shininess="0.2" />
+    <material name="table_dark" rgba="0.19 0.19 0.18 1" specular="0.05" shininess="0.1" />
+    <material name="wall" rgba="0.25 0.25 0.24 1" specular="0.0" />
+    <material name="floor" rgba="0.15 0.15 0.14 1" />
+    <material name="cup" rgba="0.03 0.03 0.03 1" specular="0.5" shininess="0.6" />
+    <material name="block" rgba="0.90 0.10 0.08 1" specular="0.3" shininess="0.4" />
+  </asset>
+  <worldbody>
+    <light name="sun" pos="0.2 0.5 1.5" dir="-0.1 -0.2 -1" directional="false" diffuse="0.45 0.45 0.45" specular="0.1 0.1 0.1" castshadow="true" cutoff="90" />
+    <light name="fill" pos="-0.8 0.6 1.0" dir="0.6 -0.3 -0.8" diffuse="0.15 0.15 0.15" specular="0 0 0" castshadow="false" />
+    <geom name="floor" type="plane" size="0 0 0.05" pos="0 0 -0.74" material="floor" />
+    <geom name="table_top" type="box" size="0.7 0.6 0.02" pos="0.0 0.3 -0.02" material="table_dark" />
+    <geom name="mat" type="box" size="0.164 0.157 0.001" pos="-0.035 0.251 0.001" euler="0 0 0.17977" material="mat_grey" />
+    <geom name="wall" type="box" size="2.0 0.01 1.2" pos="0 -0.45 0.46" material="wall" />
+    <camera name="top" pos="-0.04210 0.46600 0.46870" xyaxes="-0.983426 -0.177247 0.038166 0.178861 -0.913926 0.364345" fovy="35.040" resolution="640 480" />
+    <body name="Base" childclass="so_arm100" pos="0.0 0.0 0.0" quat="0 0 0 1">
+      <geom type="mesh" mesh="Base" class="visual" material="arm_black" />
+      <geom type="mesh" mesh="Base_Motor" class="motor_visual" material="arm_black" />
+      <geom type="mesh" mesh="Base" class="collision" />
+      <body name="Rotation_Pitch" pos="0 -0.0452 0.0165" quat="0.707105 0.707108 0 0">
+        <inertial pos="-9.07886e-05 0.0590972 0.031089" quat="0.363978 0.441169 -0.623108 0.533504" mass="0.119226" diaginertia="5.94278e-05 5.89975e-05 3.13712e-05" />
+        <joint name="Rotation" class="Rotation" />
+        <geom type="mesh" mesh="Rotation_Pitch" class="visual" material="arm_black" />
+        <geom type="mesh" mesh="Rotation_Pitch_Motor" class="motor_visual" material="arm_black" />
+        <geom type="mesh" mesh="Rotation_Pitch" class="collision" />
+        <body name="Upper_Arm" pos="0 0.1025 0.0306" euler="1.57079 0 0">
+          <inertial pos="-1.72052e-05 0.0701802 0.00310545" quat="0.50104 0.498994 -0.493562 0.50632" mass="0.162409" diaginertia="0.000213312 0.000167164 7.01522e-05" />
+          <joint name="Pitch" class="Pitch" />
+          <geom type="mesh" mesh="Upper_Arm" class="visual" material="arm_black" />
+          <geom type="mesh" mesh="Upper_Arm_Motor" class="motor_visual" material="arm_black" />
+          <geom type="mesh" mesh="Upper_Arm" class="collision" />
+          <body name="Lower_Arm" pos="0 0.11257 0.028" euler="-1.57079 0 0">
+            <inertial pos="-0.00339604 0.00137796 0.0768007" quat="0.701995 0.0787996 0.0645626 0.704859" mass="0.147968" diaginertia="0.000138803 0.000107748 4.84242e-05" />
+            <joint name="Elbow" class="Elbow" />
+            <geom type="mesh" mesh="Lower_Arm" class="visual" material="arm_black" />
+            <geom type="mesh" mesh="Lower_Arm_Motor" class="motor_visual" material="arm_black" />
+            <geom type="mesh" mesh="Lower_Arm" class="collision" />
+            <body name="Wrist_Pitch_Roll" pos="0 0.0052 0.1349" euler="-1.57079 0 0">
+              <inertial pos="-0.00852653 -0.0352279 -2.34622e-05" quat="-0.0522806 0.705235 0.0549524 0.704905" mass="0.0661321" diaginertia="3.45403e-05 2.39041e-05 1.94704e-05" />
+              <joint name="Wrist_Pitch" class="Wrist_Pitch" />
+              <geom type="mesh" mesh="Wrist_Pitch_Roll" class="visual" material="arm_black" />
+              <geom type="mesh" mesh="Wrist_Pitch_Roll_Motor" class="motor_visual" material="arm_black" />
+              <geom type="mesh" mesh="Wrist_Pitch_Roll" class="collision" />
+              <body name="Fixed_Jaw" pos="0 -0.0601 0" euler="0 1.57079 0">
+                <inertial pos="0.00552377 -0.0280167 0.000483583" quat="0.41836 0.620891 -0.350644 0.562599" mass="0.0929859" diaginertia="5.03136e-05 4.64098e-05 2.72961e-05" />
+                <joint name="Wrist_Roll" class="Wrist_Roll" />
+                <geom type="mesh" mesh="Fixed_Jaw" class="visual" material="arm_black" />
+                <geom type="mesh" mesh="Fixed_Jaw_Motor" class="motor_visual" material="arm_black" />
+                <geom type="mesh" mesh="Fixed_Jaw_Collision_1" class="collision" />
+                <geom type="mesh" mesh="Fixed_Jaw_Collision_2" class="collision" />
+                <geom class="finger_collision" name="fixed_jaw_pad_1" size="0.001 0.005 0.004" pos="0.0089 -0.1014 0" />
+                <geom class="finger_collision" name="fixed_jaw_pad_2" size="0.001 0.005 0.006" pos="0.0109 -0.0914 0" />
+                <geom class="finger_collision" name="fixed_jaw_pad_3" size="0.001 0.01 0.007" pos="0.0126 -0.0768 0" />
+                <geom class="finger_collision" name="fixed_jaw_pad_4" size="0.001 0.01 0.008" pos="0.0143 -0.0572 0" />
+                <body name="Moving_Jaw" pos="-0.0202 -0.0244 0" quat="1.34924e-11 -3.67321e-06 1 -3.67321e-06">
+                  <inertial pos="-0.00161745 -0.0303473 0.000449646" quat="0.696562 0.716737 -0.0239844 -0.0227026" mass="0.0202444" diaginertia="1.11265e-05 8.99651e-06 2.99548e-06" />
+                  <joint name="Jaw" class="Jaw" />
+                  <geom type="mesh" mesh="Moving_Jaw" class="visual" material="arm_black" />
+                  <geom type="mesh" mesh="Moving_Jaw_Collision_1" class="collision" />
+                  <geom type="mesh" mesh="Moving_Jaw_Collision_2" class="collision" />
+                  <geom type="mesh" mesh="Moving_Jaw_Collision_3" class="collision" />
+                  <geom class="finger_collision" name="moving_jaw_pad_1" size="0.001 0.005 0.004" pos="-0.0113 -0.077 0" />
+                  <geom class="finger_collision" name="moving_jaw_pad_2" size="0.001 0.005 0.006" pos="-0.0093 -0.067 0" />
+                  <geom class="finger_collision" name="moving_jaw_pad_3" size="0.001 0.01 0.006" pos="-0.0073 -0.055 0" />
+                  <geom class="finger_collision" name="moving_jaw_pad_4" size="0.001 0.01 0.008" pos="-0.0073 -0.035 0" />
+                </body>
+                <site name="tcp" pos="-0.012 -0.080 0" size="0.004" group="3" rgba="1 0 0 0" />
+                <camera name="side" pos="0.00580 -0.01250 0.07760" xyaxes="0.998106 -0.007153 -0.061101 -0.052061 0.430912 -0.900891" fovy="59.860" resolution="640 480" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="cup" pos="-0.08 0.17 0" mocap="true">
+      <geom name="cup_wall_0" type="box" size="0.003 0.00424 0.04000" pos="0.04000 0.00000 0.04000" euler="0 0 0.00000" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_1" type="box" size="0.003 0.00424 0.04000" pos="0.03923 0.00780 0.04000" euler="0 0 0.19635" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_2" type="box" size="0.003 0.00424 0.04000" pos="0.03696 0.01531 0.04000" euler="0 0 0.39270" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_3" type="box" size="0.003 0.00424 0.04000" pos="0.03326 0.02222 0.04000" euler="0 0 0.58905" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_4" type="box" size="0.003 0.00424 0.04000" pos="0.02828 0.02828 0.04000" euler="0 0 0.78540" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_5" type="box" size="0.003 0.00424 0.04000" pos="0.02222 0.03326 0.04000" euler="0 0 0.98175" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_6" type="box" size="0.003 0.00424 0.04000" pos="0.01531 0.03696 0.04000" euler="0 0 1.17810" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_7" type="box" size="0.003 0.00424 0.04000" pos="0.00780 0.03923 0.04000" euler="0 0 1.37445" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_8" type="box" size="0.003 0.00424 0.04000" pos="0.00000 0.04000 0.04000" euler="0 0 1.57080" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_9" type="box" size="0.003 0.00424 0.04000" pos="-0.00780 0.03923 0.04000" euler="0 0 1.76715" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_10" type="box" size="0.003 0.00424 0.04000" pos="-0.01531 0.03696 0.04000" euler="0 0 1.96350" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_11" type="box" size="0.003 0.00424 0.04000" pos="-0.02222 0.03326 0.04000" euler="0 0 2.15984" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_12" type="box" size="0.003 0.00424 0.04000" pos="-0.02828 0.02828 0.04000" euler="0 0 2.35619" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_13" type="box" size="0.003 0.00424 0.04000" pos="-0.03326 0.02222 0.04000" euler="0 0 2.55254" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_14" type="box" size="0.003 0.00424 0.04000" pos="-0.03696 0.01531 0.04000" euler="0 0 2.74889" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_15" type="box" size="0.003 0.00424 0.04000" pos="-0.03923 0.00780 0.04000" euler="0 0 2.94524" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_16" type="box" size="0.003 0.00424 0.04000" pos="-0.04000 0.00000 0.04000" euler="0 0 3.14159" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_17" type="box" size="0.003 0.00424 0.04000" pos="-0.03923 -0.00780 0.04000" euler="0 0 3.33794" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_18" type="box" size="0.003 0.00424 0.04000" pos="-0.03696 -0.01531 0.04000" euler="0 0 3.53429" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_19" type="box" size="0.003 0.00424 0.04000" pos="-0.03326 -0.02222 0.04000" euler="0 0 3.73064" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_20" type="box" size="0.003 0.00424 0.04000" pos="-0.02828 -0.02828 0.04000" euler="0 0 3.92699" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_21" type="box" size="0.003 0.00424 0.04000" pos="-0.02222 -0.03326 0.04000" euler="0 0 4.12334" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_22" type="box" size="0.003 0.00424 0.04000" pos="-0.01531 -0.03696 0.04000" euler="0 0 4.31969" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_23" type="box" size="0.003 0.00424 0.04000" pos="-0.00780 -0.03923 0.04000" euler="0 0 4.51604" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_24" type="box" size="0.003 0.00424 0.04000" pos="-0.00000 -0.04000 0.04000" euler="0 0 4.71239" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_25" type="box" size="0.003 0.00424 0.04000" pos="0.00780 -0.03923 0.04000" euler="0 0 4.90874" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_26" type="box" size="0.003 0.00424 0.04000" pos="0.01531 -0.03696 0.04000" euler="0 0 5.10509" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_27" type="box" size="0.003 0.00424 0.04000" pos="0.02222 -0.03326 0.04000" euler="0 0 5.30144" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_28" type="box" size="0.003 0.00424 0.04000" pos="0.02828 -0.02828 0.04000" euler="0 0 5.49779" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_29" type="box" size="0.003 0.00424 0.04000" pos="0.03326 -0.02222 0.04000" euler="0 0 5.69414" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_30" type="box" size="0.003 0.00424 0.04000" pos="0.03696 -0.01531 0.04000" euler="0 0 5.89049" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_wall_31" type="box" size="0.003 0.00424 0.04000" pos="0.03923 -0.00780 0.04000" euler="0 0 6.08684" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_floor" type="cylinder" size="0.038 0.003" pos="0 0 0.003" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_0" type="capsule" size="0.0045 0.009" pos="-0.04400 0 0.01800" euler="0 0.00000 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_1" type="capsule" size="0.0045 0.009" pos="-0.05500 0 0.02095" euler="0 0.52360 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_2" type="capsule" size="0.0045 0.009" pos="-0.06305 0 0.02900" euler="0 1.04720 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_3" type="capsule" size="0.0045 0.009" pos="-0.06600 0 0.04000" euler="0 1.57080 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_4" type="capsule" size="0.0045 0.009" pos="-0.06305 0 0.05100" euler="0 2.09440 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_5" type="capsule" size="0.0045 0.009" pos="-0.05500 0 0.05905" euler="0 2.61799 0" material="cup" contype="0" conaffinity="0" />
+      <geom name="cup_handle_6" type="capsule" size="0.0045 0.009" pos="-0.04400 0 0.06200" euler="0 3.14159 0" material="cup" contype="0" conaffinity="0" />
+    </body>
+    <body name="block" pos="0.02 0.33 0.0096" euler="0 0 0.00000" mocap="true">
+      <geom name="block" type="box" size="0.016 0.016 0.0096" pos="0 0 0" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_0" type="cylinder" size="0.0024 0.0009" pos="-0.0120 -0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_1" type="cylinder" size="0.0024 0.0009" pos="-0.0120 -0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_2" type="cylinder" size="0.0024 0.0009" pos="-0.0120 0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_3" type="cylinder" size="0.0024 0.0009" pos="-0.0120 0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_4" type="cylinder" size="0.0024 0.0009" pos="-0.0040 -0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_5" type="cylinder" size="0.0024 0.0009" pos="-0.0040 -0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_6" type="cylinder" size="0.0024 0.0009" pos="-0.0040 0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_7" type="cylinder" size="0.0024 0.0009" pos="-0.0040 0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_8" type="cylinder" size="0.0024 0.0009" pos="0.0040 -0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_9" type="cylinder" size="0.0024 0.0009" pos="0.0040 -0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_10" type="cylinder" size="0.0024 0.0009" pos="0.0040 0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_11" type="cylinder" size="0.0024 0.0009" pos="0.0040 0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_12" type="cylinder" size="0.0024 0.0009" pos="0.0120 -0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_13" type="cylinder" size="0.0024 0.0009" pos="0.0120 -0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_14" type="cylinder" size="0.0024 0.0009" pos="0.0120 0.0040 0.0105" material="block" contype="0" conaffinity="0" />
+      <geom name="stud_15" type="cylinder" size="0.0024 0.0009" pos="0.0120 0.0120 0.0105" material="block" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+  <actuator>
+    <position class="Rotation" name="Rotation" joint="Rotation" inheritrange="1" />
+    <position class="Pitch" name="Pitch" joint="Pitch" inheritrange="1" />
+    <position class="Elbow" name="Elbow" joint="Elbow" inheritrange="1" />
+    <position class="Wrist_Pitch" name="Wrist_Pitch" joint="Wrist_Pitch" inheritrange="1" />
+    <position class="Wrist_Roll" name="Wrist_Roll" joint="Wrist_Roll" inheritrange="1" />
+    <position class="Jaw" name="Jaw" joint="Jaw" inheritrange="1" />
+  </actuator>
+  <keyframe>
+    <key name="rest" qpos="0 -3.3 3.1 1.1 0 0" ctrl="0 -3.3 3.1 1.1 0 0" />
+  </keyframe>
+</mujoco>

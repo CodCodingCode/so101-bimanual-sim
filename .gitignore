@@ -1,0 +1,16 @@
+# machine-local links into ../inference-testing (big data, weights, venv)
+/neuroscope
+/data_so101
+/data_real
+/yam_sim
+/.venv
+__pycache__/
+*.pyc
+.DS_Store
+MUJOCO_LOG.TXT
+# renders / masks / npz outputs (regenerable, multi-GB)
+*.npy
+*.npz
+*.png
+*.jpg
+!so101_twin/assets/**

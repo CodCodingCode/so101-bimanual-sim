@@ -1,0 +1,790 @@
+{
+ "layouts": {
+  "4": {
+   "cam": "top",
+   "frame": 0,
+   "cubes": [
+    [
+     0.1587,
+     0.1638
+    ],
+    [
+     0.1172,
+     0.3007
+    ],
+    [
+     0.0194,
+     0.3095
+    ]
+   ],
+   "target": 2,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.07
+  },
+  "5": {
+   "cam": "top",
+   "frame": 8,
+   "cubes": [
+    [
+     0.0138,
+     0.2735
+    ],
+    [
+     0.1275,
+     0.2485
+    ],
+    [
+     0.1851,
+     0.2785
+    ],
+    [
+     0.0903,
+     0.3004
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.079
+  },
+  "8": {
+   "cam": "top",
+   "frame": 16,
+   "cubes": [
+    [
+     0.1104,
+     0.2017
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.21
+  },
+  "9": {
+   "cam": "top",
+   "frame": 24,
+   "cubes": [
+    [
+     0.0175,
+     0.4449
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.115
+  },
+  "10": {
+   "cam": "top",
+   "frame": 32,
+   "cubes": [
+    [
+     0.1091,
+     0.2285
+    ],
+    [
+     0.1134,
+     0.3637
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.182
+  },
+  "11": {
+   "cam": "top",
+   "frame": 40,
+   "cubes": [
+    [
+     0.0308,
+     0.4
+    ],
+    [
+     -0.0435,
+     0.2911
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.094
+  },
+  "13": {
+   "cam": "top",
+   "frame": 48,
+   "cubes": [
+    [
+     -0.1274,
+     0.2922
+    ],
+    [
+     0.0894,
+     0.3549
+    ],
+    [
+     -0.1142,
+     0.2377
+    ]
+   ],
+   "target": 2,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.012
+  },
+  "16": {
+   "cam": "top",
+   "frame": 56,
+   "cubes": [
+    [
+     -0.0112,
+     0.6179
+    ],
+    [
+     0.0249,
+     0.3338
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.118
+  },
+  "19": {
+   "cam": "top",
+   "frame": 64,
+   "cubes": [
+    [
+     0.041,
+     0.4234
+    ],
+    [
+     -0.064,
+     0.3779
+    ],
+    [
+     0.0451,
+     0.494
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.079
+  },
+  "20": {
+   "cam": "top",
+   "frame": 72,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 3,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.122
+  },
+  "22": {
+   "cam": "top",
+   "frame": 80,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 0,
+   "fallback": true,
+   "tcp_dist_at_grasp": NaN
+  },
+  "23": {
+   "cam": "top",
+   "frame": 88,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 3,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.009
+  },
+  "25": {
+   "cam": "top",
+   "frame": 96,
+   "cubes": [
+    [
+     0.1036,
+     0.3413
+    ],
+    [
+     0.0317,
+     0.1709
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.197
+  },
+  "27": {
+   "cam": "top",
+   "frame": 104,
+   "cubes": [
+    [
+     0.1769,
+     0.1665
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.138
+  },
+  "34": {
+   "cam": "top",
+   "frame": 112,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 2,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.076
+  },
+  "36": {
+   "cam": "top",
+   "frame": 120,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 3,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.166
+  },
+  "37": {
+   "cam": "top",
+   "frame": 128,
+   "cubes": [
+    [
+     -0.173,
+     0.555
+    ],
+    [
+     -0.1565,
+     0.3549
+    ],
+    [
+     0.0317,
+     0.5883
+    ],
+    [
+     -0.1365,
+     0.3932
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.115
+  },
+  "39": {
+   "cam": "top",
+   "frame": 136,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 3,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.031
+  },
+  "42": {
+   "cam": "top",
+   "frame": 144,
+   "cubes": [
+    [
+     0.0103,
+     0.5844
+    ],
+    [
+     0.0374,
+     0.1843
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.143
+  },
+  "44": {
+   "cam": "top",
+   "frame": 152,
+   "cubes": [
+    [
+     -0.0436,
+     0.3256
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.026
+  },
+  "52": {
+   "cam": "top",
+   "frame": 160,
+   "cubes": [
+    [
+     0.0799,
+     0.6003
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.435
+  },
+  "55": {
+   "cam": "top",
+   "frame": 168,
+   "cubes": [
+    [
+     -0.0323,
+     0.5954
+    ],
+    [
+     0.1561,
+     0.6778
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.289
+  },
+  "66": {
+   "cam": "top_b",
+   "frame": 176,
+   "cubes": [
+    [
+     -0.0329,
+     0.2457
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.126
+  },
+  "67": {
+   "cam": "top_b",
+   "frame": 184,
+   "cubes": [
+    [
+     -0.0555,
+     0.2726
+    ],
+    [
+     0.1397,
+     0.1675
+    ]
+   ],
+   "target": 1,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.134
+  },
+  "68": {
+   "cam": "top_b",
+   "frame": 192,
+   "cubes": [
+    [
+     0.1368,
+     0.1675
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.294
+  },
+  "72": {
+   "cam": "top_b",
+   "frame": 200,
+   "cubes": [
+    [
+     -0.1664,
+     0.17
+    ],
+    [
+     0.0235,
+     0.4453
+    ],
+    [
+     0.0491,
+     0.1769
+    ],
+    [
+     0.1092,
+     0.1553
+    ]
+   ],
+   "target": 2,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.055
+  },
+  "74": {
+   "cam": "top_b",
+   "frame": 208,
+   "cubes": [
+    [
+     0.0594,
+     0.1975
+    ],
+    [
+     -0.1173,
+     0.2587
+    ],
+    [
+     0.0555,
+     0.3324
+    ],
+    [
+     -0.1407,
+     0.36
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.109
+  },
+  "75": {
+   "cam": "top_b",
+   "frame": 216,
+   "cubes": [
+    [
+     0.0596,
+     0.1445
+    ],
+    [
+     -0.074,
+     0.317
+    ],
+    [
+     -0.0874,
+     0.2475
+    ]
+   ],
+   "target": 2,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.023
+  },
+  "81": {
+   "cam": "top_b",
+   "frame": 224,
+   "cubes": [
+    [
+     0.0069,
+     0.253
+    ],
+    [
+     0.0869,
+     0.1392
+    ],
+    [
+     0.0799,
+     0.4517
+    ],
+    [
+     -0.0351,
+     0.4517
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.152
+  },
+  "82": {
+   "cam": "top_b",
+   "frame": 232,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 0,
+   "fallback": true,
+   "tcp_dist_at_grasp": NaN
+  },
+  "83": {
+   "cam": "top_b",
+   "frame": 240,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 0,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.195
+  },
+  "84": {
+   "cam": "top_b",
+   "frame": 248,
+   "cubes": [
+    [
+     0.1447,
+     0.3889
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.275
+  },
+  "85": {
+   "cam": "top_b",
+   "frame": 256,
+   "cubes": [
+    [
+     -0.0756,
+     0.3161
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.042
+  },
+  "87": {
+   "cam": "top_b",
+   "frame": 264,
+   "cubes": [
+    [
+     0.0455,
+     0.4972
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.17
+  },
+  "88": {
+   "cam": "top_b",
+   "frame": 272,
+   "cubes": [
+    [
+     0.0311,
+     0.2485
+    ],
+    [
+     0.1851,
+     0.2773
+    ],
+    [
+     0.1079,
+     0.1576
+    ],
+    [
+     -0.0611,
+     0.1803
+    ]
+   ],
+   "target": 2,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.169
+  },
+  "92": {
+   "cam": "top_b",
+   "frame": 280,
+   "cubes": [
+    [
+     -0.0849,
+     0.339
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.109
+  },
+  "96": {
+   "cam": "top_b",
+   "frame": 288,
+   "cubes": [
+    [
+     0.0135,
+     0.4061
+    ],
+    [
+     0.1114,
+     0.2333
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.087
+  },
+  "99": {
+   "cam": "top_b",
+   "frame": 296,
+   "cubes": [
+    [
+     0.1031,
+     0.274
+    ]
+   ],
+   "target": 0,
+   "fallback": false,
+   "tcp_dist_at_grasp": 0.024
+  },
+  "100": {
+   "cam": "top_b",
+   "frame": 304,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 3,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.111
+  },
+  "101": {
+   "cam": "top_b",
+   "frame": 312,
+   "cubes": [
+    [
+     -0.03,
+     0.3
+    ],
+    [
+     0.05,
+     0.33
+    ],
+    [
+     0.02,
+     0.38
+    ],
+    [
+     0.09,
+     0.27
+    ]
+   ],
+   "target": 0,
+   "fallback": true,
+   "tcp_dist_at_grasp": 0.041
+  }
+ },
+ "box_front_bottom": {
+  "top": [
+   0.3876,
+   0.4142
+  ],
+  "top_b": [
+   0.4011,
+   0.5115
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "model": "facebook/sam2.1-hiera-small",
+ "device": "mps",
+ "smooth": true,
+ "prompts": "so101_twin/stack2/prompts_fgw",
+ "total_s": 57.748883962631226,
+ "scenes": {
+  "stack": {
+   "n": 320,
+   "seconds": 54.40726590156555,
+   "per_image_s": 0.08501135297119618,
+   "peak_rss_gb": 1.66644287109375,
+   "cams": {
+    "top": {
+     "prompt_iou_med": 0.0,
+     "sam_iou_med": 0.0,
+     "area": 0.0,
+     "empty": 1.0
+    },
+    "side": {
+     "prompt_iou_med": 0.9624773263931274,
+     "sam_iou_med": 0.959648072719574,
+     "area": 0.036197021484375,
+     "empty": 0.125
+    }
+   }
+  }
+ }
+}

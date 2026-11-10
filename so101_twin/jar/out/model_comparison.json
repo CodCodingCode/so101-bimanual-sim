@@ -1,0 +1,157 @@
+{
+ "metric": "strict arm-only IoU on masks _t2o",
+ "rule": "max over candidates of min over cameras of the EVEN-episode mean IoU (fit split); held-out (odd) shown, not used for the choice",
+ "rows": [
+  {
+   "fit_json": "so101_twin/jar/out/jar_r2_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t1o",
+   "even_median": {
+    "top": 0.8562,
+    "side": 0.8591
+   },
+   "even_mean": {
+    "top": 0.835,
+    "side": 0.8246
+   },
+   "even_p10": {
+    "top": 0.7662,
+    "side": 0.6991
+   },
+   "held_out_median": {
+    "top": 0.8569,
+    "side": 0.8625
+   },
+   "held_out_p10": {
+    "top": 0.7992,
+    "side": 0.7743
+   },
+   "even_min": 0.8246,
+   "k1": {
+    "top": -0.0458,
+    "side": 0.2121
+   }
+  },
+  {
+   "fit_json": "so101_twin/jar/out/jar_r2_so100_fit.json",
+   "model": "so100",
+   "mask_tag_fitted": "_t1o",
+   "even_median": {
+    "top": 0.8056,
+    "side": 0.8736
+   },
+   "even_mean": {
+    "top": 0.7925,
+    "side": 0.8499
+   },
+   "even_p10": {
+    "top": 0.7523,
+    "side": 0.7756
+   },
+   "held_out_median": {
+    "top": 0.8065,
+    "side": 0.876
+   },
+   "held_out_p10": {
+    "top": 0.7767,
+    "side": 0.8164
+   },
+   "even_min": 0.7925,
+   "k1": {
+    "top": 0.0062,
+    "side": 0.2159
+   }
+  },
+  {
+   "fit_json": "so101_twin/jar/out/jar_r3_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t2o",
+   "even_median": {
+    "top": 0.8659,
+    "side": 0.8694
+   },
+   "even_mean": {
+    "top": 0.84,
+    "side": 0.8426
+   },
+   "even_p10": {
+    "top": 0.7583,
+    "side": 0.7481
+   },
+   "held_out_median": {
+    "top": 0.8685,
+    "side": 0.8712
+   },
+   "held_out_p10": {
+    "top": 0.7906,
+    "side": 0.7931
+   },
+   "even_min": 0.84,
+   "k1": {
+    "top": -0.0458,
+    "side": 0.1659
+   }
+  },
+  {
+   "fit_json": "so101_twin/jar/out/jar_r4_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t2o",
+   "even_median": {
+    "top": 0.8549,
+    "side": 0.8592
+   },
+   "even_mean": {
+    "top": 0.8357,
+    "side": 0.8428
+   },
+   "even_p10": {
+    "top": 0.7719,
+    "side": 0.7766
+   },
+   "held_out_median": {
+    "top": 0.8588,
+    "side": 0.8643
+   },
+   "held_out_p10": {
+    "top": 0.8064,
+    "side": 0.81
+   },
+   "even_min": 0.8357,
+   "k1": {
+    "top": -0.0671,
+    "side": 0.3459
+   }
+  },
+  {
+   "fit_json": "so101_twin/jar/out/jar_r5_so101_fit.json",
+   "model": "so101",
+   "mask_tag_fitted": "_t2o",
+   "even_median": {
+    "top": 0.8669,
+    "side": 0.8536
+   },
+   "even_mean": {
+    "top": 0.8477,
+    "side": 0.8352
+   },
+   "even_p10": {
+    "top": 0.7934,
+    "side": 0.7674
+   },
+   "held_out_median": {
+    "top": 0.8689,
+    "side": 0.8559
+   },
+   "held_out_p10": {
+    "top": 0.816,
+    "side": 0.7931
+   },
+   "even_min": 0.8352,
+   "k1": {
+    "top": -0.0571,
+    "side": 0.0
+   }
+  }
+ ],
+ "chosen_fit": "so101_twin/jar/out/jar_r3_so101_fit.json"
+}
