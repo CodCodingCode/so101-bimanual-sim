@@ -1,0 +1,74 @@
+it   1 (   9s) best score -0.17 | tilt_deg 47.4 roll_deg -87.1 tip_mm 13.8 tip_dy_mm -11.6 squeeze_mm 6.9 lift_squeeze_mm 0.2 cube_y_mm 39.1
+it   2 (  17s) best score -0.04 | tilt_deg 45.8 roll_deg -88.2 tip_mm 11.2 tip_dy_mm -7.8 squeeze_mm 8.9 lift_squeeze_mm 0.3 cube_y_mm 37.7
+it   3 (  25s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   4 (  32s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   5 (  41s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   6 (  49s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   7 (  57s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   8 (  66s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it   9 (  74s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it  10 (  82s) best score 0.57 | tilt_deg 45.6 roll_deg -88.3 tip_mm 18.1 tip_dy_mm -12.0 squeeze_mm 8.9 lift_squeeze_mm 0.2 cube_y_mm 37.2
+it  11 (  89s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  12 (  97s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  13 ( 105s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  14 ( 112s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  15 ( 119s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  16 ( 127s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  17 ( 134s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  18 ( 141s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  19 ( 148s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  20 ( 156s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  21 ( 164s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  22 ( 172s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  23 ( 180s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  24 ( 187s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  25 ( 195s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  26 ( 202s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  27 ( 210s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  28 ( 217s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  29 ( 225s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  30 ( 232s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  31 ( 240s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  32 ( 247s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  33 ( 255s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  34 ( 263s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  35 ( 270s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  36 ( 277s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  37 ( 285s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  38 ( 292s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  39 ( 300s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  40 ( 308s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  41 ( 315s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  42 ( 323s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  43 ( 331s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  44 ( 338s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  45 ( 346s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  46 ( 354s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  47 ( 362s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  48 ( 370s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  49 ( 377s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  50 ( 385s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+it  51 ( 394s) best score 0.58 | tilt_deg 49.2 roll_deg -89.7 tip_mm 15.6 tip_dy_mm -8.8 squeeze_mm 13.4 lift_squeeze_mm 0.1 cube_y_mm 37.2
+yaw 0.0: lifted  36.8 mm, contact |n_z| 0.06, cube tilt max  5.3 deg, contact height +16 mm vs centre, bad contacts none
+yaw 5.0: lifted  37.2 mm, contact |n_z| 0.08, cube tilt max 15.8 deg, contact height +16 mm vs centre, bad contacts none
+yaw 10.0: lifted  37.1 mm, contact |n_z| 0.08, cube tilt max  5.4 deg, contact height +16 mm vs centre, bad contacts none
+yaw -8.0: lifted  36.4 mm, contact |n_z| 0.10, cube tilt max  4.8 deg, contact height +16 mm vs centre, bad contacts {'arm-arm': 64}
+{
+ "params": {
+  "tilt_deg": 49.20682237385196,
+  "roll_deg": -89.68276943271523,
+  "tip_mm": 15.615380092430929,
+  "tip_dy_mm": -8.842562680252747,
+  "squeeze_mm": 13.4004943219222,
+  "lift_squeeze_mm": 0.12563587593382886,
+  "cube_y_mm": 37.21125223857963
+ },
+ "score_4yaws": 0.5284111498318971,
+ "logs": [
+  "yaw 0.0: lifted  36.8 mm, contact |n_z| 0.06, cube tilt max  5.3 deg, contact height +16 mm vs centre, bad contacts none",
+  "yaw 5.0: lifted  37.2 mm, contact |n_z| 0.08, cube tilt max 15.8 deg, contact height +16 mm vs centre, bad contacts none",
+  "yaw 10.0: lifted  37.1 mm, contact |n_z| 0.08, cube tilt max  5.4 deg, contact height +16 mm vs centre, bad contacts none",
+  "yaw -8.0: lifted  36.4 mm, contact |n_z| 0.10, cube tilt max  4.8 deg, contact height +16 mm vs centre, bad contacts {'arm-arm': 64}"
+ ],
+ "friction": "0.4"
+}

@@ -1,0 +1,163 @@
+{
+ "rig": {
+  "arms": {
+   "left": "COM5",
+   "right": "COM6"
+  },
+  "camera_backend": "dshow",
+  "cameras": {
+   "overhead": 3,
+   "left_wrist": 2,
+   "right_wrist": 1
+  },
+  "crop": {
+   "left_wrist": 1.0,
+   "right_wrist": 1.0
+  },
+  "overhead_mask": [
+   [
+    [
+     490,
+     0
+    ],
+    [
+     640,
+     0
+    ],
+    [
+     640,
+     480
+    ],
+    [
+     582,
+     480
+    ],
+    [
+     575,
+     400
+    ],
+    [
+     565,
+     300
+    ],
+    [
+     551,
+     200
+    ],
+    [
+     531,
+     100
+    ]
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     42,
+     0
+    ],
+    [
+     28,
+     45
+    ],
+    [
+     12,
+     100
+    ],
+    [
+     0,
+     140
+    ]
+   ]
+  ],
+  "overhead_warp": {
+   "scale": 0.99,
+   "dx": 46,
+   "dy": -70
+  },
+  "joint_offsets_deg": {
+   "left": [
+    7.7,
+    -4.3,
+    -8.8,
+    8.8,
+    -72.7,
+    0.0
+   ],
+   "right": [
+    0,
+    0,
+    0,
+    0,
+    -90,
+    0
+   ]
+  },
+  "joint_offsets_note": "sim = real + offset, degrees. Wrist roll calibrated a quarter turn from sim zero (check/roll_test.jpg). Left pan +21 fitted from run_01_022718 overhead overlays (check/overlay_run.jpg).",
+  "wrist_map": {
+   "f": 603.2522,
+   "cx": 280.0,
+   "cy": 196.0,
+   "k1": 0.23,
+   "rx": 0.0,
+   "ry": 0.0,
+   "rz": 0.0
+  },
+  "wrist_map_note": "real->sim wrist mapping fitted by wrist_fit.py on left-arm runs; right wrist left as captured (different mount, unfitted)",
+  "wrist_map_cams": [
+   "left_wrist"
+  ],
+  "calib_wrist_note": "calib_wrist.py on 19 sightings: median reprojection 18->21 px",
+  "table_floor_cm": 1.0,
+  "table_floor_note": "virtual floor for the hand lowest point in the calibrated sim frame. Bare wood contacts measured at 0.0 cm (run_01_030319); the crumpled sheet raised contact to 1.6 cm (run_01_031407). Add mat thickness if you use one."
+ },
+ "side": "right",
+ "source": "map_sweep.py (robot-driven)",
+ "floor_cm": 5.0,
+ "midline_cm": 9.0,
+ "poses": 100,
+ "from_runs": [
+  "C:\\robot\\real\\runs\\20261105_031114\\run_03_001640",
+  "C:\\robot\\real\\runs\\20261105_031114\\run_01_031407",
+  "C:\\robot\\real\\runs\\20261105_031114\\run_04_001705",
+  "C:\\robot\\real\\runs\\20261105_031114\\run_02_001510",
+  "C:\\robot\\real\\runs\\20261105_002110\\run_02_002718",
+  "C:\\robot\\real\\runs\\20261105_002110\\run_03_002910",
+  "C:\\robot\\real\\runs\\20261105_002110\\run_04_003527",
+  "C:\\robot\\real\\runs\\20261105_002110\\run_05_003604",
+  "C:\\robot\\real\\runs\\20261105_002110\\run_01_002606",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_01_004732",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_02_004805",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_03_004856",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_04_004944",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_05_005021",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_06_005927",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_07_005954",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_08_010049",
+  "C:\\robot\\real\\runs\\20261105_020855\\run_01_021242",
+  "C:\\robot\\real\\runs\\20261105_021643\\run_01_022057",
+  "C:\\robot\\real\\runs\\20261105_022500\\run_01_022718",
+  "C:\\robot\\real\\runs\\20261105_023114\\run_01_023325",
+  "C:\\robot\\real\\runs\\20261105_024413\\run_01_025004",
+  "C:\\robot\\real\\runs\\20261105_025447\\run_01_025726",
+  "C:\\robot\\real\\runs\\20261105_030110\\run_01_030319",
+  "C:\\robot\\real\\runs\\20261105_004353\\run_09_201749",
+  "C:\\robot\\real\\runs\\dryrun_rtc\\run_01_235117",
+  "C:\\robot\\real\\runs\\dryrun_plain\\run_01_235326",
+  "C:\\robot\\real\\runs\\dryrun_rtc\\run_01_235553",
+  "C:\\robot\\real\\runs\\dryrun_rtc\\run_01_235801",
+  "C:\\robot\\real\\runs\\dryrun_plain\\run_01_000009",
+  "C:\\robot\\real\\runs\\dryrun_rtc\\run_01_000358",
+  "C:\\robot\\real\\runs\\dryrun_rtc\\run_01_000711",
+  "C:\\robot\\real\\runs\\20261106_015240\\run_01_015523",
+  "C:\\robot\\real\\runs\\20261106_015729\\run_01_020128",
+  "C:\\robot\\real\\runs\\20261106_015729\\run_02_020403",
+  "C:\\robot\\real\\runs\\calib_right_20261110_183004\\run_01",
+  "C:\\robot\\real\\runs\\calib_right_robot_20261110_184121\\run_01",
+  "C:\\robot\\real\\runs\\calib_left_mirror\\run_01",
+  "C:\\robot\\real\\runs\\calib_left_robot_20261110_185636\\run_01",
+  "C:\\robot\\real\\runs\\map_left_20261110_191812\\run_01"
+ ]
+}

@@ -14,3 +14,24 @@ MUJOCO_LOG.TXT
 *.png
 *.jpg
 !so101_twin/assets/**
+
+# ---------------- pi_sim_so101: sim + two-arm clamp RL ----------------
+pi_sim_so101/.venv/
+pi_sim_so101/.backup_claude/
+pi_sim_so101/.pytest_cache/
+pi_sim_so101/*.egg-info/
+pi_sim_so101/outputs/
+pi_sim_so101/squeeze/videos/
+pi_sim_so101/squeeze/runs_tb/
+# training runs are multi-GB (demos, camera datasets, every checkpoint).
+# The final models are copied, slimmed, into pi_sim_so101/squeeze/models/ (tracked).
+pi_sim_so101/squeeze/runs_clamp/
+pi_sim_so101/squeeze/runs_clamp_recovery/
+!pi_sim_so101/squeeze/models/*.npz
+# scene assets (meshes, wood table texture) are needed to build the sim
+!pi_sim_so101/pi_sim/assets/**
+
+# ---------------- machine-specific / private ----------------
+# rig SSH notes: Tailscale hostname + IPs of the robot laptop
+DZKCHEN_REMOTE.md
+.claude/

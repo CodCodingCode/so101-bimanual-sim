@@ -1,0 +1,19 @@
+{
+ "params": {
+  "tilt_deg": 44.714345668544254,
+  "roll_deg": -89.90280092055747,
+  "tip_mm": 13.875224165519393,
+  "tip_dy_mm": 6.227645544082286,
+  "squeeze_mm": 19.99997483399357,
+  "lift_squeeze_mm": 0.08166481076147508,
+  "cube_y_mm": -36.84803616438725
+ },
+ "score_4yaws": 0.9950697512043665,
+ "logs": [
+  "yaw 0.0: lifted  42.7 mm, contact |n_z| 0.00",
+  "yaw 5.0: lifted  43.6 mm, contact |n_z| 0.01",
+  "yaw 10.0: lifted  42.5 mm, contact |n_z| 0.02",
+  "yaw -8.0: lifted  41.3 mm, contact |n_z| 0.03"
+ ],
+ "friction": "0.4"
+}

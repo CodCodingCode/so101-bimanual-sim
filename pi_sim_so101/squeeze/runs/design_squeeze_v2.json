@@ -1,0 +1,19 @@
+{
+ "params": {
+  "tilt_deg": 48.330113458739,
+  "roll_deg": -89.78487862082847,
+  "tip_mm": 12.181782915343758,
+  "tip_dy_mm": -11.850781112994198,
+  "squeeze_mm": 6.227349387415175,
+  "lift_squeeze_mm": 0.016755880704788784,
+  "cube_y_mm": 37.99553004359751
+ },
+ "score_4yaws": 0.5836327703553007,
+ "logs": [
+  "yaw 0.0: lifted  36.7 mm, contact |n_z| 0.03, cube tilt max  2.1 deg, contact height +16 mm vs centre, bad contacts none",
+  "yaw 5.0: lifted  36.5 mm, contact |n_z| 0.04, cube tilt max  6.0 deg, contact height +16 mm vs centre, bad contacts {'arm-arm': 36}",
+  "yaw 10.0: lifted  36.8 mm, contact |n_z| 0.06, cube tilt max  6.1 deg, contact height +16 mm vs centre, bad contacts {'arm-arm': 10}",
+  "yaw -8.0: lifted  36.8 mm, contact |n_z| 0.07, cube tilt max  4.9 deg, contact height +16 mm vs centre, bad contacts {'arm-arm': 17}"
+ ],
+ "friction": "0.4"
+}

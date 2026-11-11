@@ -1,0 +1,52 @@
+{
+ "joints": {
+  "shoulder_pan": {
+   "kp": 198.41783,
+   "kv": 12.58288,
+   "forcerange": 0.94396,
+   "frictionloss": 0.01308,
+   "armature": 0.00514,
+   "timeconst": 0.04
+  },
+  "shoulder_lift": {
+   "kp": 27.61734,
+   "kv": 1.23418,
+   "forcerange": 1.70118,
+   "frictionloss": 0.29071,
+   "armature": 0.02962,
+   "timeconst": 0.04
+  },
+  "elbow_flex": {
+   "kp": 19.84978,
+   "kv": 0.51521,
+   "forcerange": 1.64027,
+   "frictionloss": 0.3645,
+   "armature": 0.00641,
+   "timeconst": 0.04
+  },
+  "wrist_flex": {
+   "kp": 360.83681,
+   "kv": 22.63902,
+   "forcerange": 1.13541,
+   "frictionloss": 0.21324,
+   "armature": 0.02184,
+   "timeconst": 0.04
+  },
+  "wrist_roll": {
+   "kp": 122.47737,
+   "kv": 6.7803,
+   "forcerange": 0.75911,
+   "frictionloss": 0.00765,
+   "armature": 0.00487,
+   "timeconst": 0.04
+  },
+  "gripper": {
+   "kp": 144.46442,
+   "kv": 11.21452,
+   "forcerange": 1.1605,
+   "frictionloss": 0.03562,
+   "armature": 0.01437,
+   "timeconst": 0.04
+  }
+ }
+}

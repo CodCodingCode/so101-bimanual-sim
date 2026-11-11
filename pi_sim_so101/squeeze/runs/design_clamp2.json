@@ -1,0 +1,14 @@
+{
+ "params": {
+  "tilt_l": 32.8,
+  "tilt_r": 30.2,
+  "roll_l": -97.5,
+  "roll_r": -112.4,
+  "dy_l_mm": -8.8,
+  "dy_r_mm": -4.0,
+  "tip_mm": 14.9,
+  "gap_mm": 0.4
+ },
+ "score": 0.99,
+ "source": "it  15 ( 337s) best 0.99 | tilt_l 32.8 tilt_r 30.2 roll_l -97.5 roll_r -112.4 dy_l_mm -8.8 dy_r_mm -4.0 tip_mm 14.9 gap_mm 0.4"
+}

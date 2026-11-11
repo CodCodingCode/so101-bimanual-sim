@@ -1,0 +1,124 @@
+{
+ "rig": {
+  "arms": {
+   "left": "COM5",
+   "right": "COM6"
+  },
+  "camera_backend": "dshow",
+  "cameras": {
+   "overhead": 3,
+   "left_wrist": 2,
+   "right_wrist": 1
+  },
+  "crop": {
+   "left_wrist": 1.0,
+   "right_wrist": 1.0
+  },
+  "overhead_mask": [
+   [
+    [
+     490,
+     0
+    ],
+    [
+     640,
+     0
+    ],
+    [
+     640,
+     480
+    ],
+    [
+     582,
+     480
+    ],
+    [
+     575,
+     400
+    ],
+    [
+     565,
+     300
+    ],
+    [
+     551,
+     200
+    ],
+    [
+     531,
+     100
+    ]
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     42,
+     0
+    ],
+    [
+     28,
+     45
+    ],
+    [
+     12,
+     100
+    ],
+    [
+     0,
+     140
+    ]
+   ]
+  ],
+  "overhead_warp": {
+   "scale": 0.99,
+   "dx": 46,
+   "dy": -70
+  },
+  "joint_offsets_deg": {
+   "left": [
+    5.1,
+    8.5,
+    -6.6,
+    2.2,
+    -72.7,
+    0.0
+   ],
+   "right": [
+    4.0,
+    -0.9,
+    -6.7,
+    -1.2,
+    -90.0,
+    0.0
+   ]
+  },
+  "joint_offsets_note": "sim = real + offset, degrees. Wrist roll calibrated a quarter turn from sim zero (check/roll_test.jpg). Left pan +21 fitted from run_01_022718 overhead overlays (check/overlay_run.jpg).",
+  "wrist_map": {
+   "f": 603.2522,
+   "cx": 280.0,
+   "cy": 196.0,
+   "k1": 0.23,
+   "rx": 0.0,
+   "ry": 0.0,
+   "rz": 0.0
+  },
+  "wrist_map_note": "real->sim wrist mapping fitted by wrist_fit.py on left-arm runs; right wrist left as captured (different mount, unfitted)",
+  "wrist_map_cams": [
+   "left_wrist"
+  ],
+  "calib_wrist_note": "calib_wrist.py on 19 sightings: median reprojection 18->21 px",
+  "table_floor_cm": 1.0,
+  "table_floor_note": "virtual floor for the hand lowest point in the calibrated sim frame. Bare wood contacts measured at 0.0 cm (run_01_030319); the crumpled sheet raised contact to 1.6 cm (run_01_031407). Add mat thickness if you use one.",
+  "joint_offsets_note_right": "2026-11-10: right pan/lift/elbow/wrist_flex fitted from 30 robot-driven overhead frames (runs\\calib_right_robot_20261110_184121) + 30 left-sweep frames, in the 232 mm TheRobotStudio mount layout (sim/rig_tools/fit_overhead_232.py, held-out IoU 0.37; 3 fits agree within ~3 deg). Wrist roll kept at -90 (not observable from overhead). Previous: [0,0,0,0,-90,0].",
+  "arm_spacing_mm_measured": 232,
+  "arm_spacing_note": "Real arms are 232 mm apart (mount CAD; overhead fit 222-239 mm). The laptop pi_sim still places them 360 mm apart; overhead_warp and the left offsets were fitted in that 360 mm sim.",
+  "joint_offsets_note_left": "2026-11-10: left pan/lift/elbow/wrist_flex corrected by (-2.6, +12.8, +2.2, -6.6) deg, fitted in the 232 mm mount layout (sim/rig_tools/fit_overhead_232.py) and validated on 100 unseen frames (runs\\map_left_20261110_191812: IoU 0.272 -> 0.312). Wrist roll kept. Previous: [7.7, -4.3, -8.8, 8.8, -72.7, 0.0]."
+ },
+ "dt": 0.02,
+ "torque_limit": 700,
+ "grip_limit": 450,
+ "source": "dyn_test.py"
+}
