@@ -1,0 +1,13 @@
+19:09:40 init from squeeze/runs_clamp_v3/detector_policy/best.pt; teacher /Users/owner/Downloads/whatif/sim/pi_sim_so101/squeeze/runs_clamp_v3/grip_teacher; grip DR True
+19:12:17 round 0 (beta 0.5, 36000 labelled steps, mse 0.0016) policy alone: success 0.15 clean 0.02 box_tipped 0.00 (48 episodes)
+19:12:17   new best (0.02) -> best.pt
+19:14:48 round 1 (beta 0.3, 72000 labelled steps, mse 0.0025) policy alone: success 0.90 clean 0.48 box_tipped 0.02 (48 episodes)
+19:14:48   new best (0.48) -> best.pt
+19:17:22 round 2 (beta 0.1, 108000 labelled steps, mse 0.0031) policy alone: success 0.96 clean 0.42 box_tipped 0.00 (48 episodes)
+19:20:08 round 3 (beta 0.0, 144000 labelled steps, mse 0.0057) policy alone: success 0.92 clean 0.60 box_tipped 0.00 (48 episodes)
+19:20:08   new best (0.60) -> best.pt
+19:23:56 round 4 (beta 0.0, 180000 labelled steps, mse 0.0068) policy alone: success 0.96 clean 0.06 box_tipped 0.02 (48 episodes)
+19:28:04 round 5 (beta 0.0, 215927 labelled steps, mse 0.0085) policy alone: success 0.92 clean 0.79 box_tipped 0.00 (48 episodes)
+19:28:04   new best (0.79) -> best.pt
+19:32:01 round 6 (beta 0.0, 251927 labelled steps, mse 0.0085) policy alone: success 0.92 clean 0.56 box_tipped 0.00 (48 episodes)
+19:32:01 done

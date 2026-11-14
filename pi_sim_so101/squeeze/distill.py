@@ -38,9 +38,17 @@ sys.path.insert(0, str(HERE.parent))
 
 os.environ.setdefault("SQUEEZE_TASK", "clamp")
 os.environ.setdefault("CLAMP_RECOVERY", "1")
-OUT = HERE / "runs_clamp_recovery" / "student"
-RIG = HERE.parents[1] / "rig_tools" / "data" / "so101_camera_rig.calibrated_full.json"
-TEACHER = "scripted re-planning clamp teacher (clamp_rl.ClampRLEnv.expert_action)"
+OUT = HERE / os.environ.get("DISTILL_OUT", "runs_clamp_v3/student")
+# SO101_RIG: one switch for every sim's cameras (the rig built from robots/so101/calibration by
+# rig_tools/build_rig_from_calibration.py once the wrist refit is validated)
+_ACTIVE_RIG = HERE.parents[1] / "rig_tools" / "data" / "so101_camera_rig.active.json"   # apply_calibration.py local
+RIG = (Path(os.environ["SO101_RIG"]) if os.environ.get("SO101_RIG") else
+       _ACTIVE_RIG if _ACTIVE_RIG.exists() else HERE.parents[1] / "rig_tools" / "data" / "so101_camera_rig.calibrated_full.json")
+# the teacher is the trained RL policy (state-based, sim-privileged inputs); the student gets cameras + joints only
+TEACHER_DIR = HERE / os.environ.get("DISTILL_TEACHER", "runs_clamp_v3/dagger")
+TEACHER = str(TEACHER_DIR / "best.zip")
+KEEP_EVERY = 2                 # store every 2nd frame (consecutive frames are near-identical; halves the memory)
+AUX_W = 0.5                    # weight of the auxiliary "where is the cube" loss (checked on real frames)
 CAMS = ("overhead", "left_wrist", "right_wrist")
 IMG = 64
 PROP = 31
@@ -72,6 +80,7 @@ class Randomizer:
         m = env.base.model
         self.m, self.mj = m, mujoco
         self.rgba0 = m.geom_rgba.copy()
+        self.matid0 = m.geom_matid.copy()     # pi_sim's restore_visuals() does not restore materials (sim-74, 2026-11-13)
         self.mat0 = m.mat_rgba.copy()
         self.light0 = (m.light_diffuse.copy(), m.light_ambient.copy(), m.light_pos.copy())
         self.head0 = (m.vis.headlight.diffuse.copy(), m.vis.headlight.ambient.copy())
@@ -95,6 +104,8 @@ class Randomizer:
         self.box = [g for g in range(m.ngeom) if names[g] == "can_geom" or names[g].startswith("box_wall_")]
         self.room = [g for g in range(m.ngeom) if names[g] == "floor" or names[g].startswith("room_wall_")]
         self.mount = m.body("overhead_camera_mount").id
+        self.offtable = [g for g in range(m.ngeom) if names[g].startswith("offtable_")]
+        self.offtable0 = m.geom_pos[self.offtable].copy() if self.offtable else None
 
     def _set(self, gs, rgb):
         m = self.m
@@ -104,10 +115,21 @@ class Randomizer:
             m.geom_rgba[g, :3] = np.clip(rgb, 0, 1)
             m.geom_rgba[g, 3] = 1.0
 
+    def restore_materials(self):
+        self.m.geom_matid[:] = self.matid0
+
     def apply(self, rng):
         m = self.m
+        self.restore_materials()          # a previous episode's _set() switched some geoms to flat colours
         E = self.E   # every colour jitters around the real rig's measured colours (env.py, matched_sim)
-        self._set(self.arm_light, E.ARM_RGB * rng.uniform(0.85, 1.2) + rng.normal(0, 0.02, 3))
+        whiteness = rng.uniform(0.0, 1.0)            # real arms: from grey-blue (as measured) to white plastic
+        base = (1 - whiteness) * E.ARM_RGB + whiteness * np.array([0.9, 0.91, 0.93])
+        self._set(self.arm_light, base * rng.uniform(0.7, 1.25) + rng.normal(0, 0.02, 3))
+        m.light_castshadow[:] = int(rng.random() < 0.3)
+        if self.offtable:
+            shift = np.r_[rng.normal(0, 0.012, 2), 0.0]
+            m.geom_pos[self.offtable] = self.offtable0 + shift
+            m.geom_rgba[self.offtable, :3] = np.clip(E.OFFTABLE_RGB * rng.uniform(0.8, 1.2) + rng.normal(0, 0.02, 3), 0, 1)
         if self.table_mat >= 0:   # keep the wood grain; jitter its tint / brightness
             m.mat_rgba[self.table_mat, :3] = np.clip(self.mat0[self.table_mat, :3] * rng.uniform(0.75, 1.25)
                                                      + rng.normal(0, 0.04, 3), 0, 1)
@@ -164,12 +186,16 @@ def build_student():
             self.encs = nn.ModuleList([enc() for _ in CAMS])
             self.prop = nn.Sequential(nn.Linear(PROP, 64), nn.ReLU())
             self.head = nn.Sequential(nn.Linear(128 * len(CAMS) + 64, 256), nn.ReLU(), nn.Linear(256, 256), nn.ReLU(),
-                                      nn.Linear(256, 6), nn.Tanh())
+                                      nn.Linear(256, 8))
+
+        def forward_all(self, imgs, prop):
+            # imgs: [B, 3cams, 3, H, W] float in [0, 1]. Returns (action in [-1, 1] x6, cube xy estimate x2)
+            feats = [e(imgs[:, i]) for i, e in enumerate(self.encs)]
+            out = self.head(torch.cat(feats + [self.prop(prop)], 1))
+            return torch.tanh(out[:, :6]), out[:, 6:8]
 
         def forward(self, imgs, prop):
-            # imgs: [B, 3cams, 3, H, W] float in [0, 1]
-            feats = [e(imgs[:, i]) for i, e in enumerate(self.encs)]
-            return self.head(torch.cat(feats + [self.prop(prop)], 1))
+            return self.forward_all(imgs, prop)[0]
 
     return Student()
 
@@ -196,6 +222,11 @@ def augment(x, gen):
     c = (torch.rand(B, C, 1, 1, 1, generator=gen) * 0.5 + 0.75).to(x.device)
     mean = x.mean(dim=(2, 3, 4), keepdim=True)
     x = (x - mean) * c + mean + b
+    x = x * (torch.rand(B, C, ch, 1, 1, generator=gen) * 0.16 + 0.92).to(x.device)        # white balance
+    x = x.clamp(1e-4, 1) ** (torch.rand(B, C, 1, 1, 1, generator=gen) * 0.45 + 0.8).to(x.device)   # exposure curve
+    blur = (torch.rand(B, C, 1, 1, 1, generator=gen) < 0.3).to(x.device)
+    xb = torch.nn.functional.avg_pool2d(x.view(B * C, ch, H, W), 3, 1, 1).view(B, C, ch, H, W)
+    x = torch.where(blur, xb, x)
     x = x + torch.randn(x.shape, generator=gen).to(x.device) * 0.02
     return x.clamp(0, 1)
 
@@ -205,7 +236,11 @@ def _collect(job):
     """Run episodes; execute teacher (prob beta) or student; label every frame with the teacher's action."""
     seeds, student_path, beta, noise, out_file = job
     import torch
+    import train as T
     torch.set_num_threads(1)
+    teacher = T.BCPPO.load(TEACHER, device="cpu")
+    ts = np.load(TEACHER_DIR / "obs_stats.npz")
+    tnorm = lambda o: np.clip((o - ts["mean"]) / np.sqrt(ts["var"] + 1e-8), -10, 10).astype(np.float32)
     student = None
     if student_path:
         student = build_student()
@@ -213,24 +248,28 @@ def _collect(job):
         student.eval()
     env = make_env(int(seeds[0]))
     rnd = Randomizer(env)
-    I, P, A, results = [], [], [], []
+    I, P, A, Q, results = [], [], [], [], []
+    import clamp_teacher as C
     for seed in seeds:
         rng = np.random.default_rng(int(seed) + 777)
-        rnd.apply(rng)
-        env.reset(seed=int(seed))
+        obs, _ = env.reset(seed=int(seed))
+        rnd.apply(rng)          # AFTER reset (2026-11-13: reset restores the nominal look; applied before, it was a no-op)
         prev = np.zeros(6, np.float32)
         ever, after_success = set(), 0
         for t in range(env.base.max_steps):
             imgs, prop = observe(env, prev)
-            ta = np.asarray(env.expert_action(), np.float32)      # must run every step: advances the plan
-            I.append(imgs); P.append(prop); A.append(ta)
+            ta = np.asarray(teacher.predict(tnorm(obs), deterministic=True)[0], np.float32)
+            if t % KEEP_EVERY == 0:
+                cube = env.base.cube_pos()
+                I.append(imgs); P.append(prop); A.append(ta)
+                Q.append(np.array([cube[0] / 0.05, (cube[1] - C.CUBE_Y) / 0.05], np.float32))
             if student is not None and rng.random() >= beta:
                 with torch.no_grad():
                     act = student(to_tensor(imgs[None], "cpu"), torch.from_numpy(prop[None])).numpy()[0]
             else:
                 act = ta + rng.normal(0, noise, 6).astype(np.float32) if noise > 0 else ta
             act = np.clip(act, -1, 1).astype(np.float32)
-            _, _, term, trunc, info = env.step(act)
+            obs, _, term, trunc, info = env.step(act)
             prev = act
             for st in STAGES:
                 if info.get(st):
@@ -245,7 +284,7 @@ def _collect(job):
         if "is_success" in ever and not info["bad_free_steps"]:
             ever.add("clean")
         results.append({st: st in ever for st in STAGES})
-    np.savez(out_file, imgs=np.stack(I), prop=np.stack(P), act=np.stack(A))
+    np.savez(out_file, imgs=np.stack(I), prop=np.stack(P), act=np.stack(A), cube=np.stack(Q))
     return results
 
 
@@ -265,24 +304,24 @@ def collect(round_name, n_episodes, seed0, student_path, beta, noise, workers):
 
 # ------------------------------------------------------------------ training
 def load_all():
-    I, P, A = [], [], []
+    I, P, A, Q = [], [], [], []
     for f in sorted(OUT.glob("data_*.npz")):
         z = np.load(f)
-        I.append(z["imgs"]); P.append(z["prop"]); A.append(z["act"])
-    return np.concatenate(I), np.concatenate(P), np.concatenate(A)
+        I.append(z["imgs"]); P.append(z["prop"]); A.append(z["act"]); Q.append(z["cube"])
+    return np.concatenate(I), np.concatenate(P), np.concatenate(A), np.concatenate(Q)
 
 
 def train(epochs, init=None):
     import torch
     dev = "mps" if torch.backends.mps.is_available() else "cpu"
-    I, P, A = load_all()
+    I, P, A, Q = load_all()
     n = len(A)
     net = build_student().to(dev)
     if init is not None and Path(init).exists():
         net.load_state_dict(torch.load(init, map_location=dev))
     opt = torch.optim.Adam(net.parameters(), lr=3e-4)
     gen = torch.Generator().manual_seed(0)
-    Pt, At = torch.from_numpy(P), torch.from_numpy(A)
+    Pt, At, Qt = torch.from_numpy(P), torch.from_numpy(A), torch.from_numpy(Q)
     t0 = time.time()
     for ep in range(epochs):
         perm = torch.randperm(n, generator=gen).numpy()
@@ -291,7 +330,8 @@ def train(epochs, init=None):
             idx = perm[k:k + 256]
             x = augment(to_tensor(I[idx], dev), gen)
             prop = (Pt[idx] + torch.randn(len(idx), PROP, generator=gen) * 0.01).to(dev)
-            loss = ((net(x, prop) - At[idx].to(dev)) ** 2).mean()
+            act, cube = net.forward_all(x, prop)
+            loss = ((act - At[idx].to(dev)) ** 2).mean() + AUX_W * ((cube - Qt[idx].to(dev)) ** 2).mean()
             opt.zero_grad()
             loss.backward()
             opt.step()
@@ -304,7 +344,7 @@ def train(epochs, init=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--workers", type=int, default=10)
+    ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--eval", default=None, help="evaluate a student checkpoint only")
     ap.add_argument("--episodes", type=int, default=50)
     a = ap.parse_args()
@@ -313,13 +353,13 @@ def main():
         return
     OUT.mkdir(parents=True, exist_ok=True)
     log = {"teacher": str(TEACHER), "rig": str(RIG), "rounds": []}
-    log["rounds"].append({"round": "teacher", **collect("r0_teacher", 160, 100_000, None, 1.0, 0.15, a.workers)})
+    log["rounds"].append({"round": "teacher", **collect("r0_teacher", 120, 100_000, None, 1.0, 0.1, a.workers)})
     ckpt = train(15)
     for r, beta in enumerate((0.5, 0.2, 0.0), start=1):
-        rates = collect(f"r{r}_dagger", 100, 100_000 + 1000 * r, str(ckpt), beta, 0.0, a.workers)
+        rates = collect(f"r{r}_dagger", 60, 100_000 + 1000 * r, str(ckpt), beta, 0.0, a.workers)
         log["rounds"].append({"round": f"dagger{r}", "beta": beta, **rates})
         ckpt = train(8, init=ckpt)
-    final = collect("final_eval", 60, 900_000, str(ckpt), 0.0, 0.0, a.workers)
+    final = collect("final_eval", 40, 900_000, str(ckpt), 0.0, 0.0, a.workers)
     log["final_student_eval"] = final
     for f in OUT.glob("data_final_eval_*.npz"):
         f.unlink()

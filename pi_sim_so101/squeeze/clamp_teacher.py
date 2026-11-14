@@ -19,16 +19,27 @@ import mujoco
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-_D = HERE / "runs" / "design_clamp2.json"
+# v3 (2026-11-11, after a real run knocked a wrist camera holder off): real joint ranges, a GENTLE squeeze (tips only
+# press_mm into each face, never aimed through each other), designed with the box in place and the safety guard's
+# clearances to the wrist camera mounts / camera post / box. Falls back to v2 if v3 is not there.
+import os as _os
+_D = HERE / "runs" / _os.environ.get("CLAMP_DESIGN", "design_clamp3.json")     # e.g. design_clamp3b_twist.json
+if not _D.exists():
+    _D = HERE / "runs" / "design_clamp2.json"
 P = json.loads(_D.read_text())["params"] if _D.exists() else {}
 TILT = {"left": np.radians(P.get("tilt_l", 32.8)), "right": np.radians(P.get("tilt_r", 30.2))}
 ROLL = {"left": np.radians(P.get("roll_l", -97.5)), "right": np.radians(P.get("roll_r", -112.4))}
 TIP_DY = {"left": P.get("dy_l_mm", -8.8) / 1000, "right": P.get("dy_r_mm", -4.0) / 1000}
 TIP_Z = P.get("tip_mm", 14.9) / 1000                  # tool point (fingertips) above the cube's bottom
-GAP = P.get("gap_mm", 0.4) / 1000                     # final commanded tip |x| from the cube centre line
 CUBE_HALF = 0.016
+if "press_mm" in P:                                   # v3: commanded tips press_mm INSIDE each face (gentle)
+    GAP = CUBE_HALF - P["press_mm"] / 1000
+    CLOSE = CUBE_HALF + 0.002                         # close in to 2 mm OUTSIDE the faces first
+else:                                                 # v2: tips aimed 0.4 mm from the centre line (unsafe on the rig)
+    GAP = P.get("gap_mm", 0.4) / 1000
+    CLOSE = CUBE_HALF - 0.004
 CUBE_Y = 0.0372                                       # nominal cube y (world; bases at y = -0.22, 25.9 cm in front)
-BOX_DY = -0.10                                        # box centre between the arms and the cube (carry backward:
+BOX_DY = P.get("box_dy_mm", -100.0) / 1000            # box centre between the arms and the cube (carry backward:
                                                       # reaching forward to a box past the cube makes the grippers meet)
 CARRY_Z = 0.09                                        # tool height while carrying (cube bottom ~7.5 cm, rim 3 cm)
 DROP_Z = TIP_Z + 0.035                                # tool height when letting go (cube bottom ~3.5 cm, rim 3 cm)
@@ -58,7 +69,7 @@ class ClampPlan:
     def __init__(self, cube_xyz, box_xy=None, release=True):
         cx, cy = float(cube_xyz[0]), float(cube_xyz[1])
         dyl, dyr = TIP_DY["left"], TIP_DY["right"]
-        out, z, close = CUBE_HALF + 0.035, TIP_Z, CUBE_HALF - 0.004
+        out, z, close = CUBE_HALF + 0.035, TIP_Z, CLOSE
 
         def pair(xl, xr, y, zz):
             return [xl, y + dyl, zz], [xr, y + dyr, zz]

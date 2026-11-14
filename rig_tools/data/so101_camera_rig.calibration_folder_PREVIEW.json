@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "note": "Built by rig_tools/build_rig_from_calibration.py from robots/so101/calibration/cameras/ (PREVIEW, not for training): overhead: CURRENT lens + pose (fitted together on 11-10; measured lens still provisional); left_wrist: measured lens + OLD pose (PREVIEW: the old pose was fitted with the old lens); right_wrist: measured lens + OLD pose (PREVIEW: the old pose was fitted with the old lens)",
+ "cameras": {
+  "overhead": {
+   "width": 640,
+   "height": 480,
+   "fps": 30,
+   "rotation": 0,
+   "hardware_model": "InnoMaker U20CAM-1080P-S1 (640x480 = centre 4:3 crop of the 1080p sensor)",
+   "intrinsics": {
+    "fx": 612.57,
+    "fy": 612.57,
+    "cx": 285.1,
+    "cy": 242.2
+   },
+   "distortion": [
+    -0.9328,
+    0.9382,
+    0,
+    0,
+    0
+   ],
+   "pose": {
+    "parent_body": "world",
+    "pos": [
+     -0.00182,
+     -0.19068,
+     0.52908
+    ],
+    "quat_wxyz": [
+     0.976551,
+     0.214204,
+     0.004384,
+     0.021144
+    ]
+   },
+   "calibration_status": "built from /Users/owner/Downloads/whatif/robots/so101/calibration/cameras (overhead: CURRENT lens + pose (fitted together on 11-10; measured lens still provisional))"
+  },
+  "left_wrist": {
+   "width": 640,
+   "height": 480,
+   "fps": 30,
+   "rotation": 0,
+   "hardware_model": "InnoMaker U20CAM-1080P-S1 (640x480 = centre 4:3 crop of the 1080p sensor)",
+   "intrinsics": {
+    "fx": 540.27,
+    "fy": 538.2,
+    "cx": 310.08,
+    "cy": 250.53
+   },
+   "distortion": [
+    -0.4471,
+    0.26909,
+    -0.00079,
+    0.0006,
+    -0.10492
+   ],
+   "pose": {
+    "parent_body": "left_camera_mount",
+    "pos": [
+     -0.00462,
+     0.05805,
+     -0.05423
+    ],
+    "quat_wxyz": [
+     0.958997,
+     -0.281068,
+     -0.00176,
+     0.036372
+    ]
+   },
+   "calibration_status": "built from /Users/owner/Downloads/whatif/robots/so101/calibration/cameras (left_wrist: measured lens + OLD pose (PREVIEW: the old pose was fitted with the old lens))"
+  },
+  "right_wrist": {
+   "width": 640,
+   "height": 480,
+   "fps": 30,
+   "rotation": 0,
+   "hardware_model": "InnoMaker U20CAM-1080P-S1 (640x480 = centre 4:3 crop of the 1080p sensor)",
+   "intrinsics": {
+    "fx": 546.66,
+    "fy": 544.74,
+    "cx": 331.84,
+    "cy": 246.28
+   },
+   "distortion": [
+    -0.45355,
+    0.28314,
+    0.00031,
+    -0.00076,
+    -0.10492
+   ],
+   "pose": {
+    "parent_body": "right_camera_mount",
+    "pos": [
+     -0.00795,
+     0.058,
+     -0.05128
+    ],
+    "quat_wxyz": [
+     0.951794,
+     -0.281265,
+     0.078169,
+     0.094173
+    ]
+   },
+   "calibration_status": "built from /Users/owner/Downloads/whatif/robots/so101/calibration/cameras (right_wrist: measured lens + OLD pose (PREVIEW: the old pose was fitted with the old lens))"
+  }
+ }
+}

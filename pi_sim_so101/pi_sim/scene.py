@@ -25,6 +25,20 @@ ARM_X = 0.116                    # was 0.18 before the mount (0.36 m between arm
 ARM_Y = -0.22                    # arm base-body origin; its hole centre is 21.245 mm forward of this
 ARM_Z = 0.0072                   # the arms stand on the 7.2 mm arm_base plates
 ARM_SHIFT = 0.18 - ARM_X         # how far each arm moved toward the middle; task layouts follow it
+# Measured per-arm pedestal corrections (robots/so101/calibration, adopted with the camera refit): optional file
+# assets/so101_kinematics.json {"left": {"pedestal_shift_cm": [x, y, z]}, "right": {...}} or PI_SIM_KINEMATICS=<file>.
+# Absent -> no shift (the nominal mount layout). The per-joint offsets of the same fit live on the REAL side
+# (rig.json joint_offsets_deg: sim = real + offset), not here.
+KINEMATICS = Path(os.environ.get("PI_SIM_KINEMATICS", "")) if os.environ.get("PI_SIM_KINEMATICS") else None
+
+
+def _pedestal_shift(side):
+    import json as _json
+    path = KINEMATICS or (Path(__file__).parent / "assets" / "so101_kinematics.json")
+    if not path.exists():
+        return np.zeros(3)
+    v = _json.loads(path.read_text()).get(side, {}).get("pedestal_shift_cm")
+    return np.zeros(3) if v is None else np.asarray(v, float)[:3] / 100.0
 POST_XY = (0.0, ARM_Y + 0.021245 - 0.02328)
 MOUNT_QUAT = "0.5 0.5 0.5 0.5"   # STL frame (x workspace, y up, z across) -> world (x across, y workspace, z up)
 MOUNT_PARTS = {  # world position of each STL's origin; derivation in vendor/robotstudio_overhead_mount/UPSTREAM.json
@@ -127,7 +141,7 @@ def build_model(object_shape="cube", object_color="red", camera_rig=None, extra_
       <worldbody>
         <light name="key_light" pos="0 -0.5 1.5" dir="0 0 -1" diffuse="0.8 0.8 0.8"/>
         <geom name="floor" type="plane" size="3 3 0.1" pos="0 0 -0.76" material="floor_mat"/>
-        <geom name="table" type="box" size="0.5 0.4 0.025" pos="0 0 -0.025" rgba="0.55 0.38 0.22 1"/>
+        <geom name="table" type="box" size="0.5 0.4 0.025" pos="0 0 -0.025" rgba="0.55 0.38 0.22 1" friction="0.25 0.005 0.0001" priority="1"/>
         <body name="cube" pos="-0.116 0 0.016">
           <freejoint name="cube_joint"/>
           <geom name="cube_geom" type="box" size="0.015 0.015 0.015" mass="0.015" friction="1 0.01 0.001" rgba="0.92 0.24 0.14 1"/>
@@ -161,8 +175,9 @@ def build_model(object_shape="cube", object_color="red", camera_rig=None, extra_
         camera = arm.find(f".//camera[@name='{side}_wrist_cam']")
         _configure_camera(camera, cameras[f"{side}_wrist"])
         camera.set("name", f"{side}_wrist")
+        dx, dy, dz = _pedestal_shift(side)
         wrapper = ET.SubElement(root.find("worldbody"), "body", name=f"{side}_pedestal",
-                                pos=f"{x} {ARM_Y} {ARM_Z}", euler=f"0 0 {np.pi / 2}")
+                                pos=f"{x + dx} {ARM_Y + dy} {ARM_Z + dz}", euler=f"0 0 {np.pi / 2}")
         wrapper.append(arm.find("worldbody/body"))
         for section in ("default", "asset", "contact", "tendon", "equality", "actuator"):
             contents = arm.find(section)

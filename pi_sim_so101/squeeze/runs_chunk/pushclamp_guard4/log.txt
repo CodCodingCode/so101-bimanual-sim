@@ -1,0 +1,3 @@
+round 0 (teacher rollouts): teacher success 0.29 clean 0.24 box tipped 0.00 (80 episodes) | 44826 chunk labels [242s]
+warm start from runs_chunk/rotation_guard4_best/student.pt
+PUSH-THEN-CLAMP mode: cube x +-12 cm, y +-3 cm, scripted push (cameras) then the clamp

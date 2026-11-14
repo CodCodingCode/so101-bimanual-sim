@@ -1,0 +1,50 @@
+it   1 (  75s) best -2.700 | tilt_l 44.2 tilt_r 25.2 roll_l -121.1 roll_r -142.8 dy_l_mm -4.8 dy_r_mm -5.8 tip_mm 18.1 press_mm 3.3
+it   2 ( 149s) best -2.638 | tilt_l 46.0 tilt_r 34.5 roll_l -156.8 roll_r -138.0 dy_l_mm -3.7 dy_r_mm -2.7 tip_mm 18.3 press_mm 2.6
+it   3 ( 225s) best -2.584 | tilt_l 53.0 tilt_r 37.3 roll_l -128.0 roll_r -159.2 dy_l_mm -2.9 dy_r_mm 8.0 tip_mm 14.2 press_mm 4.0
+it   4 ( 302s) best -2.008 | tilt_l 57.0 tilt_r 24.5 roll_l -155.6 roll_r -139.1 dy_l_mm -9.5 dy_r_mm 8.2 tip_mm 20.8 press_mm 3.2
+it   5 ( 375s) best -1.932 | tilt_l 59.1 tilt_r 23.9 roll_l -153.5 roll_r -153.9 dy_l_mm -14.8 dy_r_mm 18.0 tip_mm 24.7 press_mm 3.5
+it   6 ( 458s) best -1.900 | tilt_l 44.8 tilt_r 21.3 roll_l -140.9 roll_r -96.6 dy_l_mm -17.2 dy_r_mm 18.7 tip_mm 22.3 press_mm 3.2
+it   7 ( 541s) best -1.900 | tilt_l 44.8 tilt_r 21.3 roll_l -140.9 roll_r -96.6 dy_l_mm -17.2 dy_r_mm 18.7 tip_mm 22.3 press_mm 3.2
+it   8 ( 616s) best -1.900 | tilt_l 44.8 tilt_r 21.3 roll_l -140.9 roll_r -96.6 dy_l_mm -17.2 dy_r_mm 18.7 tip_mm 22.3 press_mm 3.2
+it   9 ( 700s) best -1.100 | tilt_l 20.8 tilt_r 20.4 roll_l -166.1 roll_r -160.5 dy_l_mm -17.9 dy_r_mm 19.7 tip_mm 23.4 press_mm 1.6
+it  10 ( 783s) best -1.100 | tilt_l 20.8 tilt_r 20.4 roll_l -166.1 roll_r -160.5 dy_l_mm -17.9 dy_r_mm 19.7 tip_mm 23.4 press_mm 1.6
+it  11 ( 868s) best -0.724 | tilt_l 22.2 tilt_r 20.0 roll_l -168.0 roll_r -108.9 dy_l_mm -18.1 dy_r_mm 19.6 tip_mm 26.0 press_mm 1.6
+it  12 ( 951s) best -0.724 | tilt_l 22.2 tilt_r 20.0 roll_l -168.0 roll_r -108.9 dy_l_mm -18.1 dy_r_mm 19.6 tip_mm 26.0 press_mm 1.6
+it  13 (1037s) best -0.724 | tilt_l 22.2 tilt_r 20.0 roll_l -168.0 roll_r -108.9 dy_l_mm -18.1 dy_r_mm 19.6 tip_mm 26.0 press_mm 1.6
+it  14 (1119s) best -0.724 | tilt_l 22.2 tilt_r 20.0 roll_l -168.0 roll_r -108.9 dy_l_mm -18.1 dy_r_mm 19.6 tip_mm 26.0 press_mm 1.6
+it  15 (1203s) best -0.529 | tilt_l 20.0 tilt_r 20.0 roll_l -169.8 roll_r -115.2 dy_l_mm -19.8 dy_r_mm 20.0 tip_mm 25.7 press_mm 1.5
+it  16 (1286s) best -0.529 | tilt_l 20.0 tilt_r 20.0 roll_l -169.8 roll_r -115.2 dy_l_mm -19.8 dy_r_mm 20.0 tip_mm 25.7 press_mm 1.5
+it  17 (1366s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  18 (5240s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  19 (5755s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  20 (6404s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  21 (6459s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  22 (6514s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  23 (6568s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  24 (6622s) best -0.524 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -114.3 dy_l_mm -20.0 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  25 (6674s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  26 (6728s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  27 (6781s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  28 (6835s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  29 (6888s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  30 (6942s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+it  31 (6995s) best -0.506 | tilt_l 20.0 tilt_r 20.0 roll_l -170.0 roll_r -116.1 dy_l_mm -19.9 dy_r_mm 20.0 tip_mm 26.0 press_mm 1.5
+cube +0.0,+0.0 cm yaw  +0 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '6mm@lift', 'meas:arm-arm': '5mm@carry'} | closest cmd:arm-arm 6 cmd:arm-camera 46 cmd:arm-box 12 meas:arm-arm 5 meas:arm-camera 46 meas:arm-box 9
+cube +1.5,+1.0 cm yaw  +6 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '5mm@hold', 'meas:arm-arm': '5mm@carry'} | closest cmd:arm-arm 5 cmd:arm-camera 46 cmd:arm-box 12 meas:arm-arm 5 meas:arm-camera 45 meas:arm-box 9
+cube -1.5,-1.0 cm yaw  -6 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '6mm@lift', 'cmd:arm-box': '12mm@squeeze', 'meas:arm-arm': '1mm@lower'} | closest cmd:arm-arm 6 cmd:arm-camera 49 cmd:arm-box 12 meas:arm-arm 1 meas:arm-camera 48 meas:arm-box 9
+cube +1.0,-1.5 cm yaw +10 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '6mm@lift', 'meas:arm-arm': '6mm@carry'} | closest cmd:arm-arm 6 cmd:arm-camera 38 cmd:arm-box 13 meas:arm-arm 6 meas:arm-camera 36 meas:arm-box 10
+cube -1.0,+1.5 cm yaw -10 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '5mm@squeeze', 'cmd:arm-box': '12mm@close', 'meas:arm-arm': '5mm@carry'} | closest cmd:arm-arm 5 cmd:arm-camera 50 cmd:arm-box 12 meas:arm-arm 5 meas:arm-camera 50 meas:arm-box 9
+cube +0.0,+0.0 cm yaw  +4 mu 0.35: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-arm': '6mm@lift', 'meas:arm-arm': '5mm@carry'} | closest cmd:arm-arm 6 cmd:arm-camera 46 cmd:arm-box 12 meas:arm-arm 5 meas:arm-camera 46 meas:arm-box 9
+{
+ "params": {
+  "tilt_l": 20.000033560914023,
+  "tilt_r": 20.00000000010675,
+  "roll_l": -169.99999689076245,
+  "roll_r": -116.1367648381097,
+  "dy_l_mm": -19.94059067025977,
+  "dy_r_mm": 19.999999999999993,
+  "tip_mm": 25.999999999995545,
+  "press_mm": 1.5000000001952032
+ },
+ "score": -0.5055359686897232
+}

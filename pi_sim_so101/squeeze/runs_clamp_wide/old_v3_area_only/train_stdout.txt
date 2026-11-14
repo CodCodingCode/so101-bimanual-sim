@@ -1,0 +1,2 @@
+17:05:47 steps    54000 level 0.00 (cube +-1.5 cm) last 120: success 0.97 clean 0.97 lifted 1.00 box tipped 0.00 [98s]
+  -> level 0.10: cube +-2.6 cm

@@ -1,0 +1,136 @@
+it   1 ( 170s) best 0.446 | tilt_l 23.9 tilt_r 12.9 roll_l 152.3 roll_r -92.8 dy_l_mm 20.6 dy_r_mm -6.2 tip_mm 28.0 press_mm 1.6 box_dy_mm -114.1
+it   2 ( 347s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   3 ( 523s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   4 ( 701s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   5 ( 878s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   6 (1052s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   7 (1224s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   8 (1395s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+Process SpawnPoolWorker-33:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-34:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-35:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-36:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/queues.py", line 377, in put
+    self._writer.send_bytes(obj)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe

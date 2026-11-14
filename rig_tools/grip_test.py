@@ -24,6 +24,7 @@ import numpy as np                      # noqa: E402
 from PIL import Image                   # noqa: E402
 
 import so101_real as R                  # noqa: E402
+import rt_control as RT   # noqa: E402  (min-jerk ramps at 100 Hz, 2026-11-13 motor rule)
 
 DT = 0.02
 STOP, GO = HERE / "STOP", HERE / "GO"
@@ -71,7 +72,7 @@ def main():
     def ramp(a, b, secs, phase):
         n = int(secs / DT)
         for k in range(1, n + 1):
-            tick(a + (b - a) * k / n, phase)
+            tick(a + (b - a) * RT.min_jerk(k / n), phase)
 
     def hold(c, secs, phase):
         for _ in range(int(secs / DT)):
@@ -131,9 +132,9 @@ def main():
             mid = raw.copy(); mid[0], mid[3], mid[4], mid[5] = rest[0], rest[3], rest[4], rest[5]
             for tgt in (mid, rest):
                 r0 = arm.read_raw()
-                for k in range(1, 126):
-                    arm.goal(np.round(r0 + (tgt - r0) * k / 125).astype(int))
-                    time.sleep(0.02)
+                for k in range(1, 251):
+                    arm.goal(np.round(r0 + (tgt - r0) * RT.min_jerk(k / 250)).astype(int))
+                    time.sleep(0.01)
             time.sleep(0.4)
         finally:
             arm.torque(False)

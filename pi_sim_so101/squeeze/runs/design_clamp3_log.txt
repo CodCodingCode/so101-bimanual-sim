@@ -1,0 +1,59 @@
+it   1 (  60s) best -0.932 | tilt_l 36.0 tilt_r 31.9 roll_l 128.9 roll_r -104.3 dy_l_mm 3.7 dy_r_mm 1.6 tip_mm 12.4 press_mm 2.3 box_dy_mm -105.0
+it   2 ( 121s) best -0.932 | tilt_l 36.0 tilt_r 31.9 roll_l 128.9 roll_r -104.3 dy_l_mm 3.7 dy_r_mm 1.6 tip_mm 12.4 press_mm 2.3 box_dy_mm -105.0
+it   3 ( 180s) best -0.932 | tilt_l 36.0 tilt_r 31.9 roll_l 128.9 roll_r -104.3 dy_l_mm 3.7 dy_r_mm 1.6 tip_mm 12.4 press_mm 2.3 box_dy_mm -105.0
+it   4 ( 239s) best -0.932 | tilt_l 36.0 tilt_r 31.9 roll_l 128.9 roll_r -104.3 dy_l_mm 3.7 dy_r_mm 1.6 tip_mm 12.4 press_mm 2.3 box_dy_mm -105.0
+it   5 ( 295s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it   6 ( 351s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it   7 ( 410s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it   8 ( 469s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it   9 ( 526s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it  10 ( 584s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it  11 ( 641s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it  12 ( 699s) best -0.303 | tilt_l 26.2 tilt_r 12.8 roll_l 62.8 roll_r -76.1 dy_l_mm 13.7 dy_r_mm 15.1 tip_mm 18.3 press_mm 2.9 box_dy_mm -112.6
+it  13 ( 755s) best -0.136 | tilt_l 39.6 tilt_r 16.8 roll_l 146.6 roll_r -121.8 dy_l_mm 24.5 dy_r_mm 28.2 tip_mm 23.3 press_mm 1.7 box_dy_mm -116.5
+it  14 ( 811s) best -0.136 | tilt_l 39.6 tilt_r 16.8 roll_l 146.6 roll_r -121.8 dy_l_mm 24.5 dy_r_mm 28.2 tip_mm 23.3 press_mm 1.7 box_dy_mm -116.5
+it  15 ( 868s) best -0.107 | tilt_l 25.6 tilt_r 20.5 roll_l 127.2 roll_r -143.7 dy_l_mm 22.5 dy_r_mm 16.0 tip_mm 20.4 press_mm 1.6 box_dy_mm -113.2
+it  16 ( 925s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  17 ( 981s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  18 (1036s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  19 (1091s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  20 (1148s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  21 (1201s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  22 (1254s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  23 (1307s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  24 (1360s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  25 (1411s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  26 (1465s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  27 (1517s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  28 (1570s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  29 (1624s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  30 (1678s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  31 (1732s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  32 (1785s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  33 (1837s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  34 (1889s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  35 (1940s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  36 (1993s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  37 (2045s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  38 (2097s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+it  39 (2149s) best 0.341 | tilt_l 29.2 tilt_r 17.7 roll_l 135.4 roll_r -93.4 dy_l_mm 18.1 dy_r_mm 19.0 tip_mm 24.8 press_mm 1.6 box_dy_mm -124.4
+cube +0.0,+0.0 cm yaw  +0 mu 0.4: lifted 37.2 mm, tilt 11.3, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@lift'} | closest cmd:camera-mount 40 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 23 meas:camera-mount 21 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 23
+cube +1.5,+1.0 cm yaw  +6 mu 0.4: lifted 37.2 mm, tilt 12.2, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@squeeze'} | closest cmd:camera-mount 41 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 14 meas:camera-mount 28 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 14
+cube -1.5,-1.0 cm yaw  -6 mu 0.4: lifted 37.2 mm, tilt  9.3, in box True, contacts {'arm-arm': 32}, under clearance target {'cmd:arm-arm': '3mm@lift', 'cmd:arm-box': '5mm@carry', 'meas:arm-arm': '0mm@lower', 'meas:arm-box': '5mm@carry'} | closest cmd:camera-mount 39 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 5 meas:camera-mount 23 meas:arm-arm 0 meas:arm-camera 50 meas:arm-box 5
+cube +1.0,-1.5 cm yaw +10 mu 0.4: lifted 37.2 mm, tilt 12.6, in box True, contacts none, under clearance target {'cmd:arm-arm': '4mm@lift', 'cmd:arm-box': '7mm@carry'} | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 48 cmd:arm-box 7 meas:camera-mount 24 meas:arm-arm 10 meas:arm-camera 49 meas:arm-box 8
+cube -1.0,+1.5 cm yaw -10 mu 0.4: lifted 37.9 mm, tilt 10.7, in box True, contacts none, under clearance target {'cmd:arm-arm': '2mm@raise'} | closest cmd:camera-mount 39 cmd:arm-arm 2 cmd:arm-camera 50 cmd:arm-box 21 meas:camera-mount 22 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 21
+cube +0.0,+0.0 cm yaw  +4 mu 0.35: lifted 37.4 mm, tilt 11.4, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@squeeze'} | closest cmd:camera-mount 40 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 23 meas:camera-mount 21 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 23
+{
+ "params": {
+  "tilt_l": 29.221145511145888,
+  "tilt_r": 17.656729914942012,
+  "roll_l": 135.3668266995478,
+  "roll_r": -93.44333759631449,
+  "dy_l_mm": 18.081589048085796,
+  "dy_r_mm": 18.97740040094743,
+  "tip_mm": 24.76200801859582,
+  "press_mm": 1.5652768458498478,
+  "box_dy_mm": -124.40766400206329
+ },
+ "score": 0.34146762243979706
+}

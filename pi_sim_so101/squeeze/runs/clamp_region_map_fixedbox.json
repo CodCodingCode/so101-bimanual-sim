@@ -1,0 +1,3137 @@
+[
+ {
+  "x": -0.1,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 134,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.8,
+    "arm-arm": 3.0,
+    "arm-camera": 50.0,
+    "arm-box": 2.1
+   },
+   "meas": {
+    "camera-mount": 37.6,
+    "arm-arm": 2.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-arm",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 8.8
+ },
+ {
+  "x": -0.08,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 63,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.0,
+    "arm-arm": 4.5,
+    "arm-camera": 50.0,
+    "arm-box": 2.5
+   },
+   "meas": {
+    "camera-mount": 38.8,
+    "arm-arm": 4.2,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 8.8
+ },
+ {
+  "x": -0.06,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 60,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.0,
+    "arm-arm": 5.3,
+    "arm-camera": 50.0,
+    "arm-box": 2.9
+   },
+   "meas": {
+    "camera-mount": 30.6,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 8.5
+ },
+ {
+  "x": -0.04,
+  "y": -0.042800000000000005,
+  "in_box": true,
+  "lifted_mm": 2.8399884126983252,
+  "contacts": 118,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.0,
+    "arm-arm": 6.1,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 28.3,
+    "arm-arm": 5.8,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 8.7
+ },
+ {
+  "x": -0.02,
+  "y": -0.042800000000000005,
+  "in_box": true,
+  "lifted_mm": 2.816730680765246,
+  "contacts": 70,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.9,
+    "arm-arm": 5.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 25.2,
+    "arm-arm": 6.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 9.6
+ },
+ {
+  "x": 0.0,
+  "y": -0.042800000000000005,
+  "in_box": true,
+  "lifted_mm": 2.8168517984565806,
+  "contacts": 50,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.6,
+    "arm-arm": 7.2,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 23.9,
+    "arm-arm": 7.8,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 10.7
+ },
+ {
+  "x": 0.02,
+  "y": -0.042800000000000005,
+  "in_box": true,
+  "lifted_mm": 2.815671962233229,
+  "contacts": 50,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.3,
+    "arm-arm": 8.4,
+    "arm-camera": 50.0,
+    "arm-box": 1.9
+   },
+   "meas": {
+    "camera-mount": 38.1,
+    "arm-arm": 9.1,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 11.9
+ },
+ {
+  "x": 0.04,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 2.761506465873382,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 46.6,
+    "arm-arm": 11.8,
+    "arm-camera": 50.0,
+    "arm-box": 1.8
+   },
+   "meas": {
+    "camera-mount": 46.2,
+    "arm-arm": 11.4,
+    "arm-camera": 50.0,
+    "arm-box": 1.2
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 13.2
+ },
+ {
+  "x": 0.06,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 48.3,
+    "arm-arm": 13.4,
+    "arm-camera": 50.0,
+    "arm-box": 1.9
+   },
+   "meas": {
+    "camera-mount": 47.7,
+    "arm-arm": 13.0,
+    "arm-camera": 50.0,
+    "arm-box": 2.1
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box"
+  ],
+  "ik_err_mm": 14.7
+ },
+ {
+  "x": 0.08,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.0,
+    "arm-arm": 15.3,
+    "arm-camera": 50.0,
+    "arm-box": 2.0
+   },
+   "meas": {
+    "camera-mount": 37.9,
+    "arm-arm": 15.3,
+    "arm-camera": 50.0,
+    "arm-box": 2.3
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box"
+  ],
+  "ik_err_mm": 19.2
+ },
+ {
+  "x": 0.1,
+  "y": -0.042800000000000005,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.2,
+    "arm-arm": 15.0,
+    "arm-camera": 48.6,
+    "arm-box": 2.1
+   },
+   "meas": {
+    "camera-mount": 37.2,
+    "arm-arm": 15.0,
+    "arm-camera": 49.1,
+    "arm-box": 2.3
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box"
+  ],
+  "ik_err_mm": 19.1
+ },
+ {
+  "x": -0.1,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.5,
+    "arm-arm": 3.7,
+    "arm-camera": 50.0,
+    "arm-box": 17.2
+   },
+   "meas": {
+    "camera-mount": 38.3,
+    "arm-arm": 3.4,
+    "arm-camera": 50.0,
+    "arm-box": 10.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 8.8
+ },
+ {
+  "x": -0.08,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.9,
+    "arm-arm": 5.3,
+    "arm-camera": 50.0,
+    "arm-box": 17.5
+   },
+   "meas": {
+    "camera-mount": 39.6,
+    "arm-arm": 5.0,
+    "arm-camera": 50.0,
+    "arm-box": 11.1
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 8.9
+ },
+ {
+  "x": -0.06,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.8,
+    "arm-arm": 6.2,
+    "arm-camera": 50.0,
+    "arm-box": 6.3
+   },
+   "meas": {
+    "camera-mount": 35.2,
+    "arm-arm": 5.9,
+    "arm-camera": 50.0,
+    "arm-box": 6.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 8.7
+ },
+ {
+  "x": -0.04,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 53,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.8,
+    "arm-arm": 6.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 32.1,
+    "arm-arm": 6.3,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 9.4
+ },
+ {
+  "x": -0.02,
+  "y": -0.0228,
+  "in_box": true,
+  "lifted_mm": 37.03373811490611,
+  "contacts": 57,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.0,
+    "arm-arm": 5.3,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 27.0,
+    "arm-arm": 8.4,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 10.4
+ },
+ {
+  "x": 0.0,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 103,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.7,
+    "arm-arm": 6.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 25.1,
+    "arm-arm": 7.3,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 11.4
+ },
+ {
+  "x": 0.02,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 31.731655319485345,
+  "contacts": 87,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.3,
+    "arm-arm": 7.8,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 38.8,
+    "arm-arm": 8.4,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 12.5
+ },
+ {
+  "x": 0.04,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 108,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 46.6,
+    "arm-arm": 11.6,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 46.4,
+    "arm-arm": 11.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 13.8
+ },
+ {
+  "x": 0.06,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 90,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.7,
+    "arm-arm": 15.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 39.8,
+    "arm-arm": 15.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 18.6
+ },
+ {
+  "x": 0.08,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 87,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.9,
+    "arm-arm": 15.6,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 38.9,
+    "arm-arm": 15.5,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 19.0
+ },
+ {
+  "x": 0.1,
+  "y": -0.0228,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 87,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.1,
+    "arm-arm": 15.3,
+    "arm-camera": 49.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 38.1,
+    "arm-arm": 15.3,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 19.1
+ },
+ {
+  "x": -0.1,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.2,
+    "arm-arm": 4.3,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 38.9,
+    "arm-arm": 4.0,
+    "arm-camera": 50.0,
+    "arm-box": 25.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 8.8
+ },
+ {
+  "x": -0.08,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.6,
+    "arm-arm": 5.9,
+    "arm-camera": 50.0,
+    "arm-box": 21.9
+   },
+   "meas": {
+    "camera-mount": 40.3,
+    "arm-arm": 5.6,
+    "arm-camera": 50.0,
+    "arm-box": 21.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 8.9
+ },
+ {
+  "x": -0.06,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.5,
+    "arm-arm": 6.9,
+    "arm-camera": 50.0,
+    "arm-box": 6.8
+   },
+   "meas": {
+    "camera-mount": 39.1,
+    "arm-arm": 6.3,
+    "arm-camera": 50.0,
+    "arm-box": 5.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 9.3
+ },
+ {
+  "x": -0.04,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 53,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.3,
+    "arm-arm": 7.6,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 33.9,
+    "arm-arm": 6.8,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 10.1
+ },
+ {
+  "x": -0.02,
+  "y": -0.002800000000000004,
+  "in_box": true,
+  "lifted_mm": 35.949024882500254,
+  "contacts": 52,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.0,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 28.2,
+    "arm-arm": 9.4,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 11.0
+ },
+ {
+  "x": 0.0,
+  "y": -0.002800000000000004,
+  "in_box": true,
+  "lifted_mm": 32.955762981179255,
+  "contacts": 92,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.6,
+    "arm-arm": 6.1,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 26.9,
+    "arm-arm": 9.2,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 12.0
+ },
+ {
+  "x": 0.02,
+  "y": -0.002800000000000004,
+  "in_box": true,
+  "lifted_mm": 33.17691297349805,
+  "contacts": 81,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.1,
+    "arm-arm": 7.1,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 38.1,
+    "arm-arm": 8.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 13.1
+ },
+ {
+  "x": 0.04,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 81,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 46.1,
+    "arm-arm": 10.7,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 46.4,
+    "arm-arm": 11.2,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 14.3
+ },
+ {
+  "x": 0.06,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 81,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.6,
+    "arm-arm": 16.0,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 39.5,
+    "arm-arm": 15.4,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 18.4
+ },
+ {
+  "x": 0.08,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 81,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.7,
+    "arm-arm": 15.8,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 39.8,
+    "arm-arm": 15.6,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 18.8
+ },
+ {
+  "x": 0.1,
+  "y": -0.002800000000000004,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 80,
+  "kinds": [
+   "arm-box"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.0,
+    "arm-arm": 15.5,
+    "arm-camera": 49.0,
+    "arm-box": 0.0
+   },
+   "meas": {
+    "camera-mount": 39.0,
+    "arm-arm": 15.4,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-box",
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 19.0
+ },
+ {
+  "x": -0.1,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.8,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 39.5,
+    "arm-arm": 4.6,
+    "arm-camera": 50.0,
+    "arm-box": 30.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 15.8
+ },
+ {
+  "x": -0.08,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.2,
+    "arm-arm": 6.5,
+    "arm-camera": 50.0,
+    "arm-box": 26.7
+   },
+   "meas": {
+    "camera-mount": 40.7,
+    "arm-arm": 6.0,
+    "arm-camera": 50.0,
+    "arm-box": 23.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 14.5
+ },
+ {
+  "x": -0.06,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.2,
+    "arm-arm": 7.4,
+    "arm-camera": 50.0,
+    "arm-box": 17.3
+   },
+   "meas": {
+    "camera-mount": 39.2,
+    "arm-arm": 6.6,
+    "arm-camera": 50.0,
+    "arm-box": 12.4
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 11.4
+ },
+ {
+  "x": -0.04,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.6,
+    "arm-arm": 7.7,
+    "arm-camera": 50.0,
+    "arm-box": 10.5
+   },
+   "meas": {
+    "camera-mount": 33.4,
+    "arm-arm": 7.3,
+    "arm-camera": 50.0,
+    "arm-box": 4.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 10.7
+ },
+ {
+  "x": -0.02,
+  "y": 0.017199999999999997,
+  "in_box": true,
+  "lifted_mm": 36.743279228557505,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.0,
+    "arm-arm": 4.4,
+    "arm-camera": 50.0,
+    "arm-box": 10.0
+   },
+   "meas": {
+    "camera-mount": 29.6,
+    "arm-arm": 9.9,
+    "arm-camera": 50.0,
+    "arm-box": 0.0
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 11.6
+ },
+ {
+  "x": 0.0,
+  "y": 0.017199999999999997,
+  "in_box": true,
+  "lifted_mm": 36.752616263058094,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.5,
+    "arm-arm": 5.5,
+    "arm-camera": 50.0,
+    "arm-box": 9.7
+   },
+   "meas": {
+    "camera-mount": 27.3,
+    "arm-arm": 10.0,
+    "arm-camera": 50.0,
+    "arm-box": 0.7
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 12.5
+ },
+ {
+  "x": 0.02,
+  "y": 0.017199999999999997,
+  "in_box": true,
+  "lifted_mm": 36.75763093222306,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.9,
+    "arm-arm": 6.4,
+    "arm-camera": 50.0,
+    "arm-box": 9.8
+   },
+   "meas": {
+    "camera-mount": 37.0,
+    "arm-arm": 10.2,
+    "arm-camera": 50.0,
+    "arm-box": 1.4
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-box"
+  ],
+  "ik_err_mm": 13.6
+ },
+ {
+  "x": 0.04,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 45.6,
+    "arm-arm": 9.6,
+    "arm-camera": 50.0,
+    "arm-box": 9.7
+   },
+   "meas": {
+    "camera-mount": 46.0,
+    "arm-arm": 10.2,
+    "arm-camera": 50.0,
+    "arm-box": 3.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 14.7
+ },
+ {
+  "x": 0.06,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.0,
+    "arm-arm": 15.2,
+    "arm-camera": 50.0,
+    "arm-box": 10.8
+   },
+   "meas": {
+    "camera-mount": 37.2,
+    "arm-arm": 14.8,
+    "arm-camera": 50.0,
+    "arm-box": 4.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.1
+ },
+ {
+  "x": 0.08,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.9,
+    "arm-arm": 15.6,
+    "arm-camera": 50.0,
+    "arm-box": 10.9
+   },
+   "meas": {
+    "camera-mount": 39.4,
+    "arm-arm": 15.3,
+    "arm-camera": 50.0,
+    "arm-box": 4.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.7
+ },
+ {
+  "x": 0.1,
+  "y": 0.017199999999999997,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.7,
+    "arm-arm": 15.7,
+    "arm-camera": 49.1,
+    "arm-box": 11.0
+   },
+   "meas": {
+    "camera-mount": 39.8,
+    "arm-arm": 15.6,
+    "arm-camera": 50.0,
+    "arm-box": 4.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.9
+ },
+ {
+  "x": -0.1,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.3,
+    "arm-arm": 5.5,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 40.1,
+    "arm-arm": 5.1,
+    "arm-camera": 50.0,
+    "arm-box": 23.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.1
+ },
+ {
+  "x": -0.08,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.8,
+    "arm-arm": 7.1,
+    "arm-camera": 50.0,
+    "arm-box": 31.1
+   },
+   "meas": {
+    "camera-mount": 41.0,
+    "arm-arm": 6.2,
+    "arm-camera": 50.0,
+    "arm-box": 24.4
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.5
+ },
+ {
+  "x": -0.06,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.7,
+    "arm-arm": 8.0,
+    "arm-camera": 50.0,
+    "arm-box": 28.6
+   },
+   "meas": {
+    "camera-mount": 41.9,
+    "arm-arm": 7.1,
+    "arm-camera": 50.0,
+    "arm-box": 23.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.7
+ },
+ {
+  "x": -0.04,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.7,
+    "arm-arm": 7.5,
+    "arm-camera": 50.0,
+    "arm-box": 23.3
+   },
+   "meas": {
+    "camera-mount": 35.8,
+    "arm-arm": 7.8,
+    "arm-camera": 50.0,
+    "arm-box": 16.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 21.6
+ },
+ {
+  "x": -0.02,
+  "y": 0.0372,
+  "in_box": true,
+  "lifted_mm": 36.38224221998241,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.0,
+    "arm-arm": 3.9,
+    "arm-camera": 50.0,
+    "arm-box": 22.9
+   },
+   "meas": {
+    "camera-mount": 30.1,
+    "arm-arm": 9.5,
+    "arm-camera": 50.0,
+    "arm-box": 13.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 12.8
+ },
+ {
+  "x": 0.0,
+  "y": 0.0372,
+  "in_box": true,
+  "lifted_mm": 36.89742924427453,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.4,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 22.5
+   },
+   "meas": {
+    "camera-mount": 27.7,
+    "arm-arm": 9.8,
+    "arm-camera": 50.0,
+    "arm-box": 13.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 13.0
+ },
+ {
+  "x": 0.02,
+  "y": 0.0372,
+  "in_box": true,
+  "lifted_mm": 36.806496163637654,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.6,
+    "arm-arm": 5.7,
+    "arm-camera": 50.0,
+    "arm-box": 22.1
+   },
+   "meas": {
+    "camera-mount": 37.4,
+    "arm-arm": 9.9,
+    "arm-camera": 50.0,
+    "arm-box": 14.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 14.0
+ },
+ {
+  "x": 0.04,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 27.6,
+    "arm-arm": 12.7,
+    "arm-camera": 50.0,
+    "arm-box": 19.7
+   },
+   "meas": {
+    "camera-mount": 28.9,
+    "arm-arm": 13.0,
+    "arm-camera": 50.0,
+    "arm-box": 15.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.7
+ },
+ {
+  "x": 0.06,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 33.0,
+    "arm-arm": 14.1,
+    "arm-camera": 50.0,
+    "arm-box": 23.8
+   },
+   "meas": {
+    "camera-mount": 33.7,
+    "arm-arm": 13.9,
+    "arm-camera": 50.0,
+    "arm-box": 17.2
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.0
+ },
+ {
+  "x": 0.08,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 36.0,
+    "arm-arm": 14.6,
+    "arm-camera": 50.0,
+    "arm-box": 24.0
+   },
+   "meas": {
+    "camera-mount": 36.8,
+    "arm-arm": 14.7,
+    "arm-camera": 50.0,
+    "arm-box": 17.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.6
+ },
+ {
+  "x": 0.1,
+  "y": 0.0372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.8,
+    "arm-arm": 15.2,
+    "arm-camera": 49.1,
+    "arm-box": 24.1
+   },
+   "meas": {
+    "camera-mount": 39.4,
+    "arm-arm": 15.2,
+    "arm-camera": 50.0,
+    "arm-box": 17.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.9
+ },
+ {
+  "x": -0.1,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.9,
+    "arm-arm": 6.0,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 40.2,
+    "arm-arm": 5.2,
+    "arm-camera": 50.0,
+    "arm-box": 22.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.7
+ },
+ {
+  "x": -0.08,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.3,
+    "arm-arm": 7.6,
+    "arm-camera": 50.0,
+    "arm-box": 31.1
+   },
+   "meas": {
+    "camera-mount": 41.5,
+    "arm-arm": 6.7,
+    "arm-camera": 50.0,
+    "arm-box": 22.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.3
+ },
+ {
+  "x": -0.06,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.3,
+    "arm-arm": 8.5,
+    "arm-camera": 50.0,
+    "arm-box": 30.6
+   },
+   "meas": {
+    "camera-mount": 42.5,
+    "arm-arm": 7.6,
+    "arm-camera": 50.0,
+    "arm-box": 23.4
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.8
+ },
+ {
+  "x": -0.04,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.0,
+    "arm-arm": 7.9,
+    "arm-camera": 50.0,
+    "arm-box": 30.0
+   },
+   "meas": {
+    "camera-mount": 36.0,
+    "arm-arm": 7.4,
+    "arm-camera": 50.0,
+    "arm-box": 27.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.7
+ },
+ {
+  "x": -0.02,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 37.012819946810204,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 40.9,
+    "arm-arm": 3.5,
+    "arm-camera": 50.0,
+    "arm-box": 29.5
+   },
+   "meas": {
+    "camera-mount": 30.5,
+    "arm-arm": 8.6,
+    "arm-camera": 50.0,
+    "arm-box": 24.2
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.0
+ },
+ {
+  "x": 0.0,
+  "y": 0.0572,
+  "in_box": true,
+  "lifted_mm": 36.83648080432006,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.3,
+    "arm-arm": 4.4,
+    "arm-camera": 50.0,
+    "arm-box": 28.6
+   },
+   "meas": {
+    "camera-mount": 28.0,
+    "arm-arm": 9.5,
+    "arm-camera": 50.0,
+    "arm-box": 22.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 29.8
+ },
+ {
+  "x": 0.02,
+  "y": 0.0572,
+  "in_box": true,
+  "lifted_mm": 36.81031628847049,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.4,
+    "arm-arm": 5.2,
+    "arm-camera": 50.0,
+    "arm-box": 27.7
+   },
+   "meas": {
+    "camera-mount": 37.8,
+    "arm-arm": 9.6,
+    "arm-camera": 50.0,
+    "arm-box": 22.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 24.9
+ },
+ {
+  "x": 0.04,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 24.0,
+    "arm-arm": 11.7,
+    "arm-camera": 50.0,
+    "arm-box": 26.5
+   },
+   "meas": {
+    "camera-mount": 25.1,
+    "arm-arm": 12.0,
+    "arm-camera": 50.0,
+    "arm-box": 21.4
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.5
+ },
+ {
+  "x": 0.06,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 29.0,
+    "arm-arm": 13.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.1
+   },
+   "meas": {
+    "camera-mount": 29.6,
+    "arm-arm": 12.8,
+    "arm-camera": 50.0,
+    "arm-box": 20.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 17.8
+ },
+ {
+  "x": 0.08,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 33.3,
+    "arm-arm": 13.4,
+    "arm-camera": 50.0,
+    "arm-box": 25.4
+   },
+   "meas": {
+    "camera-mount": 34.3,
+    "arm-arm": 13.6,
+    "arm-camera": 50.0,
+    "arm-box": 20.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.5
+ },
+ {
+  "x": 0.1,
+  "y": 0.0572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 35.0,
+    "arm-arm": 14.0,
+    "arm-camera": 49.1,
+    "arm-box": 24.8
+   },
+   "meas": {
+    "camera-mount": 36.6,
+    "arm-arm": 14.7,
+    "arm-camera": 50.0,
+    "arm-box": 19.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 18.8
+ },
+ {
+  "x": -0.1,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.3,
+    "arm-arm": 6.5,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 40.6,
+    "arm-arm": 5.7,
+    "arm-camera": 50.0,
+    "arm-box": 22.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.4
+ },
+ {
+  "x": -0.08,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.8,
+    "arm-arm": 8.0,
+    "arm-camera": 50.0,
+    "arm-box": 31.2
+   },
+   "meas": {
+    "camera-mount": 42.0,
+    "arm-arm": 7.1,
+    "arm-camera": 50.0,
+    "arm-box": 22.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.0
+ },
+ {
+  "x": -0.06,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.5,
+    "arm-arm": 8.9,
+    "arm-camera": 50.0,
+    "arm-box": 30.7
+   },
+   "meas": {
+    "camera-mount": 43.0,
+    "arm-arm": 8.1,
+    "arm-camera": 50.0,
+    "arm-box": 23.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.4
+ },
+ {
+  "x": -0.04,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.1,
+    "arm-arm": 7.4,
+    "arm-camera": 50.0,
+    "arm-box": 30.2
+   },
+   "meas": {
+    "camera-mount": 36.2,
+    "arm-arm": 7.9,
+    "arm-camera": 50.0,
+    "arm-box": 29.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.2
+ },
+ {
+  "x": -0.02,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 37.510486664288365,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.3,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.7
+   },
+   "meas": {
+    "camera-mount": 30.9,
+    "arm-arm": 8.2,
+    "arm-camera": 50.0,
+    "arm-box": 25.4
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm"
+  ],
+  "ik_err_mm": 30.8
+ },
+ {
+  "x": 0.0,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 38.289516110251434,
+  "contacts": 1,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.6,
+    "arm-arm": 2.3,
+    "arm-camera": 50.0,
+    "arm-box": 29.0
+   },
+   "meas": {
+    "camera-mount": 28.3,
+    "arm-arm": 8.4,
+    "arm-camera": 50.0,
+    "arm-box": 22.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.1
+ },
+ {
+  "x": 0.02,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 38.417728179267854,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.9,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 28.1
+   },
+   "meas": {
+    "camera-mount": 38.1,
+    "arm-arm": 8.5,
+    "arm-camera": 50.0,
+    "arm-box": 22.3
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm"
+  ],
+  "ik_err_mm": 31.2
+ },
+ {
+  "x": 0.04,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 20.8,
+    "arm-arm": 10.9,
+    "arm-camera": 50.0,
+    "arm-box": 26.4
+   },
+   "meas": {
+    "camera-mount": 21.9,
+    "arm-arm": 11.2,
+    "arm-camera": 50.0,
+    "arm-box": 21.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.5
+ },
+ {
+  "x": 0.06,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 25.5,
+    "arm-arm": 12.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.1
+   },
+   "meas": {
+    "camera-mount": 26.0,
+    "arm-arm": 11.8,
+    "arm-camera": 50.0,
+    "arm-box": 21.1
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.3
+ },
+ {
+  "x": 0.08,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 28.9,
+    "arm-arm": 12.3,
+    "arm-camera": 50.0,
+    "arm-box": 25.7
+   },
+   "meas": {
+    "camera-mount": 30.1,
+    "arm-arm": 12.5,
+    "arm-camera": 50.0,
+    "arm-box": 20.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 30.3
+ },
+ {
+  "x": 0.1,
+  "y": 0.07719999999999999,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 32.3,
+    "arm-arm": 12.7,
+    "arm-camera": 49.1,
+    "arm-box": 25.3
+   },
+   "meas": {
+    "camera-mount": 34.2,
+    "arm-arm": 13.6,
+    "arm-camera": 50.0,
+    "arm-box": 20.2
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.2
+ },
+ {
+  "x": -0.1,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 41.8,
+    "arm-arm": 6.9,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 41.0,
+    "arm-arm": 6.1,
+    "arm-camera": 50.0,
+    "arm-box": 22.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.1
+ },
+ {
+  "x": -0.08,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.2,
+    "arm-arm": 8.4,
+    "arm-camera": 50.0,
+    "arm-box": 31.3
+   },
+   "meas": {
+    "camera-mount": 42.4,
+    "arm-arm": 7.6,
+    "arm-camera": 50.0,
+    "arm-box": 22.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.0
+ },
+ {
+  "x": -0.06,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.8,
+    "arm-arm": 9.2,
+    "arm-camera": 50.0,
+    "arm-box": 30.8
+   },
+   "meas": {
+    "camera-mount": 43.4,
+    "arm-arm": 8.1,
+    "arm-camera": 50.0,
+    "arm-box": 23.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.0
+ },
+ {
+  "x": -0.04,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.3,
+    "arm-arm": 7.9,
+    "arm-camera": 50.0,
+    "arm-box": 30.3
+   },
+   "meas": {
+    "camera-mount": 36.4,
+    "arm-arm": 3.1,
+    "arm-camera": 50.0,
+    "arm-box": 29.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 29.8
+ },
+ {
+  "x": -0.02,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 36.27600801227542,
+  "contacts": 12,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.9,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.8
+   },
+   "meas": {
+    "camera-mount": 31.3,
+    "arm-arm": 4.5,
+    "arm-camera": 50.0,
+    "arm-box": 26.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm"
+  ],
+  "ik_err_mm": 30.5
+ },
+ {
+  "x": 0.0,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 37.29230188283243,
+  "contacts": 19,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.9,
+    "arm-arm": 0.3,
+    "arm-camera": 50.0,
+    "arm-box": 29.3
+   },
+   "meas": {
+    "camera-mount": 28.5,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 23.1
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm"
+  ],
+  "ik_err_mm": 30.8
+ },
+ {
+  "x": 0.02,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 8,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 12.3,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 26.6
+   },
+   "meas": {
+    "camera-mount": 13.8,
+    "arm-arm": 4.9,
+    "arm-camera": 50.0,
+    "arm-box": 22.6
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.1
+ },
+ {
+  "x": 0.04,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 1,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 17.7,
+    "arm-arm": 10.4,
+    "arm-camera": 50.0,
+    "arm-box": 26.3
+   },
+   "meas": {
+    "camera-mount": 18.2,
+    "arm-arm": 10.6,
+    "arm-camera": 50.0,
+    "arm-box": 22.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.7
+ },
+ {
+  "x": 0.06,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 22.4,
+    "arm-arm": 11.1,
+    "arm-camera": 50.0,
+    "arm-box": 26.0
+   },
+   "meas": {
+    "camera-mount": 22.8,
+    "arm-arm": 10.9,
+    "arm-camera": 50.0,
+    "arm-box": 21.4
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.4
+ },
+ {
+  "x": 0.08,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 25.2,
+    "arm-arm": 11.2,
+    "arm-camera": 50.0,
+    "arm-box": 25.7
+   },
+   "meas": {
+    "camera-mount": 26.3,
+    "arm-arm": 11.4,
+    "arm-camera": 50.0,
+    "arm-box": 20.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.2
+ },
+ {
+  "x": 0.1,
+  "y": 0.0972,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 28.2,
+    "arm-arm": 11.6,
+    "arm-camera": 49.2,
+    "arm-box": 25.4
+   },
+   "meas": {
+    "camera-mount": 30.0,
+    "arm-arm": 12.5,
+    "arm-camera": 50.0,
+    "arm-box": 20.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 31.9
+ },
+ {
+  "x": -0.1,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 10,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.2,
+    "arm-arm": 7.3,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 41.6,
+    "arm-arm": 6.7,
+    "arm-camera": 50.0,
+    "arm-box": 22.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 64.6
+ },
+ {
+  "x": -0.08,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 43.6,
+    "arm-arm": 8.8,
+    "arm-camera": 50.0,
+    "arm-box": 31.3
+   },
+   "meas": {
+    "camera-mount": 43.0,
+    "arm-arm": 7.8,
+    "arm-camera": 50.0,
+    "arm-box": 22.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 66.0
+ },
+ {
+  "x": -0.06,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.7,
+    "arm-arm": 9.9,
+    "arm-camera": 50.0,
+    "arm-box": 30.9
+   },
+   "meas": {
+    "camera-mount": 44.1,
+    "arm-arm": 3.9,
+    "arm-camera": 50.0,
+    "arm-box": 23.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 67.7
+ },
+ {
+  "x": -0.04,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.7,
+    "arm-arm": 4.1,
+    "arm-camera": 50.0,
+    "arm-box": 30.4
+   },
+   "meas": {
+    "camera-mount": 36.5,
+    "arm-arm": 1.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.8
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 58.1
+ },
+ {
+  "x": -0.02,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 37.4650308683867,
+  "contacts": 48,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.2,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 30.0
+   },
+   "meas": {
+    "camera-mount": 31.5,
+    "arm-arm": 2.2,
+    "arm-camera": 50.0,
+    "arm-box": 26.6
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 53.4
+ },
+ {
+  "x": 0.0,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 35.84797543190691,
+  "contacts": 49,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.4,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.6
+   },
+   "meas": {
+    "camera-mount": 28.7,
+    "arm-arm": 2.3,
+    "arm-camera": 50.0,
+    "arm-box": 24.4
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 30.5
+ },
+ {
+  "x": 0.02,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 21,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 11.3,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.5
+   },
+   "meas": {
+    "camera-mount": 12.3,
+    "arm-arm": 0.8,
+    "arm-camera": 50.0,
+    "arm-box": 22.8
+   }
+  },
+  "guard_would_stop": [
+   "cmd:camera-mount",
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 33.5
+ },
+ {
+  "x": 0.04,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 6,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 12.4,
+    "arm-arm": 3.3,
+    "arm-camera": 50.0,
+    "arm-box": 26.2
+   },
+   "meas": {
+    "camera-mount": 14.3,
+    "arm-arm": 4.6,
+    "arm-camera": 50.0,
+    "arm-box": 22.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.0
+ },
+ {
+  "x": 0.06,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 5,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 19.4,
+    "arm-arm": 12.3,
+    "arm-camera": 50.0,
+    "arm-box": 25.9
+   },
+   "meas": {
+    "camera-mount": 19.7,
+    "arm-arm": 11.5,
+    "arm-camera": 50.0,
+    "arm-box": 21.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.7
+ },
+ {
+  "x": 0.08,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 22,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 22.6,
+    "arm-arm": 10.9,
+    "arm-camera": 50.0,
+    "arm-box": 25.7
+   },
+   "meas": {
+    "camera-mount": 23.6,
+    "arm-arm": 11.1,
+    "arm-camera": 50.0,
+    "arm-box": 21.2
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.4
+ },
+ {
+  "x": 0.1,
+  "y": 0.1172,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 27,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 25.3,
+    "arm-arm": 11.1,
+    "arm-camera": 49.2,
+    "arm-box": 25.4
+   },
+   "meas": {
+    "camera-mount": 27.0,
+    "arm-arm": 12.0,
+    "arm-camera": 50.0,
+    "arm-box": 20.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.0
+ },
+ {
+  "x": -0.1,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 1,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.6,
+    "arm-arm": 7.7,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 42.0,
+    "arm-arm": 7.1,
+    "arm-camera": 50.0,
+    "arm-box": 22.8
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 66.1
+ },
+ {
+  "x": -0.08,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.0,
+    "arm-arm": 8.9,
+    "arm-camera": 50.0,
+    "arm-box": 31.4
+   },
+   "meas": {
+    "camera-mount": 43.4,
+    "arm-arm": 7.7,
+    "arm-camera": 50.0,
+    "arm-box": 23.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 72.3
+ },
+ {
+  "x": -0.06,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 45.1,
+    "arm-arm": 10.0,
+    "arm-camera": 50.0,
+    "arm-box": 30.9
+   },
+   "meas": {
+    "camera-mount": 44.5,
+    "arm-arm": 4.2,
+    "arm-camera": 50.0,
+    "arm-box": 23.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 68.7
+ },
+ {
+  "x": -0.04,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 45.0,
+    "arm-arm": 4.5,
+    "arm-camera": 50.0,
+    "arm-box": 30.5
+   },
+   "meas": {
+    "camera-mount": 36.5,
+    "arm-arm": 1.2,
+    "arm-camera": 50.0,
+    "arm-box": 29.9
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 58.9
+ },
+ {
+  "x": -0.02,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 24,
+  "kinds": [
+   "arm-arm",
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 37.7,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 30.1
+   },
+   "meas": {
+    "camera-mount": 31.8,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 28.1
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 54.6
+ },
+ {
+  "x": 0.0,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 39.4,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.7
+   },
+   "meas": {
+    "camera-mount": 28.9,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 25.3
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 30.3
+ },
+ {
+  "x": 0.02,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 3,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 11.0,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.5
+   },
+   "meas": {
+    "camera-mount": 11.9,
+    "arm-arm": 0.6,
+    "arm-camera": 50.0,
+    "arm-box": 23.0
+   }
+  },
+  "guard_would_stop": [
+   "cmd:camera-mount",
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 33.9
+ },
+ {
+  "x": 0.04,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 5,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 12.0,
+    "arm-arm": 3.2,
+    "arm-camera": 50.0,
+    "arm-box": 26.2
+   },
+   "meas": {
+    "camera-mount": 13.9,
+    "arm-arm": 4.4,
+    "arm-camera": 50.0,
+    "arm-box": 22.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.2
+ },
+ {
+  "x": 0.06,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 4,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 19.2,
+    "arm-arm": 12.3,
+    "arm-camera": 50.0,
+    "arm-box": 25.9
+   },
+   "meas": {
+    "camera-mount": 19.3,
+    "arm-arm": 11.6,
+    "arm-camera": 50.0,
+    "arm-box": 22.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.0
+ },
+ {
+  "x": 0.08,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 18,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 22.2,
+    "arm-arm": 11.3,
+    "arm-camera": 50.0,
+    "arm-box": 25.6
+   },
+   "meas": {
+    "camera-mount": 23.3,
+    "arm-arm": 11.5,
+    "arm-camera": 50.0,
+    "arm-box": 21.5
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.5
+ },
+ {
+  "x": 0.1,
+  "y": 0.1372,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 24,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 25.0,
+    "arm-arm": 11.6,
+    "arm-camera": 49.2,
+    "arm-box": 25.4
+   },
+   "meas": {
+    "camera-mount": 26.7,
+    "arm-arm": 12.4,
+    "arm-camera": 50.0,
+    "arm-box": 21.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.0
+ },
+ {
+  "x": -0.1,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 42.9,
+    "arm-arm": 8.0,
+    "arm-camera": 50.0,
+    "arm-box": 31.6
+   },
+   "meas": {
+    "camera-mount": 42.3,
+    "arm-arm": 7.4,
+    "arm-camera": 50.0,
+    "arm-box": 22.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 66.3
+ },
+ {
+  "x": -0.08,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 44.3,
+    "arm-arm": 9.0,
+    "arm-camera": 50.0,
+    "arm-box": 31.4
+   },
+   "meas": {
+    "camera-mount": 43.7,
+    "arm-arm": 7.8,
+    "arm-camera": 50.0,
+    "arm-box": 23.0
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 72.1
+ },
+ {
+  "x": -0.06,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 45.4,
+    "arm-arm": 10.1,
+    "arm-camera": 50.0,
+    "arm-box": 31.0
+   },
+   "meas": {
+    "camera-mount": 44.8,
+    "arm-arm": 4.5,
+    "arm-camera": 50.0,
+    "arm-box": 23.9
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 67.8
+ },
+ {
+  "x": -0.04,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 0,
+  "kinds": [],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 45.2,
+    "arm-arm": 4.7,
+    "arm-camera": 50.0,
+    "arm-box": 30.6
+   },
+   "meas": {
+    "camera-mount": 36.4,
+    "arm-arm": 1.2,
+    "arm-camera": 50.0,
+    "arm-box": 29.9
+   }
+  },
+  "guard_would_stop": [
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 60.7
+ },
+ {
+  "x": -0.02,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 22,
+  "kinds": [
+   "arm-arm"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 38.1,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 30.2
+   },
+   "meas": {
+    "camera-mount": 32.0,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 29.3
+   }
+  },
+  "guard_would_stop": [
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 41.2
+ },
+ {
+  "x": 0.0,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 1,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 11.3,
+    "arm-arm": 2.5,
+    "arm-camera": 50.0,
+    "arm-box": 26.7
+   },
+   "meas": {
+    "camera-mount": 13.3,
+    "arm-arm": 3.8,
+    "arm-camera": 50.0,
+    "arm-box": 23.4
+   }
+  },
+  "guard_would_stop": [
+   "cmd:camera-mount"
+  ],
+  "ik_err_mm": 34.9
+ },
+ {
+  "x": 0.02,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 2,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 10.7,
+    "arm-arm": 0.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.4
+   },
+   "meas": {
+    "camera-mount": 11.4,
+    "arm-arm": 0.3,
+    "arm-camera": 50.0,
+    "arm-box": 23.1
+   }
+  },
+  "guard_would_stop": [
+   "cmd:camera-mount",
+   "cmd:arm-arm",
+   "meas:arm-arm"
+  ],
+  "ik_err_mm": 34.3
+ },
+ {
+  "x": 0.04,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 1,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 11.6,
+    "arm-arm": 3.0,
+    "arm-camera": 50.0,
+    "arm-box": 26.1
+   },
+   "meas": {
+    "camera-mount": 13.5,
+    "arm-arm": 4.1,
+    "arm-camera": 50.0,
+    "arm-box": 22.7
+   }
+  },
+  "guard_would_stop": [
+   "cmd:camera-mount"
+  ],
+  "ik_err_mm": 33.4
+ },
+ {
+  "x": 0.06,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 2,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 18.9,
+    "arm-arm": 12.2,
+    "arm-camera": 50.0,
+    "arm-box": 25.9
+   },
+   "meas": {
+    "camera-mount": 19.0,
+    "arm-arm": 11.7,
+    "arm-camera": 50.0,
+    "arm-box": 22.2
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 33.2
+ },
+ {
+  "x": 0.08,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 14,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 21.9,
+    "arm-arm": 11.7,
+    "arm-camera": 50.0,
+    "arm-box": 25.6
+   },
+   "meas": {
+    "camera-mount": 22.9,
+    "arm-arm": 11.9,
+    "arm-camera": 50.0,
+    "arm-box": 21.7
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.7
+ },
+ {
+  "x": 0.1,
+  "y": 0.1572,
+  "in_box": false,
+  "lifted_mm": 0.0,
+  "contacts": 20,
+  "kinds": [
+   "arm-table"
+  ],
+  "closest_mm": {
+   "cmd": {
+    "camera-mount": 24.6,
+    "arm-arm": 12.0,
+    "arm-camera": 49.2,
+    "arm-box": 25.4
+   },
+   "meas": {
+    "camera-mount": 26.3,
+    "arm-arm": 12.8,
+    "arm-camera": 50.0,
+    "arm-box": 21.3
+   }
+  },
+  "guard_would_stop": [],
+  "ik_err_mm": 32.1
+ }
+]

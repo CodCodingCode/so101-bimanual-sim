@@ -1,0 +1,10 @@
+round 0 (teacher rollouts): teacher success 0.61 clean 0.59 box tipped 0.00 (80 episodes) | 30872 chunk labels [139s]
+round 1 (beta 0.5, L1 0.0171, 46519 labels): student alone success 0.50 clean 0.50 box tipped 0.00 (40 episodes) [756s]
+  new best -> /Users/owner/Downloads/whatif/robots/sim/pi_sim_so101/squeeze/runs_chunk/rotation_guard4/student.pt
+round 2 (beta 0.3, L1 0.0205, 61194 labels): student alone success 0.68 clean 0.65 box tipped 0.00 (40 episodes) [1394s]
+  new best -> /Users/owner/Downloads/whatif/robots/sim/pi_sim_so101/squeeze/runs_chunk/rotation_guard4/student.pt
+round 3 (beta 0.1, L1 0.0211, 75042 labels): student alone success 0.53 clean 0.50 box tipped 0.00 (40 episodes) [2052s]
+round 4 (beta 0.0, L1 0.0235, 90538 labels): student alone success 0.65 clean 0.62 box tipped 0.00 (40 episodes) [2809s]
+round 5 (beta 0.0, L1 0.0250, 105857 labels): student alone success 0.62 clean 0.60 box tipped 0.00 (40 episodes) [3468s]
+round 6 (beta 0.0, L1 0.0258, 122201 labels): student alone success 0.70 clean 0.70 box tipped 0.00 (40 episodes) [4160s]
+  new best -> /Users/owner/Downloads/whatif/robots/sim/pi_sim_so101/squeeze/runs_chunk/rotation_guard4/student.pt

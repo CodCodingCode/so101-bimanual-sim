@@ -19,6 +19,9 @@ sys.meta_path[:] = [f for f in sys.meta_path if "__editable___pi_sim" not in get
 os.chdir(HERE)
 import numpy as np        # noqa: E402
 import so101_real as R    # noqa: E402
+import rt_control as RT   # noqa: E402
+
+CFG = RT.load_config()
 
 (HERE / "STOP").unlink(missing_ok=True)
 rig = json.loads((HERE / "rig.json").read_text())
@@ -27,12 +30,8 @@ arms = {s: R.Arm(s, rig["arms"][s], off.get(s)) for s in R.SIDES}
 
 
 def ramp(targets, secs):
-    start = {s: arms[s].read_raw() for s in R.SIDES}
-    n = int(secs * 50)
-    for k in range(1, n + 1):
-        for s in R.SIDES:
-            arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * k / n).astype(int))
-        time.sleep(0.02)
+    """Minimum-jerk S-curve at 100 Hz (rt_control.smooth_ramp; the old 50 Hz linear ramp snapped every step)."""
+    RT.smooth_ramp(arms, targets, CFG, secs)
 
 
 try:

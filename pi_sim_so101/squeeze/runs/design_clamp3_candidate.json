@@ -1,0 +1,36 @@
+{
+ "params": {
+  "tilt_l": 29.221145511145888,
+  "tilt_r": 17.656729914942012,
+  "roll_l": 135.3668266995478,
+  "roll_r": -93.44333759631449,
+  "dy_l_mm": 18.081589048085796,
+  "dy_r_mm": 18.97740040094743,
+  "tip_mm": 24.76200801859582,
+  "press_mm": 1.5652768458498478,
+  "box_dy_mm": -124.40766400206329
+ },
+ "score": 0.34146762243979706,
+ "logs": [
+  "cube +0.0,+0.0 cm yaw  +0 mu 0.4: lifted 37.2 mm, tilt 11.3, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@lift'} | closest cmd:camera-mount 40 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 23 meas:camera-mount 21 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 23",
+  "cube +1.5,+1.0 cm yaw  +6 mu 0.4: lifted 37.2 mm, tilt 12.2, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@squeeze'} | closest cmd:camera-mount 41 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 14 meas:camera-mount 28 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 14",
+  "cube -1.5,-1.0 cm yaw  -6 mu 0.4: lifted 37.2 mm, tilt  9.3, in box True, contacts {'arm-arm': 32}, under clearance target {'cmd:arm-arm': '3mm@lift', 'cmd:arm-box': '5mm@carry', 'meas:arm-arm': '0mm@lower', 'meas:arm-box': '5mm@carry'} | closest cmd:camera-mount 39 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 5 meas:camera-mount 23 meas:arm-arm 0 meas:arm-camera 50 meas:arm-box 5",
+  "cube +1.0,-1.5 cm yaw +10 mu 0.4: lifted 37.2 mm, tilt 12.6, in box True, contacts none, under clearance target {'cmd:arm-arm': '4mm@lift', 'cmd:arm-box': '7mm@carry'} | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 48 cmd:arm-box 7 meas:camera-mount 24 meas:arm-arm 10 meas:arm-camera 49 meas:arm-box 8",
+  "cube -1.0,+1.5 cm yaw -10 mu 0.4: lifted 37.9 mm, tilt 10.7, in box True, contacts none, under clearance target {'cmd:arm-arm': '2mm@raise'} | closest cmd:camera-mount 39 cmd:arm-arm 2 cmd:arm-camera 50 cmd:arm-box 21 meas:camera-mount 22 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 21",
+  "cube +0.0,+0.0 cm yaw  +4 mu 0.35: lifted 37.4 mm, tilt 11.4, in box True, contacts none, under clearance target {'cmd:arm-arm': '3mm@squeeze'} | closest cmd:camera-mount 40 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 23 meas:camera-mount 21 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 23"
+ ],
+ "targets_m": {
+  "cmd": {
+   "camera-mount": 0.018,
+   "arm-arm": 0.009,
+   "arm-camera": 0.025,
+   "arm-box": 0.012
+  },
+  "meas": {
+   "camera-mount": 0.012,
+   "arm-arm": 0.006,
+   "arm-camera": 0.02,
+   "arm-box": 0.008
+  }
+ }
+}

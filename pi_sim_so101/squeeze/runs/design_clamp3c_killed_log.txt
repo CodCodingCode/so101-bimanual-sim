@@ -1,0 +1,8 @@
+it   1 (  93s) best 0.446 | tilt_l 23.9 tilt_r 12.9 roll_l 152.3 roll_r -92.8 dy_l_mm 20.6 dy_r_mm -6.2 tip_mm 28.0 press_mm 1.6 box_dy_mm -114.1
+it   2 ( 186s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   3 ( 690s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   4 (1333s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   5 (1429s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   6 (1522s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   7 (1623s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6
+it   8 (1732s) best 0.606 | tilt_l 32.1 tilt_r 15.1 roll_l 135.8 roll_r -116.7 dy_l_mm 11.5 dy_r_mm -2.2 tip_mm 27.0 press_mm 1.6 box_dy_mm -123.6

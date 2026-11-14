@@ -1,0 +1,38 @@
+{
+ "params": {
+  "tilt_l": 30.099349031280195,
+  "tilt_r": 15.166562698471672,
+  "roll_l": 138.6738470856846,
+  "roll_r": -115.04267933489385,
+  "dy_l_mm": 19.647129495465528,
+  "dy_r_mm": 8.802080114248241,
+  "tip_mm": 27.372698842510644,
+  "press_mm": 1.5883657530902935,
+  "box_dy_mm": -112.28387250375734
+ },
+ "score": 0.8182998315905177,
+ "logs": [
+  "cube +0.0,+1.0 cm yaw  +0 mu 0.4: lifted 37.2 mm, tilt 11.6, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 26 meas:camera-mount 26 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 20",
+  "cube +0.0,+1.0 cm yaw +25 mu 0.4: lifted 37.5 mm, tilt 12.4, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 26 meas:camera-mount 26 meas:arm-arm 14 meas:arm-camera 50 meas:arm-box 19",
+  "cube +0.0,+1.0 cm yaw -25 mu 0.4: lifted 39.9 mm, tilt 20.6, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 26 meas:camera-mount 26 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 18",
+  "cube +1.0,+1.5 cm yaw +18 mu 0.4: lifted 37.1 mm, tilt 12.9, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 28 meas:camera-mount 29 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 19",
+  "cube -1.0,+0.5 cm yaw -18 mu 0.4: lifted 38.8 mm, tilt 11.5, in box True, contacts none, under clearance target none | closest cmd:camera-mount 39 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 27 meas:camera-mount 26 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 20",
+  "cube +1.0,+0.5 cm yaw -12 mu 0.4: lifted 37.2 mm, tilt 12.5, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 5 cmd:arm-camera 50 cmd:arm-box 21 meas:camera-mount 29 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 14",
+  "cube -1.0,+1.5 cm yaw +12 mu 0.4: lifted 37.5 mm, tilt 12.9, in box True, contacts none, under clearance target none | closest cmd:camera-mount 39 cmd:arm-arm 3 cmd:arm-camera 50 cmd:arm-box 32 meas:camera-mount 26 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 25",
+  "cube +0.0,+1.0 cm yaw +22 mu 0.35: lifted 37.6 mm, tilt 12.4, in box True, contacts none, under clearance target none | closest cmd:camera-mount 40 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 26 meas:camera-mount 26 meas:arm-arm 14 meas:arm-camera 50 meas:arm-box 19"
+ ],
+ "targets_m": {
+  "cmd": {
+   "camera-mount": 0.018,
+   "arm-arm": 0.003,
+   "arm-camera": 0.025,
+   "arm-box": 0.012
+  },
+  "meas": {
+   "camera-mount": 0.012,
+   "arm-arm": 0.006,
+   "arm-camera": 0.02,
+   "arm-box": 0.008
+  }
+ }
+}

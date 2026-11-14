@@ -35,3 +35,15 @@ pi_sim_so101/squeeze/runs_clamp_recovery/
 # rig SSH notes: Tailscale hostname + IPs of the robot laptop
 DZKCHEN_REMOTE.md
 .claude/
+
+# later training runs (Nov 11-14): checkpoints, datasets and videos stay local.
+# Text/JSON logs inside them are kept; final models are copied into squeeze/models/.
+pi_sim_so101/squeeze/runs_vla/
+pi_sim_so101/squeeze/runs_*/**/*.zip
+pi_sim_so101/squeeze/runs_*/**/*.pt
+pi_sim_so101/squeeze/runs_*/**/*.pkl
+pi_sim_so101/squeeze/runs_*/**/*.safetensors
+pi_sim_so101/squeeze/runs_*/**/*.parquet
+pi_sim_so101/squeeze/runs_*/**/*.mp4
+# timestamped hand backups of edited scripts
+*.bak_*

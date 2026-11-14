@@ -1,0 +1,11 @@
+22:24:36 start at stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg (design design_clamp3c_twistoff.json)
+22:26:53 steps  4563432 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.70 clean 0.87 lifted 0.83 box tipped 0.00 [137s]
+22:29:19 steps  4610352 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.71 clean 0.89 lifted 0.88 box tipped 0.00 [283s]
+22:31:53 steps  4658820 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.76 clean 0.89 lifted 0.86 box tipped 0.00 [437s]
+22:34:19 steps  4706616 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.74 clean 0.87 lifted 0.88 box tipped 0.00 [583s]
+22:36:45 steps  4753962 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.69 clean 0.93 lifted 0.85 box tipped 0.00 [729s]
+22:39:11 steps  4801848 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.76 clean 0.91 lifted 0.89 box tipped 0.00 [875s]
+22:41:23 steps  4849740 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.71 clean 0.91 lifted 0.88 box tipped 0.00 [1007s]
+22:43:57 steps  4899066 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.78 clean 0.88 lifted 0.93 box tipped 0.00 [1161s]
+22:46:25 steps  4948716 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.84 clean 0.94 lifted 0.93 box tipped 0.00 [1309s]
+22:48:46 steps  4998318 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.74 clean 0.97 lifted 0.91 box tipped 0.00 [1450s]

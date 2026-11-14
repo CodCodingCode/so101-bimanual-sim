@@ -1,0 +1,33 @@
+{
+ "box_xy": [
+  0.0,
+  -0.077
+ ],
+ "anchors": [
+  {
+   "x": 3.0,
+   "y": 1.0,
+   "params": {
+    "tilt_l": 29.84722661730638,
+    "tilt_r": 17.25086531935883,
+    "roll_l": 129.0238197928146,
+    "roll_r": -113.02657107306004,
+    "dy_l_mm": 15.683546020598158,
+    "dy_r_mm": 13.805223861854621,
+    "tip_mm": 24.588785260918574,
+    "press_mm": 1.5975000000000001
+   },
+   "score": 0.3201210841017703,
+   "ok": false,
+   "warm_ok": false,
+   "logs": [
+    "cube +3.0,+1.0 cm yaw  +0 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target none | closest cmd:camera-mount 44 cmd:arm-arm 6 cmd:arm-camera 50 cmd:arm-box 27 meas:camera-mount 44 meas:arm-arm 7 meas:arm-camera 50 meas:arm-box 21",
+    "cube +4.0,+2.0 cm yaw  +6 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target none | closest cmd:camera-mount 24 cmd:arm-arm 12 cmd:arm-camera 50 cmd:arm-box 26 meas:camera-mount 25 meas:arm-arm 12 meas:arm-camera 50 meas:arm-box 21",
+    "cube +2.0,+0.0 cm yaw  -6 mu 0.4: lifted 36.8 mm, tilt  7.9, in box True, contacts none, under clearance target none | closest cmd:camera-mount 43 cmd:arm-arm 6 cmd:arm-camera 50 cmd:arm-box 22 meas:camera-mount 37 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 14",
+    "cube +4.0,+0.0 cm yaw +10 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target none | closest cmd:camera-mount 28 cmd:arm-arm 13 cmd:arm-camera 50 cmd:arm-box 20 meas:camera-mount 29 meas:arm-arm 13 meas:arm-camera 50 meas:arm-box 16",
+    "cube +2.0,+2.0 cm yaw -10 mu 0.4: lifted 36.4 mm, tilt  8.4, in box True, contacts none, under clearance target none | closest cmd:camera-mount 43 cmd:arm-arm 5 cmd:arm-camera 50 cmd:arm-box 28 meas:camera-mount 38 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 22",
+    "cube +3.0,+1.0 cm yaw  +4 mu 0.35: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target none | closest cmd:camera-mount 44 cmd:arm-arm 6 cmd:arm-camera 50 cmd:arm-box 27 meas:camera-mount 44 meas:arm-arm 7 meas:arm-camera 50 meas:arm-box 21"
+   ]
+  }
+ ]
+}

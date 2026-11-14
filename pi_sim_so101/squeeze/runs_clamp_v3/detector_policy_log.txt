@@ -1,0 +1,18 @@
+16:08:13 round 0 (beta 1.0, 36000 labelled steps, mse 0.0004) policy alone: success 0.17 clean 0.12 box_tipped 0.00 (48 episodes)
+16:08:13   new best (0.12) -> best.pt
+16:10:43 round 1 (beta 0.5, 72000 labelled steps, mse 0.0007) policy alone: success 0.69 clean 0.21 box_tipped 0.00 (48 episodes)
+16:10:43   new best (0.21) -> best.pt
+16:13:09 round 2 (beta 0.3, 108000 labelled steps, mse 0.0007) policy alone: success 0.08 clean 0.02 box_tipped 0.00 (48 episodes)
+16:15:39 round 3 (beta 0.1, 144000 labelled steps, mse 0.0015) policy alone: success 0.81 clean 0.73 box_tipped 0.00 (48 episodes)
+16:15:39   new best (0.73) -> best.pt
+16:18:09 round 4 (beta 0.0, 180000 labelled steps, mse 0.0036) policy alone: success 0.75 clean 0.58 box_tipped 0.00 (48 episodes)
+16:20:40 round 5 (beta 0.0, 216000 labelled steps, mse 0.0053) policy alone: success 0.96 clean 0.75 box_tipped 0.00 (48 episodes)
+16:20:40   new best (0.75) -> best.pt
+16:23:13 round 6 (beta 0.0, 252000 labelled steps, mse 0.0060) policy alone: success 1.00 clean 0.92 box_tipped 0.00 (48 episodes)
+16:23:13   new best (0.92) -> best.pt
+16:25:45 round 7 (beta 0.0, 288000 labelled steps, mse 0.0061) policy alone: success 1.00 clean 0.69 box_tipped 0.00 (48 episodes)
+16:28:46 round 8 (beta 0.0, 324000 labelled steps, mse 0.0070) policy alone: success 0.98 clean 0.75 box_tipped 0.00 (48 episodes)
+16:31:34 round 9 (beta 0.0, 360000 labelled steps, mse 0.0071) policy alone: success 0.98 clean 0.92 box_tipped 0.00 (48 episodes)
+16:34:37 round 10 (beta 0.0, 396000 labelled steps, mse 0.0064) policy alone: success 1.00 clean 0.98 box_tipped 0.00 (48 episodes)
+16:34:37   new best (0.98) -> best.pt
+16:34:37 done

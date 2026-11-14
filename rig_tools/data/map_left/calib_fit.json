@@ -1,0 +1,35 @@
+{
+ "run": "rig_tools/data/map_left",
+ "side": "left",
+ "poses": 100,
+ "camera": "/Users/owner/Downloads/whatif/sim/rig_tools/data/camera_fit.json",
+ "corr_deg": {
+  "pan": 12.5,
+  "lift": 14.0,
+  "elbow": 16.0,
+  "wflex": 16.0
+ },
+ "iou": {
+  "recorded_fit": 0.18098078016385621,
+  "recorded_held": 0.18053555207240535,
+  "fitted_fit": 0.23093109646580356,
+  "fitted_held": 0.2355497673888736
+ },
+ "offsets_old": [
+  7.7,
+  -4.3,
+  -8.8,
+  8.8,
+  -72.7,
+  0.0
+ ],
+ "offsets_suggested": [
+  20.2,
+  9.7,
+  7.2,
+  24.8,
+  -72.7,
+  0.0
+ ],
+ "worth_deploying": true
+}

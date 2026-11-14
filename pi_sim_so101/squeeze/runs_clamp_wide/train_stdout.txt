@@ -1,0 +1,49 @@
+19:22:28 start at stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg, servo +-0 deg (design design_clamp3c_twistoff.json)
+19:23:49 steps    54000 stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg, servo +-0 deg | last 120: success 0.92 clean 0.85 lifted 1.00 box tipped 0.00 [82s]
+  -> stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg, servo +-0 deg
+19:25:24 steps   108000 stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg, servo +-0 deg | last 120: success 0.90 clean 0.82 lifted 1.00 box tipped 0.00 [177s]
+  -> stage 2 [A rotation] cube +-1.5 cm, yaw +-35 deg, servo +-0 deg
+19:26:40 steps   162000 stage 2 [A rotation] cube +-1.5 cm, yaw +-35 deg, servo +-0 deg | last 120: success 0.90 clean 0.82 lifted 1.00 box tipped 0.00 [253s]
+  -> stage 3 [A rotation] cube +-1.5 cm, yaw +-45 deg, servo +-0 deg
+19:28:01 steps   216000 stage 3 [A rotation] cube +-1.5 cm, yaw +-45 deg, servo +-0 deg | last 120: success 0.91 clean 0.78 lifted 1.00 box tipped 0.00 [334s]
+  == stage A done: any cube rotation in the +-1.5 cm area (ideal servos) ==
+  -> stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg
+19:29:22 steps   270000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.70 clean 0.84 lifted 0.88 box tipped 0.00 [415s]
+19:30:37 steps   324000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.68 clean 0.86 lifted 0.94 box tipped 0.00 [490s]
+19:31:54 steps   378000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.75 clean 0.86 lifted 0.94 box tipped 0.00 [567s]
+19:33:00 steps   432000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.76 clean 0.91 lifted 0.90 box tipped 0.00 [633s]
+19:34:15 steps   486000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.75 clean 0.80 lifted 0.92 box tipped 0.00 [708s]
+19:35:24 steps   540000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.77 clean 0.81 lifted 0.94 box tipped 0.00 [777s]
+19:36:30 steps   594000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.74 clean 0.88 lifted 0.93 box tipped 0.00 [843s]
+19:37:37 steps   648000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.79 clean 0.86 lifted 0.93 box tipped 0.00 [910s]
+19:38:35 steps   702000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.78 clean 0.85 lifted 0.90 box tipped 0.00 [968s]
+19:39:32 steps   756000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.82 clean 0.89 lifted 0.93 box tipped 0.00 [1025s]
+19:40:33 steps   810000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.84 clean 0.79 lifted 0.94 box tipped 0.00 [1086s]
+19:41:29 steps   864000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.82 clean 0.88 lifted 0.96 box tipped 0.00 [1142s]
+19:42:26 steps   918000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.84 clean 0.88 lifted 0.96 box tipped 0.00 [1199s]
+19:43:29 steps   972000 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.88 clean 0.87 lifted 0.97 box tipped 0.00 [1262s]
+  == stage A2 done: any cube rotation in the +-1.5 cm area, with real-servo error ==
+  -> stage 5 [B distance] cube +-2.6 cm, yaw +-45 deg, servo +-1 deg
+19:44:49 steps  1026000 stage 5 [B distance] cube +-2.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.74 clean 0.78 lifted 0.93 box tipped 0.00 [1342s]
+19:46:10 steps  1080000 stage 5 [B distance] cube +-2.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.80 clean 0.69 lifted 0.94 box tipped 0.00 [1423s]
+  -> stage 6 [B distance] cube +-3.6 cm, yaw +-45 deg, servo +-1 deg
+19:47:25 steps  1134000 stage 6 [B distance] cube +-3.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.69 clean 0.68 lifted 0.97 box tipped 0.01 [1498s]
+19:48:45 steps  1188000 stage 6 [B distance] cube +-3.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.77 clean 0.64 lifted 0.97 box tipped 0.01 [1578s]
+19:50:07 steps  1242000 stage 6 [B distance] cube +-3.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.67 clean 0.70 lifted 0.93 box tipped 0.01 [1660s]
+19:51:30 steps  1296000 stage 6 [B distance] cube +-3.6 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.78 clean 0.66 lifted 0.97 box tipped 0.01 [1743s]
+  -> stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg
+19:52:50 steps  1350000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.62 clean 0.59 lifted 0.88 box tipped 0.02 [1823s]
+19:54:24 steps  1404000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.61 clean 0.57 lifted 0.82 box tipped 0.01 [1917s]
+19:56:26 steps  1458000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.57 clean 0.72 lifted 0.87 box tipped 0.00 [2039s]
+19:58:37 steps  1512000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.64 clean 0.59 lifted 0.85 box tipped 0.03 [2170s]
+20:00:21 steps  1566000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.62 clean 0.60 lifted 0.85 box tipped 0.02 [2274s]
+20:02:31 steps  1620000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.58 clean 0.62 lifted 0.87 box tipped 0.00 [2404s]
+20:04:56 steps  1674000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.56 clean 0.62 lifted 0.80 box tipped 0.00 [2549s]
+20:07:49 steps  1728000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.57 clean 0.70 lifted 0.79 box tipped 0.01 [2722s]
+20:10:29 steps  1782000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.58 clean 0.62 lifted 0.85 box tipped 0.00 [2881s]
+20:13:10 steps  1836000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.57 clean 0.68 lifted 0.83 box tipped 0.00 [3043s]
+20:15:41 steps  1890000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.62 clean 0.70 lifted 0.88 box tipped 0.00 [3194s]
+20:18:05 steps  1944000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.54 clean 0.59 lifted 0.82 box tipped 0.00 [3338s]
+20:20:52 steps  1998000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.55 clean 0.68 lifted 0.85 box tipped 0.01 [3505s]
+20:23:35 steps  2052000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.53 clean 0.62 lifted 0.82 box tipped 0.01 [3668s]
+20:26:18 steps  2106000 stage 7 [B distance] cube +-4.7 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.60 clean 0.66 lifted 0.82 box tipped 0.01 [3831s]

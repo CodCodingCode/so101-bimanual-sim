@@ -22,8 +22,8 @@ import time
 from pathlib import Path
 
 HERE = Path(r"C:\robot\real")
-RT = HERE / "squeeze_rt"
-sys.path[:0] = [str(RT), str(HERE), r"C:\robot\pi"]
+SQ = HERE / "squeeze_rt"
+sys.path[:0] = [str(SQ), str(HERE), r"C:\robot\pi"]
 sys.meta_path[:] = [f for f in sys.meta_path if "__editable___pi_sim" not in getattr(f, "__module__", "")]
 os.chdir(HERE)
 
@@ -33,6 +33,7 @@ import torch                           # noqa: E402
 from PIL import Image                  # noqa: E402
 
 import so101_real as R                 # noqa: E402
+import rt_control as RT             # noqa: E402  (2026-11-13 motor rule: streamed goals, min-jerk ramps)
 
 STOP = HERE / "STOP"
 CAMS = ("overhead", "left_wrist", "right_wrist")
@@ -41,7 +42,7 @@ SIDES = ("left", "right")
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default=str(RT / "student.pt"))
+    ap.add_argument("--model", default=str(SQ / "student.pt"))
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--live", action="store_true")
     ap.add_argument("--speed", type=float, default=0.5, help="scales the policy's hand deltas (live)")
@@ -98,15 +99,11 @@ def main():
         parts += [prev]
         return np.concatenate([np.asarray(p, np.float32).ravel() for p in parts])
 
+    cfg = RT.load_config()
+
     def ramp_raw(targets, secs, check_stop=True):
-        start = {s: arms[s].read_raw() for s in SIDES}
-        n = int(secs * 50)
-        for k in range(1, n + 1):
-            if check_stop and STOP.exists():
-                raise KeyboardInterrupt("STOP file")
-            for s in SIDES:
-                arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * k / n).astype(int))
-            time.sleep(0.02)
+        """Scripted move: minimum-jerk S-curve at the stream rate (rt_control.smooth_ramp)."""
+        return RT.smooth_ramp(arms, targets, cfg, secs, check_stop=STOP.exists if check_stop else None)
 
     log = []
     try:
@@ -136,12 +133,16 @@ def main():
             d.ctrl[arm.actuator_ids] = d.qpos[arm.qpos_ids]
         ee0 = sim._ee_targets.copy()
         prev = np.zeros(6, np.float32)
+        clock = RT.TickClock(cfg)
+        stream = RT.ServoStreamer(arms, cfg, dry=not live)
+        stream.start({s: arms[s].read_raw().astype(int) for s in SIDES})
         t0 = time.perf_counter()
         k = 0
         while time.perf_counter() - t0 < a.seconds:
             if STOP.exists():
                 raise KeyboardInterrupt("STOP file")
             tick = time.perf_counter()
+            adv = clock.tick()
             u = read_units()
             to_shadow(u)
             imgs, p = frames(), prop(prev)
@@ -152,18 +153,19 @@ def main():
             for i, s in enumerate(SIDES):
                 arm = sim.robot[s]
                 row = scaled[i * 3:(i + 1) * 3] * ACTION_SCALE
-                sim._ee_targets[i] = np.clip(sim._ee_targets[i] + row * sim.delta_scale, sim._workspace_low[i], sim._workspace_high[i])
+                sim._ee_targets[i] = np.clip(sim._ee_targets[i] + row * sim.delta_scale * adv, sim._workspace_low[i], sim._workspace_high[i])
                 target, ik_err = sim._solve_ik(arm, sim._ee_targets[i], sim._orientations[i])
                 cur = d.ctrl[arm.actuator_ids].copy()
-                new = cur + np.clip(target - cur, -sim._rate_limit, sim._rate_limit)
+                new = cur + np.clip(target - cur, -sim._rate_limit * adv, sim._rate_limit * adv)
                 d.ctrl[arm.actuator_ids] = new
                 cmd[s] = np.r_[np.rad2deg(new), 0.0]                      # jaws shut, as in training
             low = hh.lowest(np.r_[cmd["left"], cmd["right"]])
             blocked = [s for s in SIDES if low[s] * 100 < a.floor_cm]
-            if live:
-                for s in SIDES:
-                    if s not in blocked:
-                        arms[s].goal(arms[s].to_raw(cmd[s]))
+            for s in SIDES:                                       # streamed at 100 Hz (writes nothing when dry)
+                if s in blocked:
+                    stream.hold(s)
+                else:
+                    stream.set(s, arms[s].to_raw(cmd[s]), clock.period())
             if blocked:
                 print(f"  t={k / 25:5.2f}s floor guard held {blocked} (lowest {min(low.values()) * 100:.1f} cm)", flush=True)
             log.append({"t": round(time.perf_counter() - t0, 3), "units": {s: u[s].round(2).tolist() for s in SIDES},
@@ -179,11 +181,15 @@ def main():
                       f"L {np.round(dee[0], 1)} R {np.round(dee[1], 1)} cm | loop {log[-1]['loop_ms']} ms", flush=True)
             prev = act
             k += 1
-            time.sleep(max(0.0, 0.04 - (time.perf_counter() - tick)))
+            clock.sleep_rest(tick)
         print("time limit reached", flush=True)
     except BaseException as e:
         print(f"stopping: {e!r}", flush=True)
     finally:
+        try:
+            stream.stop()                                     # MUST stop before the fold writes goals
+        except Exception:
+            pass
         (run / "log.json").write_text(json.dumps(log))
         print(f"log: {run} ({len(log)} ticks)", flush=True)
         if live:

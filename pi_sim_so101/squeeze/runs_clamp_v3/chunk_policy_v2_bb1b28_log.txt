@@ -1,0 +1,15 @@
+17:47:04 teacher grip_teacher, grip DR 1, labels = teacher's own 8-step rollouts every 2 ticks
+18:01:55 round 0 (beta 1.0, 18000 labelled ticks, mse 0.0008) chunked policy alone: delivered 0.00 clean 0.00 box_tipped 0.00 limiter 0 ticks/ep (32 episodes)
+18:01:55   new best (0.00) -> best.pt
+18:17:04 round 1 (beta 0.5, 36000 labelled ticks, mse 0.0012) chunked policy alone: delivered 0.62 clean 0.44 box_tipped 0.00 limiter 24 ticks/ep (32 episodes)
+18:17:04   new best (0.44) -> best.pt
+18:32:02 round 2 (beta 0.3, 54000 labelled ticks, mse 0.0012) chunked policy alone: delivered 0.97 clean 0.81 box_tipped 0.00 limiter 72 ticks/ep (32 episodes)
+18:32:02   new best (0.81) -> best.pt
+18:52:04 round 3 (beta 0.1, 72000 labelled ticks, mse 0.0011) chunked policy alone: delivered 0.22 clean 0.22 box_tipped 0.00 limiter 1 ticks/ep (32 episodes)
+19:18:56 round 4 (beta 0.0, 90000 labelled ticks, mse 0.0014) chunked policy alone: delivered 0.28 clean 0.25 box_tipped 0.00 limiter 1 ticks/ep (32 episodes)
+19:59:20 round 5 (beta 0.0, 108000 labelled ticks, mse 0.0016) chunked policy alone: delivered 1.00 clean 0.91 box_tipped 0.00 limiter 14 ticks/ep (32 episodes)
+19:59:20   new best (0.91) -> best.pt
+20:20:14 round 6 (beta 0.0, 126000 labelled ticks, mse 0.0015) chunked policy alone: delivered 0.88 clean 0.62 box_tipped 0.00 limiter 13 ticks/ep (32 episodes)
+20:48:41 round 7 (beta 0.0, 144000 labelled ticks, mse 0.0017) chunked policy alone: delivered 1.00 clean 0.94 box_tipped 0.00 limiter 8 ticks/ep (32 episodes)
+20:48:41   new best (0.94) -> best.pt
+20:48:41 done

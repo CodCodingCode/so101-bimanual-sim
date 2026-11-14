@@ -23,6 +23,6 @@ Known leftover: some per-scene `sam_wait.sh` / `final.sh` scripts hard-code `../
   - `squeeze/` — two-arm tip clamp with no jaws: both grippers press the cube's sides, lift, carry and drop it into
     the box. Scripted teacher (`clamp_teacher.py`), RL env (`clamp_rl.py`), PPO (`train.py`), recovery by DAgger
     (`dagger.py`), camera-policy distillation (`distill.py`). Final models with scores are in `squeeze/models/`.
-- `rig_tools/` — real rig: station web UI (`rig_ui.py`), scripted real clamp runner (`real_clamp.py`), camera and
+- `rig_tools/` — real rig: station web UI (moved to `../so101/ui/rig_ui.py` with the portal, 2026-11-14), scripted real clamp runner (`real_clamp.py`), camera and
   joint calibration, dynamics fitting.
 - `laptop_ik/` — IK helpers for the robot laptop.

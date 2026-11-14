@@ -1,0 +1,11 @@
+cube x (cm) ->             -12.5  -10.0   -7.5   -5.0   -2.5   +0.0   +2.5   +5.0   +7.5  +10.0  +12.5
+legend: OK = into the box, no contact, guard quiet | g = in box but guard would stop | x = contact | - = failed | box = box footprint | number = pushes used
++12.5 (38.2 cm out)          -      -      -      -      -      -      -      -      -      -      -
++10.0 (35.7 cm out)          -      -      -      -      -      -      -      -      -      -      -
+ +7.5 (33.2 cm out)          -      -      -      -      -      -      -      -      -      -      -
+ +5.0 (30.7 cm out)          -    x0      -      -      -      -      -      -      -    x0      -
+ +2.5 (28.2 cm out)          -      -      -      -      -    x369      -      -      -      -      -
+ +0.0 (25.7 cm out)          -      -      -   OK161   OK322   OK100      -      -      -      -      -
+ -2.5 (23.2 cm out)          -      -      -    x344    x347    x132    x352    x352      -      -      -
+ -5.0 (20.7 cm out)          -    x381    x387    box    box    box    box    box    x382    x375    x367
+clean end to end: 3/83

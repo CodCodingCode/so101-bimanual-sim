@@ -23,8 +23,8 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = Path(__file__).resolve().parent
 RIG = HERE / "data" / "so101_camera_rig.calibrated_full.json"
 MON = "http://127.0.0.1:8104/cam/overhead.mjpg"
-CUBE_ZONE = ((-0.025, 0.025), (0.0122, 0.0622))   # clamp task: cube 26 cm out +-2.5 cm
-BOX_ZONE = ((-0.02, 0.02), (-0.085, -0.055))      # box between the arms and the cube
+CUBE_ZONE = ((-0.015, 0.015), (0.0222, 0.0522))   # clamp v3: cube 26 cm out, +-1.5 cm (24/24 clean in sim there)
+BOX_ZONE = ((-0.015, 0.015), (-0.087, -0.067))     # clamp v3: box centre ~11.4 cm in front of the cube (toward the arms)
 CUBE, BOX = 0.032, 0.10
 ARM_X, ARM_Y = 0.116, -0.22
 
@@ -69,13 +69,12 @@ def rect(x0, x1, y0, y1, zz, n=12):
 
 
 def find_cube(rgb):
-    a = rgb.astype(int)
-    r, g, b = a[..., 0], a[..., 1], a[..., 2]
-    m = (r > 120) & (r - g > 60) & (r - b > 40)
-    if m.sum() < 30:
+    """Same detector as the policy runner (cube_locator.detect_red: brightness-independent red, largest blob)."""
+    import cube_locator as CL
+    uv, n = CL.detect_red(rgb)
+    if uv is None:
         return None
-    vs, us = np.nonzero(m)
-    return float(us.mean()), float(vs.mean()), int(m.sum())
+    return uv[0], uv[1], n
 
 
 latest = {"jpg": None}

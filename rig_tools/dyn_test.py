@@ -30,6 +30,7 @@ os.chdir(HERE)
 import numpy as np                      # noqa: E402
 
 import so101_real as R                  # noqa: E402
+import rt_control as RT   # noqa: E402  (min-jerk ramps at 100 Hz, 2026-11-13 motor rule)
 
 DT = 0.02
 STOP = HERE / "STOP"
@@ -95,8 +96,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--live", action="store_true")
+    ap.add_argument("--allow-steps", action="store_true",
+                    help="REQUIRED with --live: this test commands deliberate +-15 deg step responses (system id)")
     ap.add_argument("--floor-cm", type=float, default=4.0)
     a = ap.parse_args()
+    if a.live and not a.allow_steps:
+        # user rule 2026-11-13: no policy or script may drive the servos in a way that harms the motors. This test's
+        # +-15 deg instantaneous steps are exactly that by design, so it is locked unless explicitly unlocked.
+        raise SystemExit("dyn_test --live commands instantaneous +-15 deg steps (harsh on the motors) and is locked; "
+                         "add --allow-steps only if a new system-id run is really needed")
 
     sched = schedule()
     allcmd = np.concatenate([c for _, c in sched])
@@ -129,11 +137,11 @@ def main():
 
     def ramp_raw(targets, secs):
         start = {s: arms[s].read_raw() for s in R.SIDES}
-        n = int(secs * 50)
+        n = int(secs * 100)
         for k in range(1, n + 1):
             for s in R.SIDES:
-                arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * k / n).astype(int))
-            time.sleep(0.02)
+                arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * RT.min_jerk(k / n)).astype(int))
+            time.sleep(0.01)
 
     T, CMD, MEAS, LOOP, PH = [], [], [], [], []
     names = [n for n, _ in sched]

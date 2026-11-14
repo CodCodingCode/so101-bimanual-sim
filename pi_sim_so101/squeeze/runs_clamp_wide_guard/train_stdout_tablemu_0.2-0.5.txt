@@ -1,0 +1,2 @@
+23:04:17 start at stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg (design design_clamp3c_twistoff.json)
+23:06:30 steps  4895854 stage 4 [A2 rotation+servo error] cube +-1.5 cm, yaw +-45 deg, servo +-1 deg | last 120: success 0.80 clean 0.90 lifted 0.89 box tipped 0.00 [133s]

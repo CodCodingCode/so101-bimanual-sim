@@ -1,0 +1,51 @@
+== demos 19:29:31
+300 demo episodes (197 clean successes kept), 147750 steps, 191s -> /Users/owner/Downloads/whatif/sim/pi_sim_so101/squeeze/runs_clamp_v3/demos.npz
+== bc 19:32:43
+bc epoch 0: loss 0.8572
+bc epoch 1: loss 0.6106
+bc epoch 2: loss 0.5103
+bc epoch 3: loss 0.4211
+bc epoch 4: loss 0.3737
+bc epoch 5: loss 0.3494
+bc epoch 6: loss 0.3053
+bc epoch 7: loss 0.2836
+bc epoch 8: loss 0.2606
+bc epoch 9: loss 0.2478
+bc epoch 10: loss 0.2279
+bc epoch 11: loss 0.2086
+bc epoch 12: loss 0.1939
+bc epoch 13: loss 0.1907
+bc epoch 14: loss 0.1903
+bc epoch 15: loss 0.1667
+bc epoch 16: loss 0.1632
+bc epoch 17: loss 0.1528
+bc epoch 18: loss 0.1508
+bc epoch 19: loss 0.1354
+bc epoch 20: loss 0.1345
+bc epoch 21: loss 0.1218
+bc epoch 22: loss 0.1202
+bc epoch 23: loss 0.1139
+bc epoch 24: loss 0.1098
+bc epoch 25: loss 0.1023
+bc epoch 26: loss 0.1019
+bc epoch 27: loss 0.0957
+bc epoch 28: loss 0.0878
+bc epoch 29: loss 0.0827
+BC greedy: squeezed=1.00 lifted=1.00 cleared=1.00 placed=0.67 is_success=0.60 can_tipped=0.00
+== dagger 19:34:42
+19:34:43 start: 147750 clean demo steps from demos.npz
+19:35:24 round 0 (base policy) greedy: success 0.43 clean 0.23 box_tipped 0.00 | clean by disturbance none=5/13 nudge=2/17 slip=3/13 push=4/17
+19:36:46 round 1 (beta 0.5, +72000 labelled steps, 219750 total, bc mse 0.0041) greedy: success 0.83 clean 0.73 box_tipped 0.00 | clean by disturbance none=11/13 nudge=13/17 slip=8/13 push=12/17
+19:36:46   new best (0.73) -> best.zip
+19:38:00 round 2 (beta 0.3, +72000 labelled steps, 291750 total, bc mse 0.0046) greedy: success 0.98 clean 0.80 box_tipped 0.00 | clean by disturbance none=10/13 nudge=13/17 slip=12/13 push=13/17
+19:38:00   new best (0.80) -> best.zip
+19:39:13 round 3 (beta 0.2, +72000 labelled steps, 363750 total, bc mse 0.0052) greedy: success 0.97 clean 0.50 box_tipped 0.00 | clean by disturbance none=9/13 nudge=8/17 slip=0/13 push=13/17
+19:40:39 round 4 (beta 0.1, +72000 labelled steps, 435750 total, bc mse 0.0063) greedy: success 0.90 clean 0.83 box_tipped 0.00 | clean by disturbance none=12/13 nudge=17/17 slip=8/13 push=13/17
+19:40:39   new best (0.83) -> best.zip
+19:41:54 round 5 (beta 0.0, +72000 labelled steps, 507750 total, bc mse 0.0094) greedy: success 0.98 clean 0.65 box_tipped 0.00 | clean by disturbance none=10/13 nudge=10/17 slip=7/13 push=12/17
+19:43:10 round 6 (beta 0.0, +72000 labelled steps, 579750 total, bc mse 0.0108) greedy: success 1.00 clean 0.78 box_tipped 0.00 | clean by disturbance none=12/13 nudge=14/17 slip=5/13 push=16/17
+19:44:27 round 7 (beta 0.0, +72000 labelled steps, 651750 total, bc mse 0.0112) greedy: success 1.00 clean 0.97 box_tipped 0.00 | clean by disturbance none=12/13 nudge=17/17 slip=12/13 push=17/17
+19:44:27   new best (0.97) -> best.zip
+19:45:42 round 8 (beta 0.0, +72000 labelled steps, 723750 total, bc mse 0.0116) greedy: success 1.00 clean 0.82 box_tipped 0.00 | clean by disturbance none=12/13 nudge=12/17 slip=8/13 push=17/17
+19:45:42 done
+== done 19:45:43

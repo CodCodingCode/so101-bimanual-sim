@@ -28,8 +28,8 @@ os.environ.setdefault("CLAMP_RECOVERY", "1")
 
 import train as T                      # noqa: E402
 
-BASE = HERE / "runs_clamp" / "ppo"
-OUT = HERE / "runs_clamp_recovery" / "dagger"
+BASE = HERE / os.environ.get("DAGGER_BASE", "runs_clamp/ppo")
+OUT = HERE / os.environ.get("DAGGER_OUT", "runs_clamp_recovery/dagger")
 EVAL_SEED = 90_000
 
 
@@ -111,7 +111,7 @@ def main():
     shutil.copy(BASE / "obs_stats.npz", OUT / "obs_stats.npz")
     s = np.load(OUT / "obs_stats.npz")
     stats = (s["mean"], s["var"])
-    model = T.BCPPO.load(BASE / "best.zip", device="cpu")
+    model = T.BCPPO.load(BASE / ("best.zip" if (BASE / "best.zip").exists() else "model.zip"), device="cpu")
     model.policy.optimizer.param_groups[0]["lr"] = a.lr
     model.save(OUT / "model.zip")
     d = np.load(T.DEMOS)

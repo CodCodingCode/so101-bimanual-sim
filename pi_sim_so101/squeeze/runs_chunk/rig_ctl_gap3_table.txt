@@ -1,0 +1,17 @@
+{"seed": 880000, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 1.7, "ticks": 294, "secs": 29}
+{"seed": 880001, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 4, "box_err_mm": 0.7, "cube_start_err_mm": 3.3, "ticks": 431, "secs": 37}
+{"seed": 880002, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 8, "attempts": 2, "box_err_mm": 0.7, "cube_start_err_mm": 2.6, "ticks": 404, "secs": 38}
+{"seed": 880003, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.4, "cube_start_err_mm": 4.8, "ticks": 315, "secs": 27}
+{"seed": 880004, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 3, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 3.1, "ticks": 305, "secs": 26}
+{"seed": 880005, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 3, "box_err_mm": 0.8, "cube_start_err_mm": 3.4, "ticks": 384, "secs": 37}
+{"seed": 880006, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 3, "box_err_mm": 0.9, "cube_start_err_mm": 2.7, "ticks": 313, "secs": 27}
+{"seed": 880007, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.5, "cube_start_err_mm": 1.7, "ticks": 292, "secs": 27}
+{"seed": 880008, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 2.4, "ticks": 342, "secs": 31}
+{"seed": 880009, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 2, "box_err_mm": 0.9, "cube_start_err_mm": 4.0, "ticks": 407, "secs": 34}
+{"seed": 880010, "delivered": false, "clean": false, "contacts": {"arm_table": 6}, "guard_stop": null, "limiter_ticks": 0, "attempts": 6, "box_err_mm": 0.3, "cube_start_err_mm": 0.6, "ticks": 450, "secs": 42}
+{"seed": 880011, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.5, "cube_start_err_mm": 5.5, "ticks": 328, "secs": 29}
+{"seed": 880012, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 4, "box_err_mm": 0.8, "cube_start_err_mm": 3.8, "ticks": 450, "secs": 42}
+{"seed": 880013, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 5.5, "ticks": 301, "secs": 25}
+{"seed": 880014, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 35, "attempts": 5, "box_err_mm": 0.6, "cube_start_err_mm": 5.5, "ticks": 450, "secs": 37}
+
+rig controller + sim-74 student, squeeze limiter ON, release gap ON: delivered 12/15, clean 12/15, the real guard would have stopped 0/15, start refused 0

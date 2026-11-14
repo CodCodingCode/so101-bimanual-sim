@@ -1,0 +1,61 @@
+  ep 0 start x  +3.3 cm: DELIVERED | ended time
+  ep 1 start x  +1.8 cm: failed | guard stop (push): arm-box 1.9 mm (meas) | ended term
+  ep 2 start x +11.3 cm: failed | guard stop (clamp): arm-box 5.8 mm (cmd) | ended term
+  ep 3 start x  +0.8 cm: DELIVERED (contact) | ended time
+  ep 4 start x  +9.1 cm: DELIVERED | ended time
+  ep 5 start x  -5.7 cm: DELIVERED | ended time
+  ep 6 start x  +0.4 cm: DELIVERED | ended time
+  ep 7 start x  -1.2 cm: DELIVERED | ended time
+  ep 8 start x  +9.9 cm: failed | guard stop (clamp): arm-box 1.8 mm (meas) | ended term
+  ep 9 start x  -9.3 cm: failed | guard stop (clamp): arm-box 5.9 mm (cmd) | ended term
+  ep 10 start x  +6.1 cm: failed | guard stop (push): arm-box 2.9 mm (cmd) | ended term
+  ep 11 start x -11.4 cm: failed | guard stop (push): arm-box 5.5 mm (cmd) | ended term
+  ep 12 start x  +5.3 cm: failed | guard stop (clamp): arm-box 5.8 mm (cmd) | ended term
+  ep 13 start x  -7.2 cm: DELIVERED | ended time
+  ep 14 start x  -5.7 cm: failed | guard stop (clamp): arm-box 4.8 mm (cmd) | ended term
+  ep 15 start x  -9.3 cm: failed | guard stop (push): arm-box 5.2 mm (cmd) | ended term
+  ep 16 start x  +7.4 cm: failed | ended time
+  ep 17 start x -11.0 cm: failed | guard stop (push): arm-box 2.0 mm (meas) | ended term
+  ep 18 start x  +9.8 cm: failed | guard stop (clamp): arm-box 1.0 mm (meas) | ended term
+  ep 19 start x -11.5 cm: failed | guard stop (clamp): arm-box 6.0 mm (cmd) | ended term
+  ep 20 start x  +6.1 cm: DELIVERED | ended time
+  ep 21 start x  -7.7 cm: failed | guard stop (clamp): arm-box 5.7 mm (cmd) | ended term
+  ep 22 start x  -7.8 cm: failed | guard stop (clamp): arm-arm 0.0 mm (meas) | ended term
+  ep 23 start x  -7.2 cm: failed | guard stop (clamp): arm-box 5.3 mm (cmd) | ended term
+  ep 24 start x -11.7 cm: failed | guard stop (push): arm-box 6.0 mm (cmd) | ended term
+  ep 25 start x  +5.2 cm: failed | ended time
+  ep 26 start x -10.5 cm: failed | guard stop (push): arm-box 5.9 mm (cmd) | ended term
+  ep 27 start x  +3.5 cm: failed | guard stop (clamp): arm-box 0.2 mm (meas) | ended term
+  ep 28 start x  +7.7 cm: DELIVERED | ended time
+  ep 29 start x  -9.3 cm: failed | guard stop (clamp): arm-box 5.7 mm (cmd) | ended term
+  ep 30 start x +10.2 cm: failed | guard stop (clamp): arm-box 1.9 mm (meas) | ended term
+  ep 31 start x  +4.5 cm: DELIVERED | ended time
+  ep 32 start x +11.3 cm: failed | guard stop (push): arm-box 5.8 mm (cmd) | ended term
+  ep 33 start x  -0.2 cm: DELIVERED | ended time
+  ep 34 start x  +9.1 cm: failed | guard stop (push): arm-box 2.0 mm (cmd) | ended term
+  ep 35 start x  +7.7 cm: failed | guard stop (push): arm-box 5.8 mm (cmd) | ended term
+  ep 36 start x +10.5 cm: failed | guard stop (clamp): arm-box 1.9 mm (meas) | ended term
+  ep 37 start x  +6.1 cm: DELIVERED | ended time
+  ep 38 start x  +3.9 cm: failed | guard stop (push): arm-box 5.9 mm (cmd) | ended term
+  ep 39 start x  +2.6 cm: DELIVERED | ended time
+  ep 40 start x  -1.8 cm: DELIVERED | ended time
+  ep 41 start x  -4.7 cm: DELIVERED | ended time
+  ep 42 start x  +8.5 cm: failed | guard stop (push): arm-box 0.0 mm (meas) | ended term
+  ep 43 start x  -5.8 cm: failed | guard stop (push): arm-box 5.6 mm (cmd) | ended term
+  ep 44 start x  -2.2 cm: failed | guard stop (clamp): arm-box 5.9 mm (cmd) | ended term
+  ep 45 start x  -0.6 cm: failed | guard stop (push): arm-box 5.1 mm (cmd) | ended term
+  ep 46 start x  +3.6 cm: failed | guard stop (clamp): arm-arm 0.3 mm (cmd) | ended term
+  ep 47 start x  +6.8 cm: DELIVERED (contact) | ended time
+  ep 48 start x  -7.2 cm: DELIVERED | ended time
+  ep 49 start x +12.0 cm: failed | ended time
+  ep 50 start x  +2.0 cm: failed | guard stop (clamp): arm-box 4.2 mm (cmd) | ended term
+  ep 51 start x  +7.8 cm: failed | guard stop (clamp): arm-box 5.9 mm (cmd) | ended term
+  ep 52 start x  -2.9 cm: failed | guard stop (push): arm-box 1.8 mm (meas) | ended term
+  ep 53 start x  -2.2 cm: failed | guard stop (clamp): arm-box 3.8 mm (cmd) | ended term
+  ep 54 start x  +3.0 cm: failed | guard stop (push): arm-box 6.0 mm (cmd) | ended term
+  ep 55 start x  -8.8 cm: failed | guard stop (push): arm-box 1.9 mm (meas) | ended term
+  ep 56 start x +11.2 cm: failed | guard stop (push): arm-box 5.6 mm (cmd) | ended term
+  ep 57 start x -11.3 cm: failed | guard stop (push): arm-box 1.8 mm (meas) | ended term
+  ep 58 start x  -9.4 cm: failed | guard stop (clamp): arm-box 5.7 mm (cmd) | ended term
+  ep 59 start x  -1.8 cm: failed | guard stop (push): camera-mount 10.3 mm (cmd) | ended term
+SUMMARY push (scripted, cube from cameras) + clamp by teacher runs_clamp_wide_guard4/rotation_servo_done.zip: delivered 17/60, clean 15/60, guard stops 40/60; first 20 (= the VLA test) delivered 7/20; left starts 7/28, right starts 10/32; guard stops while pushing / re-homing 20, while clamping 20; flags: CLAMP_GUARD=1 CMD=1 GRIP_DR=1 SLIP=1 BIAS=1

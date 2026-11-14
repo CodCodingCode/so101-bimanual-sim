@@ -87,11 +87,33 @@ def _vector(value, count, label):
     return result
 
 
+_WARNED = set()
+
+
+def _warn_if_not_current(raw, source):
+    """Since 2026-11-13 every sim must use the real-rig calibration (robots/so101/calibration, cameras 6349a0 +
+    kinematics bb1b28; user: "future runs need to use this calibration setup"). The default rig and
+    rig_tools/data/so101_camera_rig.active.json carry its tag; anything else gets a loud warning (once per file)."""
+    import sys
+    try:
+        current = json.loads(DEFAULT_RIG.read_text()).get("calibration_tag")
+    except Exception:
+        current = None
+    if current and raw.get("calibration_tag") != current:
+        key = str(source) if isinstance(source, (str, Path)) else id(source)
+        if key not in _WARNED:
+            _WARNED.add(key)
+            print(f"WARNING pi_sim: camera rig {source if isinstance(source, (str, Path)) else '(dict)'} is NOT the "
+                  f"current calibration ({current}). Do not train on it -- use the default rig or "
+                  f"rig_tools/data/so101_camera_rig.active.json.", file=sys.stderr, flush=True)
+
+
 def load_camera_rig(source=None):
     """Load a JSON path or mapping; require the same three named views."""
     if source is None:
         source = DEFAULT_RIG
     raw = json.loads(Path(source).expanduser().read_text()) if isinstance(source, (str, Path)) else source
+    _warn_if_not_current(raw, source)
     if raw.get("schema_version") != 1 or set(raw.get("cameras", {})) != set(CAMERAS):
         raise ValueError(f"Camera rig schema_version=1 requires exactly {CAMERAS}")
     cameras = {}

@@ -1,0 +1,8 @@
+{
+ "about": "Each servo's calibrated range on the real rig, in sim joint degrees (rig.json joint_offsets_deg included), read by the safety guard on 2026-11-11 (C:\\robot\\real runs). If rig.json offsets change, re-read them with a dry check.",
+ "joints": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll"],
+ "ranges_deg": {
+  "left":  [[-115, 125], [-93, 110], [-103, 90], [-99, 103], [-253, 107]],
+  "right": [[-116, 124], [-106, 104], [-104, 90], [-104, 102], [-270, 90]]
+ }
+}

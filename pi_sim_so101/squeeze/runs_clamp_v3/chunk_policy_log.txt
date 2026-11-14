@@ -1,0 +1,13 @@
+17:24:03 round 0 (beta 1.0, 36000 labelled steps, mse 0.0014) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.06 clean 0.06 box_tipped 0.00 limiter 87 ticks/ep (32 episodes)
+17:24:03   new best (0.06) -> best.pt
+17:29:57 round 1 (beta 0.5, 72000 labelled steps, mse 0.0045) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.06 clean 0.03 box_tipped 0.00 limiter 89 ticks/ep (32 episodes)
+17:35:47 round 2 (beta 0.3, 108000 labelled steps, mse 0.0058) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.25 clean 0.03 box_tipped 0.00 limiter 139 ticks/ep (32 episodes)
+17:41:53 round 3 (beta 0.1, 144000 labelled steps, mse 0.0084) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.09 clean 0.09 box_tipped 0.00 limiter 127 ticks/ep (32 episodes)
+17:41:53   new best (0.09) -> best.pt
+17:47:34 round 4 (beta 0.0, 180000 labelled steps, mse 0.0091) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.22 clean 0.03 box_tipped 0.03 limiter 131 ticks/ep (32 episodes)
+17:52:29 round 5 (beta 0.0, 216000 labelled steps, mse 0.0100) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.16 clean 0.09 box_tipped 0.00 limiter 133 ticks/ep (32 episodes)
+17:57:23 round 6 (beta 0.0, 252000 labelled steps, mse 0.0117) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.12 clean 0.09 box_tipped 0.03 limiter 61 ticks/ep (32 episodes)
+18:02:13 round 7 (beta 0.0, 288000 labelled steps, mse 0.0110) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.19 clean 0.12 box_tipped 0.00 limiter 116 ticks/ep (32 episodes)
+18:02:13   new best (0.12) -> best.pt
+18:06:58 round 8 (beta 0.0, 324000 labelled steps, mse 0.0120) chunked policy alone, servo shortfall 0-3 deg + squeeze limiter: success 0.12 clean 0.09 box_tipped 0.00 limiter 62 ticks/ep (32 episodes)
+18:06:58 done

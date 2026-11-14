@@ -1,0 +1,1839 @@
+[
+ {
+  "start": [
+   -12.5,
+   -5.0
+  ],
+  "pushes": 428,
+  "contacts": {
+   "push:push:arm-box": 2807,
+   "push:retreat:arm-box": 25,
+   "push:relift:arm-box": 12,
+   "push:approach_low:arm-box": 5
+  },
+  "guard": [
+   "push:push:cmd:arm-box 5mm",
+   "push:push:cmd:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "not in zone after pushes",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -1.3,
+   1.2
+  ],
+  "cube_yaw_deg": 46.9,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   -5.0
+  ],
+  "pushes": 333,
+  "contacts": {
+   "push:push:arm-box": 106,
+   "push:retreat:arm-box": 1,
+   "push:approach_low:arm-box": 1
+  },
+  "guard": [
+   "push:push:cmd:arm-box 5mm",
+   "push:push:cmd:arm-box 5mm",
+   "push:push:cmd:arm-box 4mm",
+   "push:push:cmd:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -0.4,
+   0.5
+  ],
+  "cube_yaw_deg": -5.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.4,+0.5 cm yaw  -5 mu 0.4: lifted 36.8 mm, tilt 15.0, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   -5.0
+  ],
+  "pushes": 1048,
+  "contacts": {},
+  "guard": [
+   "push:push:cmd:arm-box 3mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "clamp failed",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   0.8,
+   0.3
+  ],
+  "cube_yaw_deg": -18.6,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.8,+0.3 cm yaw -19 mu 0.4: lifted 34.1 mm, tilt  5.2, in box False, contacts none, under clearance target {'cmd:arm-box': '9mm@squeeze', 'meas:arm-box': ",
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   -5.0
+  ],
+  "pushes": 1124,
+  "contacts": {},
+  "guard": [
+   "push:push:cmd:arm-box 5mm",
+   "push:push:cmd:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -0.7,
+   0.2
+  ],
+  "cube_yaw_deg": 20.6,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.2 cm yaw +21 mu 0.4: lifted 36.4 mm, tilt 11.8, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   -5.0
+  ],
+  "pushes": 1448,
+  "contacts": {
+   "push:push:arm-box": 3521,
+   "push:retreat:arm-box": 16,
+   "push:relift:arm-box": 11
+  },
+  "guard": [
+   "push:push:cmd:arm-box 4mm",
+   "push:push:cmd:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "clamp failed",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   0.4
+  ],
+  "cube_yaw_deg": -103.8,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.7,+0.4 cm yaw -104 mu 0.4: lifted 33.5 mm, tilt  8.8, in box False, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box'",
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   -5.0
+  ],
+  "pushes": 562,
+  "contacts": {
+   "push:push:arm-box": 300,
+   "push:retreat:arm-box": 10,
+   "push:relift:arm-box": 5
+  },
+  "guard": [
+   "push:push:cmd:arm-box 5mm",
+   "push:push:cmd:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   1.0
+  ],
+  "cube_yaw_deg": -7.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.7,+1.0 cm yaw  -7 mu 0.4: lifted 36.6 mm, tilt 13.4, in box True, contacts none, under clearance target {'meas:arm-box': '7mm@squeeze'}",
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   -2.5
+  ],
+  "pushes": 851,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 839
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 5mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.7,
+   0.4
+  ],
+  "cube_yaw_deg": 18.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.4 cm yaw +18 mu 0.4: lifted 36.7 mm, tilt 12.5, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   -2.5
+  ],
+  "pushes": 757,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 624
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.7,
+   0.2
+  ],
+  "cube_yaw_deg": 22.0,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.2 cm yaw +22 mu 0.4: lifted 36.7 mm, tilt 12.6, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   -2.5
+  ],
+  "pushes": 700,
+  "contacts": {
+   "push:approach_low:arm-box": 2,
+   "push:push:arm-box": 13
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 5mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.6,
+   0.5
+  ],
+  "cube_yaw_deg": 18.0,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.6,+0.5 cm yaw +18 mu 0.4: lifted 36.8 mm, tilt 12.5, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -5.0,
+   -2.5
+  ],
+  "pushes": 709,
+  "contacts": {
+   "push:approach_low:arm-box": 2,
+   "push:push:arm-box": 892
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:meas:arm-box 2mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.7,
+   0.2
+  ],
+  "cube_yaw_deg": 18.9,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.2 cm yaw +19 mu 0.4: lifted 36.5 mm, tilt 12.0, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -2.5,
+   -2.5
+  ],
+  "pushes": 1,
+  "contacts": {
+   "push:approach_low:arm-box": 4,
+   "push:push:arm-box": 3044,
+   "push:retreat:arm-box": 15,
+   "push:relift:arm-box": 5
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 5mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "not in zone after pushes",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   0.4,
+   0.3
+  ],
+  "cube_yaw_deg": 62.2,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   0.0,
+   -2.5
+  ],
+  "pushes": 132,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 87,
+   "push:retreat:arm-box": 10,
+   "push:relift:arm-box": 6,
+   "push:home:arm-box": 5
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 5mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.3,
+   0.5
+  ],
+  "cube_yaw_deg": -7.0,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.3,+0.5 cm yaw  -7 mu 0.4: lifted 36.2 mm, tilt 11.3, in box True, contacts none, under clearance target {'cmd:arm-box': '12mm@squeeze'}",
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   -2.5
+  ],
+  "pushes": 372,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 278,
+   "push:retreat:arm-box": 12,
+   "push:relift:arm-box": 6
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 5mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "clamp failed",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.6,
+   0.5
+  ],
+  "cube_yaw_deg": -13.6,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.6,+0.5 cm yaw -14 mu 0.4: lifted 33.4 mm, tilt  8.8, in box False, contacts none, under clearance target {'cmd:arm-box': '11mm@squeeze', 'meas:arm-box':",
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   -2.5
+  ],
+  "pushes": 242,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 153,
+   "push:retreat:arm-box": 1
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -0.0,
+   1.2
+  ],
+  "cube_yaw_deg": 7.0,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.0,+1.2 cm yaw  +7 mu 0.4: lifted 37.1 mm, tilt 14.0, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   -2.5
+  ],
+  "pushes": 728,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 10
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 1mm",
+   "push:push:cmd:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.4,
+   0.2
+  ],
+  "cube_yaw_deg": 15.8,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.4,+0.2 cm yaw +16 mu 0.4: lifted 36.6 mm, tilt 12.1, in box True, contacts none, under clearance target {'cmd:arm-box': '11mm@squeeze'}",
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   -2.5
+  ],
+  "pushes": 587,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 633,
+   "push:retreat:arm-box": 15,
+   "push:relift:arm-box": 4,
+   "push:approach_high:arm-box": 4
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 5mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 2mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.6,
+   0.4
+  ],
+  "cube_yaw_deg": -16.1,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.6,+0.4 cm yaw -16 mu 0.4: lifted 33.8 mm, tilt  9.8, in box True, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box': ",
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   -2.5
+  ],
+  "pushes": 718,
+  "contacts": {
+   "push:approach_low:arm-box": 1,
+   "push:push:arm-box": 27
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "clamp failed",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.6,
+   0.4
+  ],
+  "cube_yaw_deg": -19.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.6,+0.4 cm yaw -19 mu 0.4: lifted 33.9 mm, tilt  5.9, in box False, contacts none, under clearance target {'cmd:arm-box': '11mm@squeeze', 'meas:arm-box':",
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   0.0
+  ],
+  "pushes": 264,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.6,
+   0.8
+  ],
+  "cube_yaw_deg": 13.1,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.6,+0.8 cm yaw +13 mu 0.4: lifted 37.0 mm, tilt 13.8, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -10.0,
+   0.0
+  ],
+  "pushes": 270,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.5,
+   0.5
+  ],
+  "cube_yaw_deg": -2.5,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.5,+0.5 cm yaw  -2 mu 0.4: lifted 36.4 mm, tilt 14.7, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -7.5,
+   0.0
+  ],
+  "pushes": 315,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.7,
+   0.3
+  ],
+  "cube_yaw_deg": -2.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.3 cm yaw  -2 mu 0.4: lifted 36.6 mm, tilt 13.2, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -5.0,
+   0.0
+  ],
+  "pushes": 212,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.3,
+   0.4
+  ],
+  "cube_yaw_deg": -6.5,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.3,+0.4 cm yaw  -6 mu 0.4: lifted 37.2 mm, tilt 16.4, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -2.5,
+   0.0
+  ],
+  "pushes": 214,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.8,
+   0.4
+  ],
+  "cube_yaw_deg": -7.5,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.8,+0.4 cm yaw  -7 mu 0.4: lifted 38.8 mm, tilt 16.7, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   0.0,
+   0.0
+  ],
+  "pushes": 100,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -0.1,
+   0.5
+  ],
+  "cube_yaw_deg": -3.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.1,+0.5 cm yaw  -3 mu 0.4: lifted 36.8 mm, tilt 12.8, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   2.5,
+   0.0
+  ],
+  "pushes": 213,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   0.4
+  ],
+  "cube_yaw_deg": 6.9,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.7,+0.4 cm yaw  +7 mu 0.4: lifted 37.2 mm, tilt 13.1, in box True, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box': ",
+  "clean": true
+ },
+ {
+  "start": [
+   5.0,
+   0.0
+  ],
+  "pushes": 213,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.4,
+   0.4
+  ],
+  "cube_yaw_deg": 6.2,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.4,+0.4 cm yaw  +6 mu 0.4: lifted 37.3 mm, tilt 13.8, in box True, contacts none, under clearance target {'cmd:arm-box': '11mm@squeeze'}",
+  "clean": true
+ },
+ {
+  "start": [
+   7.5,
+   0.0
+  ],
+  "pushes": 322,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   0.3
+  ],
+  "cube_yaw_deg": 2.9,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.7,+0.3 cm yaw  +3 mu 0.4: lifted 36.6 mm, tilt 12.2, in box True, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box': ",
+  "clean": true
+ },
+ {
+  "start": [
+   10.0,
+   0.0
+  ],
+  "pushes": 204,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.2,
+   0.4
+  ],
+  "cube_yaw_deg": -10.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.2,+0.4 cm yaw -10 mu 0.4: lifted 35.5 mm, tilt  8.9, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   12.5,
+   0.0
+  ],
+  "pushes": 211,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.9,
+   0.5
+  ],
+  "cube_yaw_deg": -11.9,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.9,+0.5 cm yaw -12 mu 0.4: lifted 34.6 mm, tilt 10.7, in box True, contacts none, under clearance target {'cmd:arm-box': '9mm@squeeze', 'meas:arm-box': '",
+  "clean": true
+ },
+ {
+  "start": [
+   -12.5,
+   2.5
+  ],
+  "pushes": 442,
+  "contacts": {
+   "push:push:arm-box": 6
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 4mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:meas:arm-box 2mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.8,
+   0.4
+  ],
+  "cube_yaw_deg": 97.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.8,+0.4 cm yaw +97 mu 0.4: lifted 37.5 mm, tilt 13.8, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   2.5
+  ],
+  "pushes": 244,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.4,
+   1.3
+  ],
+  "cube_yaw_deg": 15.8,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.4,+1.3 cm yaw +16 mu 0.4: lifted 37.1 mm, tilt 13.8, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -7.5,
+   2.5
+  ],
+  "pushes": 185,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   0.6,
+   1.7
+  ],
+  "cube_yaw_deg": 5.6,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.6,+1.7 cm yaw  +6 mu 0.4: lifted 37.1 mm, tilt 14.6, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -5.0,
+   2.5
+  ],
+  "pushes": 175,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.2,
+   1.2
+  ],
+  "cube_yaw_deg": 11.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.2,+1.2 cm yaw +11 mu 0.4: lifted 37.0 mm, tilt 13.8, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   -2.5,
+   2.5
+  ],
+  "pushes": 193,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.1,
+   1.7
+  ],
+  "cube_yaw_deg": 8.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.1,+1.7 cm yaw  +8 mu 0.4: lifted 36.7 mm, tilt 13.6, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   0.0,
+   2.5
+  ],
+  "pushes": 1,
+  "contacts": {
+   "push:approach_high:arm-table": 1
+  },
+  "guard": [],
+  "result": "not in zone after pushes",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -0.2,
+   0.9
+  ],
+  "cube_yaw_deg": -26.5,
+  "cube_tilt_deg": 90.0,
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   2.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 5.1 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -0.8,
+   1.8
+  ],
+  "cube_yaw_deg": -1.5,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   2.5
+  ],
+  "pushes": 174,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.3,
+   1.4
+  ],
+  "cube_yaw_deg": -11.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.3,+1.4 cm yaw -11 mu 0.4: lifted 36.8 mm, tilt 13.5, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   7.5,
+   2.5
+  ],
+  "pushes": 184,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   -0.5,
+   1.8
+  ],
+  "cube_yaw_deg": -5.4,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.5,+1.8 cm yaw  -5 mu 0.4: lifted 36.2 mm, tilt 13.7, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   10.0,
+   2.5
+  ],
+  "pushes": 243,
+  "contacts": {},
+  "guard": [],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.1,
+   1.5
+  ],
+  "cube_yaw_deg": -15.5,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.1,+1.5 cm yaw -16 mu 0.4: lifted 33.9 mm, tilt 10.0, in box True, contacts none, under clearance target none",
+  "clean": true
+ },
+ {
+  "start": [
+   12.5,
+   2.5
+  ],
+  "pushes": 351,
+  "contacts": {
+   "push:approach_low:arm-box": 2,
+   "push:push:arm-box": 5
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 1mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.4,
+   0.2
+  ],
+  "cube_yaw_deg": -93.6,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.4,+0.2 cm yaw -94 mu 0.4: lifted 36.9 mm, tilt 13.5, in box True, contacts none, under clearance target {'cmd:arm-box': '11mm@squeeze'}",
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   5.0
+  ],
+  "pushes": 97,
+  "contacts": {},
+  "guard": [],
+  "result": "not in zone after pushes",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -7.9,
+   4.6
+  ],
+  "cube_yaw_deg": 1.3,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   5.0
+  ],
+  "pushes": 508,
+  "contacts": {
+   "push:approach_low:arm-box": 2,
+   "push:push:arm-box": 10
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 1mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 1mm",
+   "push:push:meas:arm-box 1mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.7,
+   0.3
+  ],
+  "cube_yaw_deg": 100.3,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.7,+0.3 cm yaw +100 mu 0.4: lifted 37.4 mm, tilt 13.9, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   5.0
+  ],
+  "pushes": 1366,
+  "contacts": {
+   "push:approach_low:arm-table": 1,
+   "push:approach_low:arm-box": 3,
+   "push:push:arm-box": 2898,
+   "push:retreat:arm-box": 17,
+   "push:relift:arm-box": 18,
+   "push:approach_high:arm-box": 13
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 0mm",
+   "push:push:cmd:arm-box 0mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 4mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "left",
+  "after_push": [
+   -0.8,
+   0.6
+  ],
+  "cube_yaw_deg": 92.0,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube -0.8,+0.6 cm yaw +92 mu 0.4: lifted 37.5 mm, tilt 14.3, in box True, contacts none, under clearance target none",
+  "clean": false
+ },
+ {
+  "start": [
+   -5.0,
+   5.0
+  ],
+  "pushes": 0,
+  "contacts": {
+   "push:approach_high:arm-table": 1
+  },
+  "guard": [],
+  "result": "push: push out of reach (IK error 6.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -1.4,
+   4.4
+  ],
+  "cube_yaw_deg": -2.5,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -2.5,
+   5.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 11.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -2.5,
+   5.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   0.0,
+   5.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 52.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -0.0,
+   5.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   5.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 11.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   2.5,
+   5.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   5.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 6.2 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   1.4,
+   4.4
+  ],
+  "cube_yaw_deg": 1.8,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   5.0
+  ],
+  "pushes": 818,
+  "contacts": {
+   "push:approach_low:arm-box": 5,
+   "push:push:arm-box": 41
+  },
+  "guard": [
+   "push:approach_high:cmd:camera-mount 5mm",
+   "push:approach_high:cmd:camera-mount 2mm",
+   "push:approach_high:cmd:camera-mount 2mm",
+   "push:approach_low:meas:camera-mount 2mm",
+   "push:approach_low:meas:camera-mount 3mm"
+  ],
+  "result": "clamp failed",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   0.4
+  ],
+  "cube_yaw_deg": -108.1,
+  "cube_tilt_deg": 90.0,
+  "clamp_log": "cube +0.7,+0.4 cm yaw -108 mu 0.4: lifted  0.0 mm, tilt  0.0, in box False, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box'",
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   5.0
+  ],
+  "pushes": 213,
+  "contacts": {
+   "push:approach_low:arm-box": 4,
+   "push:push:arm-box": 15
+  },
+  "guard": [
+   "push:approach_low:cmd:arm-box 3mm",
+   "push:approach_low:meas:arm-box 0mm",
+   "push:push:cmd:arm-box 4mm",
+   "push:push:meas:arm-box 0mm",
+   "push:push:meas:arm-box 0mm"
+  ],
+  "result": "IN BOX",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   0.7,
+   0.4
+  ],
+  "cube_yaw_deg": -1.1,
+  "cube_tilt_deg": 0.0,
+  "clamp_log": "cube +0.7,+0.4 cm yaw  -1 mu 0.4: lifted 37.2 mm, tilt 13.0, in box True, contacts none, under clearance target {'cmd:arm-box': '10mm@squeeze', 'meas:arm-box': ",
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   5.0
+  ],
+  "pushes": 97,
+  "contacts": {},
+  "guard": [],
+  "result": "not in zone after pushes",
+  "phase_fail": "",
+  "arm": "right",
+  "after_push": [
+   7.9,
+   4.5
+  ],
+  "cube_yaw_deg": -1.3,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 7.4 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -12.5,
+   7.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 7.1 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -10.0,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 12.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -7.5,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -5.0,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 22.4 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -5.0,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -2.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 71.1 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -2.5,
+   7.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   0.0,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 99.3 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -0.0,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 69.6 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   2.5,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 22.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   5.0,
+   7.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 11.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   7.5,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 7.2 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   10.0,
+   7.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   7.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 7.2 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   12.5,
+   7.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 31.4 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -12.5,
+   10.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 31.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -10.0,
+   10.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 32.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -7.5,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -5.0,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 35.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -5.0,
+   10.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -2.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 127.3 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -2.5,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   0.0,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 136.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -0.0,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 125.2 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   2.5,
+   10.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 35.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   5.0,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 32.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   7.5,
+   10.0
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 31.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   10.0,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   10.0
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 31.4 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   12.5,
+   10.0
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -12.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 46.8 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -12.5,
+   12.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -10.0,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 47.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -10.0,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -7.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 48.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -7.5,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -5.0,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 52.1 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -5.0,
+   12.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   -2.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 145.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   -2.5,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   0.0,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 151.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   0.0,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   2.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 144.5 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   2.5,
+   12.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   5.0,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 52.1 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   5.0,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   7.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 48.7 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   7.5,
+   12.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   10.0,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 47.0 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   10.0,
+   12.5
+  ],
+  "cube_yaw_deg": 0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ },
+ {
+  "start": [
+   12.5,
+   12.5
+  ],
+  "pushes": 0,
+  "contacts": {},
+  "guard": [],
+  "result": "push: push out of reach (IK error 46.8 mm)",
+  "phase_fail": "",
+  "arm": null,
+  "after_push": [
+   12.5,
+   12.5
+  ],
+  "cube_yaw_deg": -0.0,
+  "cube_tilt_deg": 0.0,
+  "clean": false
+ }
+]

@@ -1,0 +1,47 @@
+{"seed": 881000, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.5, "cube_start_err_mm": 4.7, "ticks": 296, "secs": 29}
+{"seed": 881001, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.4, "cube_start_err_mm": 2.4, "ticks": 321, "secs": 37}
+{"seed": 881002, "delivered": false, "clean": false, "contacts": {"arm_arm": 60}, "guard_stop": [177, "arm-arm 2.9 mm < 3.0 mm (left_moving_jaw_so101_v1 vs right_gripper) in the REAL (measured) pose"], "limiter_ticks": 58, "attempts": 2, "box_err_mm": 0.7, "cube_start_err_mm": 6.6, "ticks": 450, "secs": 48}
+{"seed": 881003, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.5, "cube_start_err_mm": 3.3, "ticks": 295, "secs": 34}
+{"seed": 881004, "delivered": false, "clean": false, "contacts": {"arm_arm": 1}, "guard_stop": [237, "arm-arm 3.0 mm < 3.0 mm (left_moving_jaw_so101_v1 vs right_gripper) in the REAL (measured) pose"], "limiter_ticks": 0, "attempts": 2, "box_err_mm": 0.9, "cube_start_err_mm": 6.1, "ticks": 450, "secs": 48}
+{"seed": 881005, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 1.7, "ticks": 292, "secs": 37}
+{"seed": 881006, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 10, "attempts": 2, "box_err_mm": 0.8, "cube_start_err_mm": 2.7, "ticks": 450, "secs": 58}
+{"seed": 881007, "delivered": false, "clean": false, "contacts": {"arm_box": 56}, "guard_stop": [344, "arm-box 5.6 mm < 6.0 mm (left_gripper vs box/box_wall_0) in the COMMANDED pose (where the arms were being sent, not where they are) [the real arms at that momen"], "limiter_ticks": 29, "attempts": 2, "box_err_mm": 0.6, "cube_start_err_mm": 3.5, "ticks": 450, "secs": 44}
+{"seed": 881008, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 7, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 0.5, "ticks": 337, "secs": 48}
+{"seed": 881009, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 2.5, "ticks": 295, "secs": 46}
+{"seed": 881010, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 2.0, "ticks": 320, "secs": 43}
+{"seed": 881011, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 4.3, "ticks": 300, "secs": 38}
+{"seed": 881012, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 1.0, "ticks": 308, "secs": 36}
+{"seed": 881013, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 5.4, "ticks": 319, "secs": 36}
+{"seed": 881014, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 1.2, "ticks": 301, "secs": 31}
+{"seed": 881015, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 4.0, "ticks": 345, "secs": 34}
+{"seed": 881016, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 7, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 1.8, "ticks": 288, "secs": 33}
+{"seed": 881017, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 1.4, "ticks": 308, "secs": 37}
+{"seed": 881018, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 2.4, "ticks": 291, "secs": 35}
+{"seed": 881019, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 3.8, "ticks": 306, "secs": 35}
+{"seed": 881020, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 1.5, "ticks": 351, "secs": 40}
+{"seed": 881021, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 10, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 1.6, "ticks": 316, "secs": 43}
+{"seed": 881022, "delivered": false, "clean": false, "contacts": {}, "guard_stop": [356, "arm-box 1.9 mm < 2.0 mm (left_gripper vs box/box_wall_3) in the REAL (measured) pose"], "limiter_ticks": 23, "attempts": 4, "box_err_mm": 0.1, "cube_start_err_mm": 2.2, "ticks": 450, "secs": 50}
+{"seed": 881023, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 3, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 5.0, "ticks": 298, "secs": 31}
+{"seed": 881024, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 4, "box_err_mm": 0.4, "cube_start_err_mm": 4.8, "ticks": 450, "secs": 63}
+{"seed": 881025, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 4.0, "ticks": 295, "secs": 45}
+{"seed": 881026, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 2, "box_err_mm": 0.6, "cube_start_err_mm": 1.6, "ticks": 450, "secs": 60}
+{"seed": 881027, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 1.6, "ticks": 311, "secs": 38}
+{"seed": 881028, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 3.0, "ticks": 356, "secs": 40}
+{"seed": 881029, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 3, "box_err_mm": 1.0, "cube_start_err_mm": 2.2, "ticks": 450, "secs": 45}
+{"seed": 881030, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 2.1, "ticks": 294, "secs": 29}
+{"seed": 881031, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 3, "box_err_mm": 0.7, "cube_start_err_mm": 2.2, "ticks": 450, "secs": 51}
+{"seed": 881032, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 4, "box_err_mm": 0.5, "cube_start_err_mm": 0.9, "ticks": 450, "secs": 52}
+{"seed": 881033, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 44, "attempts": 2, "box_err_mm": 0.9, "cube_start_err_mm": 3.9, "ticks": 450, "secs": 51}
+{"seed": 881034, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 4.6, "ticks": 297, "secs": 33}
+{"seed": 881035, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 2.2, "ticks": 294, "secs": 39}
+{"seed": 881036, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 2.9, "ticks": 301, "secs": 38}
+{"seed": 881037, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.4, "cube_start_err_mm": 5.4, "ticks": 316, "secs": 31}
+{"seed": 881038, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 3.3, "ticks": 305, "secs": 37}
+{"seed": 881039, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 13, "attempts": 1, "box_err_mm": 0.2, "cube_start_err_mm": 3.5, "ticks": 318, "secs": 48}
+{"seed": 881040, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.5, "cube_start_err_mm": 1.0, "ticks": 312, "secs": 46}
+{"seed": 881041, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 1.0, "cube_start_err_mm": 0.9, "ticks": 307, "secs": 41}
+{"seed": 881042, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 4.1, "ticks": 305, "secs": 35}
+{"seed": 881043, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 5, "box_err_mm": 0.4, "cube_start_err_mm": 2.9, "ticks": 450, "secs": 48}
+{"seed": 881044, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 1.1, "ticks": 307, "secs": 31}
+
+rig controller + sim-74 student, squeeze limiter ON, release gap ON: delivered 33/45, clean 33/45, the real guard would have stopped 4/45, start refused 0

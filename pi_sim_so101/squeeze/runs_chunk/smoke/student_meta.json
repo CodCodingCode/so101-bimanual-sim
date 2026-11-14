@@ -1,0 +1,1 @@
+{"K": 8, "scale": 20.0, "ensemble_m": 0.1, "obs_dim": 41, "stage": 3, "teacher": "runs_clamp_wide/rotation_done.zip", "round": 1, "success": 0.0, "clean": 0.0, "output": "(K, 2 arms, 3) tool-point targets relative to the commanded tool point at prediction time, m x 20"}

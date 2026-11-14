@@ -4,6 +4,8 @@ from dataclasses import dataclass
 
 import gymnasium as gym
 import mujoco
+from pathlib import Path
+
 import numpy as np
 from gymnasium import spaces
 from PIL import Image
@@ -27,6 +29,10 @@ def _rotvec_to_quat(rotvec):
     if angle < 1e-10:
         return np.array([1., 0., 0., 0.])
     return np.r_[np.cos(angle / 2), np.sin(angle / 2) * rotvec / angle]
+
+
+# real cube on the real table slides easily (user, 2026-11-12): table friction per episode
+TABLE_FRICTION = (0.2, 0.3)
 
 
 @dataclass
@@ -117,6 +123,7 @@ class RobotEnv(gym.Env):
         self._settle_steps = max(1, int(round(0.25 * control_hz)))
         self.camera_specs = load_camera_rig(camera_rig)
         self.model = self._build_model(object_shape, object_color, camera_rig)
+        self._overhead_opt = self._hide_wrist_mounts(camera_rig)
         self.data = mujoco.MjData(self.model)
         self._ik_data = mujoco.MjData(self.model)
         self.robot = {side: Arm(self, side) for side in ARMS}
@@ -147,6 +154,39 @@ class RobotEnv(gym.Env):
             obs["images"] = spaces.Dict({c: spaces.Box(0, 255, (image_size, image_size, 3), np.uint8) for c in self.camera_names})
         self.observation_space = spaces.Dict(obs)
         self._joint_targets = np.zeros((2, len(JOINTS)))
+
+    HIDDEN_GROUP = 5
+
+    def _hide_wrist_mounts(self, camera_rig):
+        """A real wrist camera cannot see its own mount; with the refit wrist poses (calibration tag 6349a0) the right
+        wrist camera sits inside its modelled housing and renders black. When the rig file says
+        "hide_wrist_mounts": true (rig_tools/build_rig_from_calibration.py sets it) or PI_SIM_HIDE_CAM_MOUNTS=1, the
+        visible geoms of both wrist camera mounts move to geom group 5, which MuJoCo does not draw by default, and the
+        overhead render turns group 5 back on, so the overhead still sees the mounts (same as warprm's pi_sim).
+        Returns the overhead scene option, or None when nothing is hidden (renders unchanged)."""
+        import json
+        import os
+        flag = os.environ.get("PI_SIM_HIDE_CAM_MOUNTS")
+        if flag is None:
+            try:
+                from .cameras import DEFAULT_RIG
+                raw = camera_rig if isinstance(camera_rig, dict) else (
+                    json.loads(Path(camera_rig if camera_rig is not None else DEFAULT_RIG).expanduser().read_text()))
+            except Exception:
+                raw = {}
+            hide = bool(raw.get("hide_wrist_mounts", False))
+        else:
+            hide = flag not in ("", "0", "false", "False")
+        if not hide:
+            return None
+        m = self.model
+        mounts = {m.body(f"{s}_camera_mount").id for s in ARMS}
+        for g in range(m.ngeom):
+            if m.geom_bodyid[g] in mounts and m.geom_group[g] <= 2:
+                m.geom_group[g] = self.HIDDEN_GROUP
+        opt = mujoco.MjvOption()
+        opt.geomgroup[self.HIDDEN_GROUP] = 1
+        return opt
 
     def _build_model(self, object_shape, object_color, camera_rig):
         """Subclasses add task props here (see pi_sim.tasks)."""
@@ -232,6 +272,13 @@ class RobotEnv(gym.Env):
         if unknown:
             raise ValueError(f"Unknown reset options: {sorted(unknown)}")
         mujoco.mj_resetData(self.model, self.data)
+        # TABLE FRICTION (user, 2026-11-12: the real cube slides easily on the real table): the table has contact
+        # priority 1 (scene.py), so its friction governs every table contact; each episode it is drawn from
+        # TABLE_FRICTION. Own generator, so the episode layouts drawn from np_random stay as they were for each seed.
+        if seed is not None or not hasattr(self, "_table_rng"):
+            self._table_rng = np.random.default_rng(None if seed is None else [int(seed), 20261112])
+        self.table_mu = float(self._table_rng.uniform(*TABLE_FRICTION))
+        self.model.geom_friction[self.model.geom("table").id, 0] = self.table_mu
         for arm in self.robot.values():
             home = np.array([0, -0.8, 0.8, 1.57, -0.0487])
             self.data.qpos[arm.qpos_ids] = home
@@ -474,7 +521,10 @@ class RobotEnv(gym.Env):
             self.model.vis.global_.offheight = max(height, self.model.vis.global_.offheight)
             self._renderers[size] = mujoco.Renderer(self.model, height=height, width=width)
         renderer = self._renderers[size]
-        renderer.update_scene(self.data, camera=camera)
+        if self._overhead_opt is not None and not camera.endswith("_wrist"):
+            renderer.update_scene(self.data, camera=camera, scene_option=self._overhead_opt)
+        else:
+            renderer.update_scene(self.data, camera=camera)
         # Explicit bounds also support unequal fx/fy and an overscanned lens.
         # MuJoCo's render target size is independent of camera.resolution.
         for view in renderer.scene.camera:

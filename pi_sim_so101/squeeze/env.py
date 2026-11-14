@@ -72,6 +72,25 @@ SETTLE_S = 0.4
 # 0 = plain MuJoCo friction (user, 2026-11-10). With the real 10-20 g cube the scripted squeeze still lands
 # 30/30 into the box without the noslip pass; 10 was needed for the old 40-60 g cube on the can.
 NOSLIP_ITERATIONS = 0
+# Each real servo's calibrated range (sim degrees, offsets included). The sim joints / actuators / IK are limited to it
+# (3 deg inside) so nothing the sim plans can ask a real joint for an angle it cannot reach (2026-11-11: the left wrist
+# roll was asked for 163 deg, the real servo stops at 107, and a wrist camera holder got knocked off).
+REAL_RANGES = Path(__file__).resolve().parents[1] / "pi_sim" / "assets" / "so101_real_ranges.json"
+REAL_RANGE_MARGIN_DEG = 3.0
+
+
+def apply_real_ranges(m):
+    if os.environ.get("PI_SIM_REAL_RANGES") == "off" or not REAL_RANGES.exists():
+        return
+    import json
+    spec = json.loads(REAL_RANGES.read_text())
+    for side, rows in spec["ranges_deg"].items():
+        for name, (lo, hi) in zip(spec["joints"], rows):
+            j, a = m.joint(f"{side}_{name}").id, m.actuator(f"{side}_{name}").id
+            cur = np.rad2deg(m.jnt_range[j])
+            new = np.radians([max(cur[0], lo + REAL_RANGE_MARGIN_DEG), min(cur[1], hi - REAL_RANGE_MARGIN_DEG)])
+            m.jnt_range[j] = new
+            m.actuator_ctrlrange[a] = new
 
 
 def pad_quaternion(side):
@@ -90,9 +109,13 @@ def pad_quaternion(side):
 # Appearance only: no physics changes (the room walls do not collide).
 ARM_RGB = np.array([0.557, 0.6, 0.651])      # printed arm plastic as the cameras see it (grey-blue)
 CUBE_RGB = np.array([0.518, 0.188, 0.271])   # the real "red" cube
-BOX_RGB = np.array([0.155, 0.161, 0.212])    # the real "grey" box
-ROOM_RGB = np.array([0.518, 0.518, 0.518])   # walls; the floor is 0.9x this
-TABLE_RGB = np.array([0.424, 0.365, 0.349])  # mean colour of the wood bench top in the overhead camera
+BOX_RGB = np.array([0.149, 0.135, 0.142])    # the real "grey" box (re-measured 2026-11-12)
+# 2026-11-12: re-measured against a real overhead frame (squeeze/match_real_colors.py): the real background (white
+# floor beyond the table's curved edge) renders ~1.5x brighter than the sim's, the real wood ~8% darker / yellower
+ROOM_RGB = np.array([0.54, 0.54, 0.54])      # walls (what the wrist cameras see); the floor is 0.9x this
+TABLE_RGB = np.array([0.339, 0.312, 0.286])  # mean colour of the wood bench top in the overhead camera (re-measured)
+OFFTABLE_RGB = np.array([0.72, 0.73, 0.70])  # the white floor seen beyond the real table edge
+OFFTABLE = Path(__file__).resolve().parents[1] / "pi_sim" / "assets" / "offtable_cells.json"
 _ARM_PLASTIC = np.array([0.92, 0.92, 0.9])   # pi_sim's near-white arm material, replaced by ARM_RGB
 
 
@@ -107,6 +130,19 @@ def _room_xml():
         f' contype="0" conaffinity="0"/>'
         for n, sx, sy, px, py in (("n", 1.2, 0.02, 0, 0.95), ("e", 0.02, 1.2, 0.95, 0),
                                   ("w", 0.02, 1.2, -0.95, 0), ("s", 1.2, 0.02, 0, -0.95)))
+
+
+def _offtable_xml():
+    """Visual-only floor-coloured patches where the real table is NOT (beyond its curved edge). Removed by default on
+    2026-11-12 at the user's request (they look like white paint on the sim table); PI_SIM_OFFTABLE=on brings them back."""
+    if os.environ.get("PI_SIM_OFFTABLE") != "on" or not OFFTABLE.exists():   # OFF by default (user: not real)
+        return ""
+    import json
+    spec = json.loads(OFFTABLE.read_text())
+    h = spec["cell_m"] / 2 + 0.0005
+    return "".join(f'<geom name="offtable_{i}" type="box" size="{h:.4f} {h:.4f} 0.0004" pos="{x:.4f} {y:.4f} 0.0005" '
+                   f'rgba="{_rgba(OFFTABLE_RGB)}" contype="0" conaffinity="0" group="0"/>'
+                   for i, (x, y) in enumerate(spec["cells"]))
 
 
 def match_appearance(m):
@@ -129,6 +165,7 @@ def match_appearance(m):
     m.geom_matid[floor] = -1
     m.geom_rgba[floor] = [*(ROOM_RGB * 0.9), 1]
     m.stat.center[:] = [0.0, -0.05, 0.12]   # default free camera starts inside the walls
+    m.light_castshadow[:] = 0               # the real room light is soft: almost no shadows (randomised in training)
     m.stat.extent = 0.35
     return m
 
@@ -149,7 +186,7 @@ class _Sim(RobotEnv):
     """pi_sim with the grey box, a wider near edge, and a fixed tool yaw per arm."""
 
     def _build_model(self, object_shape, object_color, camera_rig):
-        return match_appearance(build_model(object_shape, object_color, camera_rig, extra_worldbody=_can_xml() + _room_xml()))
+        return match_appearance(build_model(object_shape, object_color, camera_rig, extra_worldbody=_can_xml() + _room_xml() + _offtable_xml()))
 
     def _solve_ik(self, arm, position, quaternion, downward=None):
         return super()._solve_ik(arm, position, self.pad_quat[arm.name], downward=False)
@@ -173,6 +210,7 @@ class SqueezeEnv(gym.Env):
         # ~30x the cube's weight) the held cube still slid 7 mm down the jaws while lifting 4 cm and
         # the squeeze relaxed to 0.8 N. The noslip pass removes that creep; real friction does not creep.
         self.model.opt.noslip_iterations = NOSLIP_ITERATIONS
+        apply_real_ranges(self.model)
         self.control_hz = control_hz
         self.max_steps = int(round(episode_seconds * control_hz))
         self.settle_steps = max(1, int(round(SETTLE_S * control_hz)))

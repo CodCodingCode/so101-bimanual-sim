@@ -18,6 +18,7 @@ import numpy as np                      # noqa: E402
 from PIL import Image                   # noqa: E402
 
 import so101_real as R                  # noqa: E402
+import rt_control as RT   # noqa: E402  (min-jerk ramps at 100 Hz, 2026-11-13 motor rule)
 
 CAMS = ("overhead", "left_wrist", "right_wrist")
 
@@ -42,11 +43,11 @@ def main():
 
     def ramp(targets, secs):
         start = {s: arms[s].read_raw() for s in R.SIDES}
-        n = int(secs * 50)
+        n = int(secs * 100)
         for k in range(1, n + 1):
             for s in R.SIDES:
-                arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * k / n).astype(int))
-            time.sleep(0.02)
+                arms[s].goal(np.round(start[s] + (targets[s] - start[s]) * RT.min_jerk(k / n)).astype(int))
+            time.sleep(0.01)
 
     try:
         for a in arms.values():

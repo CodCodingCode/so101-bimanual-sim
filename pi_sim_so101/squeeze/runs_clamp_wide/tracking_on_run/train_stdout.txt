@@ -1,0 +1,20 @@
+18:38:26 start at stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg, servo +-0 deg (design design_clamp3c_twistoff.json)
+18:39:20 steps    54000 stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg, servo +-0 deg | last 120: success 0.94 clean 0.86 lifted 1.00 box tipped 0.00 [54s]
+  -> stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg, servo +-0 deg
+18:40:16 steps   108000 stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg, servo +-0 deg | last 120: success 0.89 clean 0.79 lifted 1.00 box tipped 0.00 [110s]
+  -> stage 2 [A rotation] cube +-1.5 cm, yaw +-35 deg, servo +-0 deg
+Process SpawnProcess-7:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,17 @@
+{"seed": 880000, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 15, "attempts": 2, "box_err_mm": 0.6, "cube_start_err_mm": 0.4, "ticks": 450, "secs": 43}
+{"seed": 880001, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 2.1, "ticks": 338, "secs": 33}
+{"seed": 880002, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 1.2, "cube_start_err_mm": 5.0, "ticks": 298, "secs": 29}
+{"seed": 880003, "delivered": false, "clean": false, "contacts": {}, "guard_stop": [442, "arm-box 1.9 mm < 2.0 mm (left_gripper vs box/box_wall_3) in the REAL (measured) pose"], "limiter_ticks": 0, "attempts": 7, "box_err_mm": 1.2, "cube_start_err_mm": 2.4, "ticks": 450, "secs": 42}
+{"seed": 880004, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 3.9, "ticks": 297, "secs": 29}
+{"seed": 880005, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 2.5, "ticks": 305, "secs": 29}
+{"seed": 880006, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 4.2, "ticks": 319, "secs": 31}
+{"seed": 880007, "delivered": false, "clean": false, "contacts": {"arm_table": 51}, "guard_stop": null, "limiter_ticks": 45, "attempts": 2, "box_err_mm": 0.8, "cube_start_err_mm": 4.0, "ticks": 450, "secs": 43}
+{"seed": 880008, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 1.1, "ticks": 352, "secs": 35}
+{"seed": 880009, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 1.1, "cube_start_err_mm": 3.3, "ticks": 295, "secs": 29}
+{"seed": 880010, "delivered": false, "clean": false, "contacts": {"arm_arm": 5}, "guard_stop": [204, "arm-arm 2.4 mm < 3.0 mm (left_moving_jaw_so101_v1 vs right_gripper) in the REAL (measured) pose"], "limiter_ticks": 5, "attempts": 4, "box_err_mm": 2.6, "cube_start_err_mm": 1.5, "ticks": 450, "secs": 40}
+{"seed": 880011, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 1.8, "ticks": 309, "secs": 30}
+{"seed": 880012, "delivered": false, "clean": false, "contacts": {}, "guard_stop": [371, "arm-box 1.9 mm < 2.0 mm (left_gripper vs box/box_wall_3) in the REAL (measured) pose"], "limiter_ticks": 11, "attempts": 3, "box_err_mm": 0.6, "cube_start_err_mm": 4.3, "ticks": 450, "secs": 42}
+{"seed": 880013, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 2.2, "ticks": 295, "secs": 29}
+{"seed": 880014, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 3, "box_err_mm": 0.5, "cube_start_err_mm": 3.0, "ticks": 450, "secs": 43}
+
+rig controller + sim-74 student, squeeze limiter ON, release gap ON: delivered 9/15, clean 9/15, the real guard would have stopped 3/15, start refused 0

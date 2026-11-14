@@ -1,0 +1,33 @@
+{
+ "box_xy": [
+  0.0,
+  -0.077
+ ],
+ "anchors": [
+  {
+   "x": 0.0,
+   "y": 2.5,
+   "params": {
+    "tilt_l": 29.84722661730638,
+    "tilt_r": 17.25086531935883,
+    "roll_l": 129.0238197928146,
+    "roll_r": -113.02657107306004,
+    "dy_l_mm": 15.683546020598158,
+    "dy_r_mm": 13.805223861854621,
+    "tip_mm": 24.588785260918574,
+    "press_mm": 1.5975000000000001
+   },
+   "score": 0.5028158929562584,
+   "ok": false,
+   "warm_ok": false,
+   "logs": [
+    "cube +0.0,+2.5 cm yaw  +0 mu 0.4: lifted 37.0 mm, tilt  8.8, in box True, contacts none, under clearance target none | closest cmd:camera-mount 42 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 29 meas:camera-mount 27 meas:arm-arm 9 meas:arm-camera 50 meas:arm-box 23",
+    "cube +1.8,+4.8 cm yaw  +6 mu 0.4: lifted 37.4 mm, tilt 11.7, in box False, contacts none, under clearance target {'cmd:arm-arm': '0mm@raise'} | closest cmd:camera-mount 41 cmd:arm-arm 0 cmd:arm-camera 50 cmd:arm-box 28 meas:camera-mount 36 meas:arm-arm 8 meas:arm-camera 50 meas:arm-box 22",
+    "cube -1.8,+0.3 cm yaw  -6 mu 0.4: lifted 37.0 mm, tilt  8.2, in box True, contacts none, under clearance target none | closest cmd:camera-mount 41 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 25 meas:camera-mount 29 meas:arm-arm 9 meas:arm-camera 50 meas:arm-box 15",
+    "cube +1.8,+0.3 cm yaw +10 mu 0.4: lifted 36.3 mm, tilt  7.7, in box True, contacts none, under clearance target none | closest cmd:camera-mount 43 cmd:arm-arm 5 cmd:arm-camera 50 cmd:arm-box 24 meas:camera-mount 36 meas:arm-arm 10 meas:arm-camera 50 meas:arm-box 16",
+    "cube -1.8,+4.8 cm yaw -10 mu 0.4: lifted 35.9 mm, tilt 10.2, in box False, contacts {'arm-table': 12}, under clearance target {'cmd:arm-arm': '0mm@lift'} | closest cmd:camera-mount 38 cmd:arm-arm 0 cmd:arm-camera 50 cmd:arm-box 30 meas:camera-mount 30 meas:arm-arm 7 meas:arm-camera 50 meas:arm-box 24",
+    "cube +0.0,+2.5 cm yaw  +4 mu 0.35: lifted 36.6 mm, tilt  9.3, in box True, contacts none, under clearance target none | closest cmd:camera-mount 42 cmd:arm-arm 4 cmd:arm-camera 50 cmd:arm-box 29 meas:camera-mount 27 meas:arm-arm 9 meas:arm-camera 50 meas:arm-box 23"
+   ]
+  }
+ ]
+}

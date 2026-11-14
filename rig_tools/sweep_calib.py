@@ -30,6 +30,7 @@ import numpy as np                      # noqa: E402
 from PIL import Image                   # noqa: E402
 
 import so101_real as R                  # noqa: E402
+import rt_control as RT   # noqa: E402  (min-jerk ramps at 100 Hz, 2026-11-13 motor rule)
 
 CAMS = ("overhead", "left_wrist", "right_wrist")
 RAISED = np.array([-45.8, 45.9, 90.0])  # lift, elbow, wrist_flex of SIM_HOME: arm upright, hand high
@@ -141,13 +142,13 @@ def main():
         start = arm.to_units(arm.read_raw()).astype(float)
         delta = np.abs(np.asarray(target_units) - start)
         secs = max(1.2, float(delta[:5].max()) / a.deg_s, float(delta[5]) / 80)
-        n = int(secs * 50)
+        n = int(secs * 100)
         r0, r1 = arm.to_raw(start), arm.to_raw(target_units)
         for k in range(1, n + 1):
             if STOP.exists():
                 raise KeyboardInterrupt("STOP file")
-            arm.goal(np.round(r0 + (r1 - r0) * k / n).astype(int))
-            time.sleep(0.02)
+            arm.goal(np.round(r0 + (r1 - r0) * RT.min_jerk(k / n)).astype(int))
+            time.sleep(0.01)
 
     def settle(timeout=3.0):
         t0, prev = time.time(), arm.to_units(arm.read_raw())
@@ -170,9 +171,9 @@ def main():
         mid[0], mid[3], mid[4], mid[5] = rest[0], rest[3], rest[4], rest[5]
         for tgt in (mid, rest):
             r0 = arm.read_raw()
-            for k in range(1, 101):
-                arm.goal(np.round(r0 + (tgt - r0) * k / 100).astype(int))
-                time.sleep(0.025)
+            for k in range(1, 251):
+                arm.goal(np.round(r0 + (tgt - r0) * RT.min_jerk(k / 250)).astype(int))
+                time.sleep(0.01)
         time.sleep(0.4)
 
     try:

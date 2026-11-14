@@ -31,11 +31,13 @@ sys.path.insert(0, str(HERE.parent))
 import os
 TASK = os.environ.get("SQUEEZE_TASK", "clamp")      # "clamp": two-arm tip clamp into the box (clamp_rl.py)
 RUNS = HERE / (("runs_clamp_recovery" if os.environ.get("CLAMP_RECOVERY") == "1" else "runs_clamp") if TASK == "clamp" else "runs")
+if os.environ.get("CLAMP_RUNS"):                       # e.g. runs_clamp_v3 (clamp v3: real joint ranges, gentle squeeze)
+    RUNS = HERE / os.environ["CLAMP_RUNS"]
 DEMOS = RUNS / "demos.npz"
 STAGES = ("squeezed", "lifted", "cleared", "placed", "is_success", "can_tipped")
 REWARD_SCALE = 0.01   # keeps returns O(10) for the critic; success is ~25 scaled
 GAMMA = 0.99
-WORKERS = 12
+WORKERS = int(os.environ.get("TRAIN_WORKERS", "12"))   # Mac: keep <= 4 (memory)
 CLEAN_DEMOS = os.environ.get("CLEAN_DEMOS", "1") == "1"
 
 

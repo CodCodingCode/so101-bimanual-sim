@@ -1,0 +1,1 @@
+{"K": 8, "scale": 20.0, "ensemble_m": 0.1, "obs_dim": 41, "stage": 4, "teacher": "runs_clamp_wide_guard3/rotation_servo_done.zip", "round": 3, "success": 0.775, "clean": 0.775, "output": "(K, 2 arms, 3) tool-point targets relative to the commanded tool point at prediction time, m x 20"}

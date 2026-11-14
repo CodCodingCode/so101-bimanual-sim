@@ -1,0 +1,13 @@
+cube x (cm) ->       -10    -8    -6    -4    -2    +0    +2    +4    +6    +8   +10
+legend: OK = lifted, no contact, guard quiet | g = lifted but the guard would stop | c = contact | . = no lift
+y   +12 (37.7 cm out)     .     .     .     .     .     c     c     c     c     c     c
+y   +10 (35.7 cm out)     c     .     .     .     c     .     c     c     c     c     c
+y    +8 (33.7 cm out)     c     .     .     .     c     c     c     c     c     c     c
+y    +6 (31.7 cm out)     .     .     .     .     c     c     c     c     .     .     .
+y    +4 (29.7 cm out)     .     .     .     .     c     c    OK     .     .     .     .
+y    +2 (27.7 cm out)     .     .     .     .    OK    OK    OK     .     .     .     .
+y    +0 (25.7 cm out)     .     .     .     .    OK    OK    OK     .     .     .     .
+y    -2 (23.7 cm out)     .     .     .     .    OK    OK    OK     .     .     .     .
+y    -4 (21.7 cm out)     .     .     .     .    OK    OK    OK     .     .     .     .
+y    -6 (19.7 cm out)     .     .     .     .    OK    OK    OK     .     .     .     .
+y    -8 (17.7 cm out)     .     .     .     .    OK    OK     .     .     .     .     .

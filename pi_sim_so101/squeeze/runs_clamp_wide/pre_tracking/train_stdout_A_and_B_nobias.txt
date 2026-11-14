@@ -1,0 +1,89 @@
+17:10:14 start at stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg (design design_clamp3c_twistoff.json)
+17:12:07 steps    54000 stage 0 [A rotation] cube +-1.5 cm, yaw +-15 deg | last 120: success 0.96 clean 0.94 lifted 1.00 box tipped 0.00 [114s]
+  -> stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg
+17:13:44 steps   108000 stage 1 [A rotation] cube +-1.5 cm, yaw +-25 deg | last 120: success 0.85 clean 0.83 lifted 1.00 box tipped 0.00 [210s]
+  -> stage 2 [A rotation] cube +-1.5 cm, yaw +-35 deg
+17:15:20 steps   162000 stage 2 [A rotation] cube +-1.5 cm, yaw +-35 deg | last 120: success 0.91 clean 0.85 lifted 1.00 box tipped 0.00 [307s]
+  -> stage 3 [A rotation] cube +-1.5 cm, yaw +-45 deg
+17:16:58 steps   216000 stage 3 [A rotation] cube +-1.5 cm, yaw +-45 deg | last 120: success 0.84 clean 0.80 lifted 1.00 box tipped 0.00 [405s]
+17:18:44 steps   270000 stage 3 [A rotation] cube +-1.5 cm, yaw +-45 deg | last 120: success 0.89 clean 0.83 lifted 1.00 box tipped 0.00 [511s]
+  == stage A done: the policy handles any cube rotation in the +-1.5 cm area ==
+  -> stage 4 [B distance] cube +-2.6 cm, yaw +-45 deg
+17:20:46 steps   324000 stage 4 [B distance] cube +-2.6 cm, yaw +-45 deg | last 120: success 0.79 clean 0.66 lifted 1.00 box tipped 0.00 [632s]
+  -> stage 5 [B distance] cube +-3.6 cm, yaw +-45 deg
+17:22:38 steps   378000 stage 5 [B distance] cube +-3.6 cm, yaw +-45 deg | last 120: success 0.72 clean 0.56 lifted 0.97 box tipped 0.00 [745s]
+Process SpawnProcess-1:
+Process SpawnProcess-2:
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 43, in _worker
+    remote.send((observation, reward, done, info, reset_info))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/Users/owner/.pyenv/versions/3.10.9/lib/python3.10/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe

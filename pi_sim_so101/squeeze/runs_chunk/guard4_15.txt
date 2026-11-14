@@ -1,0 +1,17 @@
+{"seed": 880000, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 38, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 0.4, "ticks": 315, "secs": 27}
+{"seed": 880001, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 2.1, "ticks": 321, "secs": 26}
+{"seed": 880002, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 57, "attempts": 1, "box_err_mm": 1.2, "cube_start_err_mm": 5.0, "ticks": 288, "secs": 24}
+{"seed": 880003, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 4, "attempts": 1, "box_err_mm": 1.2, "cube_start_err_mm": 2.4, "ticks": 291, "secs": 24}
+{"seed": 880004, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 10, "attempts": 1, "box_err_mm": 0.7, "cube_start_err_mm": 3.9, "ticks": 292, "secs": 24}
+{"seed": 880005, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 2.5, "ticks": 304, "secs": 25}
+{"seed": 880006, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 4.2, "ticks": 361, "secs": 29}
+{"seed": 880007, "delivered": false, "clean": false, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 2, "box_err_mm": 0.8, "cube_start_err_mm": 4.0, "ticks": 450, "secs": 36}
+{"seed": 880008, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.8, "cube_start_err_mm": 1.1, "ticks": 291, "secs": 23}
+{"seed": 880009, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 21, "attempts": 1, "box_err_mm": 1.1, "cube_start_err_mm": 3.3, "ticks": 292, "secs": 25}
+{"seed": 880010, "delivered": true, "clean": true, "contacts": {}, "guard_stop": [325, "arm-arm 3.0 mm < 3.0 mm (left_moving_jaw_so101_v1 vs right_gripper) in the REAL (measured) pose"], "limiter_ticks": 0, "attempts": 1, "box_err_mm": 2.6, "cube_start_err_mm": 1.5, "ticks": 347, "secs": 28}
+{"seed": 880011, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 10, "attempts": 1, "box_err_mm": 0.9, "cube_start_err_mm": 1.8, "ticks": 296, "secs": 24}
+{"seed": 880012, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 4.3, "ticks": 297, "secs": 24}
+{"seed": 880013, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 7, "attempts": 1, "box_err_mm": 0.6, "cube_start_err_mm": 2.2, "ticks": 292, "secs": 24}
+{"seed": 880014, "delivered": true, "clean": true, "contacts": {}, "guard_stop": null, "limiter_ticks": 0, "attempts": 2, "box_err_mm": 0.5, "cube_start_err_mm": 3.0, "ticks": 426, "secs": 34}
+
+rig controller + sim-74 student, squeeze limiter ON, release gap ON: delivered 14/15, clean 14/15, the real guard would have stopped 1/15, start refused 0
